@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 2,
-  "updatedAt": "2026-10-27T07:50:00.648Z",
+  "version": 3,
+  "updatedAt": "2026-10-27T07:51:56.682Z",
   "note": "Single source for the public site. Edit through admin.html."
  },
  "site": {
@@ -14,7 +14,7 @@
    "en": "The voice of Bihar’s industry since 1943",
    "hi": "1943 से बिहार के उद्योग जगत की आवाज़"
   },
-  "logoImage": "uploads/mvqdxd8gg9j9kx-bia-logo.png",
+  "logoImage": "bia-logo.png",
   "estLine": {
    "en": "Est. 1943",
    "hi": "स्थापना 1943 · पटना"
@@ -4485,7 +4485,7 @@
    "en": "General information only, not legal or tax advice.",
    "hi": "केवल सामान्य जानकारी, कानूनी या कर सलाह नहीं।"
   },
-  "threshold": 0.35,
+  "threshold": 0.34,
   "synonyms": [
    "fee fees shulk शुल्क charge charges cost kitna kitni कितना कितनी paisa amount subscription चंदा",
    "member membership sadasya sadasyata सदस्य सदस्यता",
