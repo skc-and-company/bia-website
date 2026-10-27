@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 3,
-  "updatedAt": "2026-10-27T07:51:56.682Z",
+  "version": 4,
+  "updatedAt": "2026-10-27T08:14:32.117Z",
   "note": "Single source for the public site. Edit through admin.html."
  },
  "site": {
@@ -433,7 +433,7 @@
       "en": "Bihar Industrial Area Development Authority (BIADA)",
       "hi": "बिहार औद्योगिक क्षेत्र विकास प्राधिकार (बियाडा)"
      },
-     "url": "https://www.biadabihar.in/"
+     "url": "https://biada1.bihar.gov.in/"
     },
     {
      "name": {
@@ -4242,7 +4242,7 @@
     "en": "April 2023",
     "hi": "अप्रैल 2023"
    },
-   "url": "https://www.biabihar.com/wp-content/uploads/BIA_Bulletin-APRIL_2023.pdf",
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-APRIL-2023.pdf",
    "highlights": {
     "en": "",
     "hi": ""
@@ -5498,7 +5498,7 @@
        "en": "BIADA",
        "hi": "बियाडा"
       },
-      "url": "https://www.biadabihar.in/"
+      "url": "https://biada1.bihar.gov.in/"
      },
      {
       "label": {
