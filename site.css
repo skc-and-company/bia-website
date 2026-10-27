@@ -94,9 +94,11 @@ html[lang="hi"] .eyebrow { letter-spacing: .02em; font-size: .95rem; }
 /* ------------------------------------------------------------------ header */
 .hdr { position: sticky; top: 0; z-index: 50; background: color-mix(in oklab, var(--surface) 94%, transparent); -webkit-backdrop-filter: saturate(1.4) blur(12px); backdrop-filter: saturate(1.4) blur(12px); border-bottom: 1px solid var(--line); transition: box-shadow .3s; }
 .hdr.scrolled { box-shadow: 0 8px 24px -20px rgb(0 0 0 / .45); }
+.hdr .wrap, .util .wrap { max-width: 1400px; }
 .hdr-in { display: flex; align-items: center; gap: 24px; min-height: 80px; }
-.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--text); flex: 0 1 auto; min-width: 0; }
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--text); flex: none; min-width: 0; }
 .tools { flex: none; }
+.nav ul { flex-wrap: nowrap; }
 .brand img { height: 52px; width: auto; }
 :root[data-mode="dark"] .brand img { background: #fff; border-radius: 8px; padding: 3px; }
 .brand-txt { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
@@ -121,7 +123,19 @@ html[lang="hi"] .eyebrow { letter-spacing: .02em; font-size: .95rem; }
 .icon-btn:active { transform: scale(.95); }
 .icon-btn svg { width: 20px; height: 20px; }
 .burger { display: none; }
+/* Medium screens: the name wraps to two lines and the menu tightens so nothing touches. */
+@media (max-width: 1460px) {
+  .brand-txt b { white-space: normal; max-width: 9.5em; line-height: 1.2; font-size: 1.02rem; }
+  .brand-txt small { display: none; }
+  .nav .top { padding: 10px 9px; font-size: .93rem; }
+  .tools .cta { padding: 11px 16px; }
+  .hdr-in { gap: 18px; }
+}
 @media (max-width: 1180px) { .nav, .tools .cta { display: none; } .burger { display: inline-grid; } .tools { margin-left: auto; } }
+/* Safety net set by site.js when the menu still would not fit (longer labels, Hindi, items added in the admin). */
+.hdr.tight .nav, .hdr.tight .tools .cta { display: none; }
+.hdr.tight .burger { display: inline-grid; }
+.hdr.tight .tools { margin-left: auto; }
 @media (max-width: 480px) { .hdr-in { gap: 12px; min-height: 70px; } .brand { gap: 10px; } .brand-txt small { display: none; } .brand img { height: 42px; } .brand-txt b { font-size: .98rem; line-height: 1.25; white-space: normal; } }
 
 .drawer { position: fixed; inset: 0; z-index: 80; pointer-events: none; }

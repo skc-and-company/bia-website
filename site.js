@@ -151,7 +151,20 @@
       <nav>${drawerNav()}</nav><a class="btn btn-brand" href="#/membership">${esc(U('becomeMember'))}</a></div>`;
     renderFooter();
     applyMode();
+    fitHeader();
   }
+  // If the logo, name, menu and button do not fit on one line, switch to the menu button instead of overlapping.
+  function fitHeader() {
+    const hdr = $('#hdr'), row = $('#hdr .hdr-in');
+    if (!row) return;
+    hdr.classList.remove('tight');
+    const nav = $('#hdr .nav'), brandEl = $('#hdr .brand');
+    if (!nav || getComputedStyle(nav).display === 'none') return;
+    const overlaps = row.scrollWidth > row.clientWidth + 1 || brandEl.getBoundingClientRect().right > nav.getBoundingClientRect().left - 6;
+    hdr.classList.toggle('tight', overlaps);
+  }
+  let fitT; window.addEventListener('resize', () => { cancelAnimationFrame(fitT); fitT = requestAnimationFrame(fitHeader); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => fitHeader());
   function renderFooter() {
     const s = C.site, f = C.footer;
     $('#ftr').innerHTML = `<div class="kband"></div><div class="wrap ftr-in">
@@ -558,7 +571,7 @@
       $('#main').innerHTML = view.html;
       if (view.after) view.after();
       document.title = (view.title ? view.title + ' · ' : '') + T(C.site.name);
-      const nu = $('#hdr .nav ul'); if (nu) nu.innerHTML = navHTML();
+      const nu = $('#hdr .nav ul'); if (nu) { nu.innerHTML = navHTML(); fitHeader(); }
       const dn = $('#drawer nav'); if (dn) dn.innerHTML = drawerNav();
       if (!same && !opts.keepScroll) window.scrollTo({ top: 0, behavior: 'instant' });
       if (window.Chanakya) window.Chanakya.refresh();
