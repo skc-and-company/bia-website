@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BIA Website Admin</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14164A">
+<link rel="icon" type="image/png" href="bia-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Mukta:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="admin.css?v=202610271252">
+</head>
+<body>
+<header class="top">
+  <img src="bia-logo.png" alt="BIA" class="logo">
+  <span class="ttl">Website admin</span>
+  <span class="pill" id="status">Loading…</span>
+  <div class="acts">
+    <button type="button" class="tb" id="undoBtn" disabled>Undo</button>
+    <button type="button" class="tb" id="redoBtn" disabled>Redo</button>
+    <button type="button" class="tb hide-wide" id="previewToggle">Preview</button>
+    <a class="tb" href="./" target="_blank" rel="noopener">Open public site ↗</a>
+    <button type="button" class="pub" id="publishBtn">Publish</button>
+  </div>
+</header>
+<div class="layout">
+  <nav class="side" id="side" aria-label="Sections"></nav>
+  <main class="editor" id="editor" tabindex="-1"><p class="muted">Loading the site content…</p></main>
+  <aside class="preview" id="preview" aria-label="Live preview">
+    <div class="pv-bar">
+      <b>Live preview</b>
+      <div class="seg" id="pvDevice"><button type="button" data-dev="desk" aria-pressed="true">Desktop</button><button type="button" data-dev="phone" aria-pressed="false">Phone</button></div>
+      <div class="seg" id="pvLang"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="hi" aria-pressed="false">हिं</button></div>
+      <div class="seg" id="pvMode"><button type="button" data-mode="light" aria-pressed="true">Light</button><button type="button" data-mode="dark" aria-pressed="false">Dark</button></div>
+    </div>
+    <div class="pv-frame" id="pvFrame"><iframe id="pv" title="Live preview of the public site" src="index.html?preview=1#/"></iframe></div>
+  </aside>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="common.js?v=202610271252"></script>
+<script src="bot.js?v=202610271252"></script>
+<script src="admin.js?v=202610271252"></script>
+</body>
+</html>

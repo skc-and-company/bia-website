@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bihar Industries Association</title>
+<meta name="description" content="Bihar Industries Association (BIA), founded in 1943, is the apex body of industry and services in Bihar.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14164A">
+<link rel="icon" type="image/png" href="bia-logo.png">
+<link rel="apple-touch-icon" href="bia-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link id="fontlink" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mukta:wght@300;400;500;600;700&display=swap">
+<link rel="preload" as="image" href="img/hero-expo-stage.jpg" fetchpriority="high">
+<link rel="stylesheet" href="site.css?v=202610271252">
+<script>
+  // Apply saved language and light/dark mode before first paint (no flash).
+  (function () {
+    try {
+      var m = localStorage.getItem('bia.mode'), l = localStorage.getItem('bia.lang');
+      if (!m) m = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.mode = m;
+      if (l) document.documentElement.lang = l;
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+<a class="skip" id="skip" href="#main">Skip to content</a>
+<div class="proto" id="proto">Prototype for review by Bihar Industries Association. Not the official website.</div>
+<div class="draftbar" id="draftbar" hidden></div>
+<div class="util" id="util"></div>
+<header class="hdr" id="hdr"></header>
+<div class="drawer" id="drawer"></div>
+<main id="main" tabindex="-1"><div class="boot"><span></span></div></main>
+<footer class="ftr" id="ftr"></footer>
+<button class="icon-btn to-top" id="toTop" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 15 6-6 6 6"/></svg></button>
+<script src="common.js?v=202610271252"></script>
+<script src="bot.js?v=202610271252"></script>
+<script src="site.js?v=202610271252"></script>
+</body>
+</html>

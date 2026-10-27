@@ -1,0 +1,5525 @@
+{
+ "meta": {
+  "version": 1,
+  "updatedAt": "2026-10-27T12:49:25+05:30",
+  "note": "Single source for the public site. Edit through admin.html."
+ },
+ "site": {
+  "name": {
+   "en": "Bihar Industries Association",
+   "hi": "बिहार इंडस्ट्रीज़ एसोसिएशन"
+  },
+  "short": "BIA",
+  "tagline": {
+   "en": "The voice of Bihar’s industry since 1943",
+   "hi": "1943 से बिहार के उद्योग जगत की आवाज़"
+  },
+  "logoImage": "bia-logo.png",
+  "estLine": {
+   "en": "Est. 1943",
+   "hi": "स्थापना 1943 · पटना"
+  },
+  "address": {
+   "en": "Industry House, Sinha Library Road, Patna, Bihar 800001",
+   "hi": "इंडस्ट्री हाउस, सिन्हा लाइब्रेरी रोड, पटना, बिहार 800001"
+  },
+  "addressShort": {
+   "en": "Industry House, Sinha Library Road, Patna",
+   "hi": "इंडस्ट्री हाउस, सिन्हा लाइब्रेरी रोड, पटना"
+  },
+  "phone": "0612 222 6642",
+  "email": "biapatna1@gmail.com",
+  "whatsapp": "",
+  "hours": {
+   "en": "",
+   "hi": ""
+  },
+  "mapLink": "https://www.google.com/maps/search/?api=1&query=Industry+House+Sinha+Library+Road+Patna",
+  "social": [
+   {
+    "name": "Facebook",
+    "url": "https://www.facebook.com/BiharIndustriesAssociation/"
+   },
+   {
+    "name": "X",
+    "url": "https://twitter.com/BiharIndustries"
+   },
+   {
+    "name": "YouTube",
+    "url": "https://www.youtube.com/channel/UCFqzCgUH7J923GYKPNMFNfA"
+   }
+  ],
+  "formEmail": "biapatna1@gmail.com"
+ },
+ "theme": {
+  "defaultMode": "system",
+  "defaultLang": "en",
+  "fontDisplay": "Poppins",
+  "fontBody": "Mukta",
+  "radius": 12,
+  "motion": true,
+  "light": {
+   "brand": "#2E3092",
+   "accent": "#F2A51A",
+   "navy": "#14164A",
+   "bg": "#FFFFFF",
+   "surface": "#FFFFFF",
+   "text": "#101233"
+  },
+  "dark": {
+   "brand": "#2E3092",
+   "accent": "#F2A51A",
+   "navy": "#07081B",
+   "bg": "#0B0D24",
+   "surface": "#14173A",
+   "text": "#ECEDF7"
+  }
+ },
+ "nav": [
+  {
+   "label": {
+    "en": "About",
+    "hi": "परिचय"
+   },
+   "route": "#/about",
+   "visible": true,
+   "children": [
+    {
+     "label": {
+      "en": "About BIA",
+      "hi": "बीआईए के बारे में"
+     },
+     "route": "#/about"
+    },
+    {
+     "label": {
+      "en": "Leadership & committees",
+      "hi": "नेतृत्व एवं समितियाँ"
+     },
+     "route": "#/leadership"
+    }
+   ]
+  },
+  {
+   "label": {
+    "en": "Policies & Updates",
+    "hi": "नीतियाँ एवं अपडेट"
+   },
+   "route": "#/policies",
+   "visible": true,
+   "children": []
+  },
+  {
+   "label": {
+    "en": "Membership",
+    "hi": "सदस्यता"
+   },
+   "route": "#/membership",
+   "visible": true,
+   "children": []
+  },
+  {
+   "label": {
+    "en": "Events",
+    "hi": "कार्यक्रम"
+   },
+   "route": "#/events",
+   "visible": true,
+   "children": []
+  },
+  {
+   "label": {
+    "en": "Media",
+    "hi": "मीडिया"
+   },
+   "route": "#/news",
+   "visible": true,
+   "children": [
+    {
+     "label": {
+      "en": "News",
+      "hi": "समाचार"
+     },
+     "route": "#/news"
+    },
+    {
+     "label": {
+      "en": "BIA Bulletin",
+      "hi": "बीआईए बुलेटिन"
+     },
+     "route": "#/bulletin"
+    },
+    {
+     "label": {
+      "en": "Gallery",
+      "hi": "गैलरी"
+     },
+     "route": "#/gallery"
+    }
+   ]
+  },
+  {
+   "label": {
+    "en": "Initiatives",
+    "hi": "पहल"
+   },
+   "route": "#/initiatives",
+   "visible": true,
+   "children": []
+  },
+  {
+   "label": {
+    "en": "Contact",
+    "hi": "संपर्क"
+   },
+   "route": "#/contact",
+   "visible": true,
+   "children": []
+  }
+ ],
+ "home": {
+  "sections": [
+   {
+    "id": "hero",
+    "visible": true
+   },
+   {
+    "id": "stats",
+    "visible": true
+   },
+   {
+    "id": "updates",
+    "visible": true
+   },
+   {
+    "id": "president",
+    "visible": true
+   },
+   {
+    "id": "news",
+    "visible": true
+   },
+   {
+    "id": "membership",
+    "visible": true
+   },
+   {
+    "id": "events",
+    "visible": true
+   },
+   {
+    "id": "bulletin",
+    "visible": true
+   },
+   {
+    "id": "initiatives",
+    "visible": true
+   },
+   {
+    "id": "partners",
+    "visible": true
+   }
+  ],
+  "hero": {
+   "eyebrow": {
+    "en": "Patna · Since 1943",
+    "hi": "पटना · स्थापना 1943"
+   },
+   "title": {
+    "en": "The voice of Bihar’s industry",
+    "hi": "बिहार के उद्योग जगत की आवाज़"
+   },
+   "lede": {
+    "en": "For 83 years, Bihar Industries Association has represented the state’s manufacturers, service enterprises and professionals before the State and Central Governments.",
+    "hi": "83 वर्षों से बिहार इंडस्ट्रीज़ एसोसिएशन राज्य के उद्योगों, सेवा उद्यमों और पेशेवरों की बात राज्य एवं केंद्र सरकार तक पहुँचा रहा है।"
+   },
+   "cta1": {
+    "label": {
+     "en": "Become a member",
+     "hi": "सदस्य बनें"
+    },
+    "link": "#/membership"
+   },
+   "cta2": {
+    "label": {
+     "en": "Latest policy updates",
+     "hi": "नवीनतम नीति अपडेट"
+    },
+    "link": "#/policies"
+   },
+   "slides": [
+    {
+     "image": "img/hero-expo-stage.jpg",
+     "caption": {
+      "en": "Destination Bihar Expo 2026 · Gandhi Maidan, Patna",
+      "hi": "डेस्टिनेशन बिहार एक्सपो 2026 · गांधी मैदान, पटना"
+     }
+    },
+    {
+     "image": "img/hero-goyal.jpg",
+     "caption": {
+      "en": "Interactive session with Union Minister Shri Piyush Goyal, November 2025",
+      "hi": "केंद्रीय मंत्री श्री पीयूष गोयल के साथ संवाद, नवंबर 2025"
+     }
+    },
+    {
+     "image": "img/hero-expo-ribbon.jpg",
+     "caption": {
+      "en": "Inauguration of Destination Bihar Expo 2026",
+      "hi": "डेस्टिनेशन बिहार एक्सपो 2026 का उद्घाटन"
+     }
+    }
+   ]
+  },
+  "stats": {
+   "items": [
+    {
+     "value": "1943",
+     "label": {
+      "en": "Founded in Patna",
+      "hi": "पटना में स्थापना"
+     }
+    },
+    {
+     "value": "82",
+     "label": {
+      "en": "Annual general meetings held",
+      "hi": "वार्षिक आम सभाएँ आयोजित"
+     }
+    },
+    {
+     "value": "22",
+     "label": {
+      "en": "Committees and cells",
+      "hi": "समितियाँ एवं प्रकोष्ठ"
+     }
+    },
+    {
+     "value": "2.5 lakh",
+     "label": {
+      "en": "sq ft at Destination Bihar Expo 2026",
+      "hi": "वर्गफीट में डेस्टिनेशन बिहार एक्सपो 2026"
+     }
+    }
+   ]
+  },
+  "updates": {
+   "eyebrow": {
+    "en": "Policies & updates",
+    "hi": "नीतियाँ एवं अपडेट"
+   },
+   "title": {
+    "en": "What changed for industry",
+    "hi": "उद्योग के लिए क्या बदला"
+   },
+   "intro": {
+    "en": "National and Bihar policies, GST and income-tax changes, each with a short BIA summary.",
+    "hi": "राष्ट्रीय एवं बिहार की नीतियाँ, जीएसटी और आयकर में बदलाव, हर एक के साथ बीआईए का संक्षिप्त सारांश।"
+   },
+   "count": 5
+  },
+  "president": {
+   "eyebrow": {
+    "en": "From the President",
+    "hi": "अध्यक्ष की कलम से"
+   },
+   "name": {
+    "en": "Shri Ram Lall Khetan",
+    "hi": "श्री राम लाल खेतान"
+   },
+   "role": {
+    "en": "President, 2026-27",
+    "hi": "अध्यक्ष, 2026-27"
+   },
+   "photo": "img/Shri-Ram-Lall-Khetan-768x768.jpg",
+   "message": {
+    "en": "BIA’s purpose has not changed since 1943: to bring the concerns of industry to government, and to help shape policies under which enterprise in Bihar can grow.",
+    "hi": "1943 से बीआईए का उद्देश्य नहीं बदला है: उद्योग की समस्याओं को सरकार तक पहुँचाना और ऐसी नीतियाँ बनाने में सहयोग करना जिनसे बिहार में उद्यम आगे बढ़ सकें।"
+   },
+   "link": "#/leadership"
+  },
+  "news": {
+   "eyebrow": {
+    "en": "News",
+    "hi": "समाचार"
+   },
+   "title": {
+    "en": "Recent activity",
+    "hi": "हाल की गतिविधियाँ"
+   },
+   "count": 5
+  },
+  "membership": {
+   "eyebrow": {
+    "en": "Membership",
+    "hi": "सदस्यता"
+   },
+   "title": {
+    "en": "Join Bihar’s apex industry body",
+    "hi": "बिहार की शीर्ष औद्योगिक संस्था से जुड़ें"
+   },
+   "text": {
+    "en": "Members get policy updates, direct access to government, a platform at BIA’s seminars and exhibitions, and a say in BIA’s representations.",
+    "hi": "सदस्यों को नीति अपडेट, सरकार से सीधा संवाद, बीआईए की संगोष्ठियों एवं प्रदर्शनियों में मंच और बीआईए के प्रतिवेदनों में भागीदारी मिलती है।"
+   },
+   "cta": {
+    "en": "See fees and apply",
+    "hi": "शुल्क देखें और आवेदन करें"
+   }
+  },
+  "events": {
+   "eyebrow": {
+    "en": "Events",
+    "hi": "कार्यक्रम"
+   },
+   "title": {
+    "en": "BIA’s calendar",
+    "hi": "बीआईए का कैलेंडर"
+   }
+  },
+  "bulletin": {
+   "eyebrow": {
+    "en": "BIA Bulletin",
+    "hi": "बीआईए बुलेटिन"
+   },
+   "title": {
+    "en": "The monthly bulletin",
+    "hi": "मासिक बुलेटिन"
+   },
+   "text": {
+    "en": "Every month BIA publishes its bulletin with representations, meetings, notifications and member news. Issues since 2016 are in the archive.",
+    "hi": "बीआईए हर महीने अपना बुलेटिन प्रकाशित करता है जिसमें प्रतिवेदन, बैठकें, अधिसूचनाएँ और सदस्यों के समाचार होते हैं। 2016 से अब तक के अंक संग्रह में उपलब्ध हैं।"
+   }
+  },
+  "initiatives": {
+   "eyebrow": {
+    "en": "Initiatives",
+    "hi": "पहल"
+   },
+   "title": {
+    "en": "Beyond representation",
+    "hi": "प्रतिनिधित्व से आगे"
+   }
+  },
+  "partners": {
+   "title": {
+    "en": "Affiliations and government links",
+    "hi": "संबद्धता एवं सरकारी लिंक"
+   },
+   "items": [
+    {
+     "name": {
+      "en": "Confederation of Indian Industry (CII)",
+      "hi": "भारतीय उद्योग परिसंघ (सीआईआई)"
+     },
+     "url": "https://www.cii.in/"
+    },
+    {
+     "name": {
+      "en": "Federation of Indian Micro and Small & Medium Enterprises (FISME)",
+      "hi": "फेडरेशन ऑफ इंडियन माइक्रो एंड स्मॉल एंड मीडियम एंटरप्राइजेज (फिस्मे)"
+     },
+     "url": "https://fisme.org.in/"
+    },
+    {
+     "name": {
+      "en": "Department of Industries, Government of Bihar",
+      "hi": "उद्योग विभाग, बिहार सरकार"
+     },
+     "url": "https://state.bihar.gov.in/industries/CitizenHome.html"
+    },
+    {
+     "name": {
+      "en": "Bihar Industrial Area Development Authority (BIADA)",
+      "hi": "बिहार औद्योगिक क्षेत्र विकास प्राधिकार (बियाडा)"
+     },
+     "url": "https://www.biadabihar.in/"
+    },
+    {
+     "name": {
+      "en": "BIA VenturePark incubator",
+      "hi": "बीआईए वेंचरपार्क इनक्यूबेटर"
+     },
+     "url": "https://biaventurepark.com/"
+    }
+   ]
+  }
+ },
+ "pages": {
+  "about": {
+   "title": {
+    "en": "About BIA",
+    "hi": "बीआईए के बारे में"
+   },
+   "intro": {
+    "en": "Bihar Industries Association was founded in 1943. Until the creation of Jharkhand in 2000 it was the only apex body of industry and services in undivided Bihar, and it remains the state’s leading voice of enterprise.",
+    "hi": "बिहार इंडस्ट्रीज़ एसोसिएशन की स्थापना 1943 में हुई। वर्ष 2000 में झारखंड के गठन तक यह अविभाजित बिहार में उद्योग एवं सेवा क्षेत्र की एकमात्र शीर्ष संस्था थी और आज भी राज्य में उद्यम की प्रमुख आवाज़ है।"
+   },
+   "story": {
+    "en": "BIA’s members include large, medium and small industries, service enterprises, banks and professionals from across Bihar. The Association is registered as a not-for-profit company under Section 25 of the Companies Act, 1956, and is recognised by the Central and State Governments as a representative body of industry and services. It is affiliated to the Confederation of Indian Industry (CII) and FISME.\n\nBIA draws the attention of government to the impediments in the way of industrialisation, helps frame sound legislation and state policy for industry, and works to keep relations between labour and capital harmonious. It also undertakes labour welfare and social service, from free computer training for young people to outreach in Bihar’s districts.",
+    "hi": "बीआईए के सदस्यों में पूरे बिहार के बड़े, मध्यम और लघु उद्योग, सेवा उद्यम, बैंक और पेशेवर शामिल हैं। एसोसिएशन कंपनी अधिनियम, 1956 की धारा 25 के अंतर्गत एक गैर-लाभकारी कंपनी के रूप में पंजीकृत है और केंद्र एवं राज्य सरकार द्वारा उद्योग एवं सेवा क्षेत्र की प्रतिनिधि संस्था के रूप में मान्यता प्राप्त है। यह भारतीय उद्योग परिसंघ (सीआईआई) और फिस्मे से संबद्ध है।\n\nबीआईए औद्योगीकरण की राह की बाधाओं की ओर सरकार का ध्यान आकर्षित करता है, उद्योग के लिए उचित कानून एवं राज्य नीतियाँ बनाने में सहयोग करता है और श्रम एवं पूंजी के बीच सौहार्दपूर्ण संबंध बनाए रखने के लिए कार्य करता है। यह श्रमिक कल्याण और सामाजिक सेवा के कार्य भी करता है, युवाओं के लिए निःशुल्क कंप्यूटर प्रशिक्षण से लेकर ज़िलों में आउटरीच कार्यक्रमों तक।"
+   },
+   "vision": {
+    "en": "To create value for members and society: entrepreneurial advancement, an interface with government that builds a better industrial climate, and a common platform for everyone with a stake in industry.",
+    "hi": "सदस्यों एवं समाज के लिए मूल्य सृजन: उद्यमशीलता का विकास, सरकार के साथ ऐसा संवाद जो बेहतर औद्योगिक वातावरण बनाए, और उद्योग से जुड़े सभी हितधारकों के लिए एक साझा मंच।"
+   },
+   "mission": {
+    "en": "To promote the industrial development of Bihar by focusing the attention of the State and Central Governments on the impediments to industrialisation, and to promote and safeguard the interests of industry in general and of Bihar’s industry in particular.",
+    "hi": "राज्य एवं केंद्र सरकार का ध्यान औद्योगीकरण की बाधाओं की ओर आकर्षित कर बिहार के औद्योगिक विकास को बढ़ावा देना, तथा सामान्य रूप से उद्योग और विशेष रूप से बिहार के उद्योग के हितों का संवर्धन एवं संरक्षण करना।"
+   },
+   "objectives": [
+    {
+     "en": "Represent industry before the State and Central Governments",
+     "hi": "राज्य एवं केंद्र सरकार के समक्ष उद्योग का प्रतिनिधित्व"
+    },
+    {
+     "en": "Help shape sound legislation and industrial policy",
+     "hi": "उचित कानून एवं औद्योगिक नीति निर्माण में सहयोग"
+    },
+    {
+     "en": "Keep members informed of policies, rules and notifications",
+     "hi": "सदस्यों को नीतियों, नियमों एवं अधिसूचनाओं की जानकारी"
+    },
+    {
+     "en": "Organise seminars, interactive sessions and exhibitions",
+     "hi": "संगोष्ठी, संवाद कार्यक्रम एवं प्रदर्शनियों का आयोजन"
+    },
+    {
+     "en": "Promote harmony between labour and capital",
+     "hi": "श्रम एवं पूंजी के बीच सौहार्द को बढ़ावा"
+    },
+    {
+     "en": "Support skills, startups and social welfare",
+     "hi": "कौशल, स्टार्टअप एवं समाज कल्याण को प्रोत्साहन"
+    }
+   ],
+   "timeline": [
+    {
+     "year": "1943",
+     "text": {
+      "en": "BIA is founded in Patna. Late S. P. Jain becomes its first President.",
+      "hi": "पटना में बीआईए की स्थापना। स्व. एस. पी. जैन प्रथम अध्यक्ष बने।"
+     }
+    },
+    {
+     "year": "1956",
+     "text": {
+      "en": "Registered as a not-for-profit company under Section 25 of the Companies Act, 1956.",
+      "hi": "कंपनी अधिनियम, 1956 की धारा 25 के अंतर्गत गैर-लाभकारी कंपनी के रूप में पंजीकरण।"
+     }
+    },
+    {
+     "year": "2000",
+     "text": {
+      "en": "Jharkhand is created. BIA continues as the apex industry body of the new State of Bihar.",
+      "hi": "झारखंड का गठन। बीआईए नए बिहार राज्य की शीर्ष औद्योगिक संस्था के रूप में जारी।"
+     }
+    },
+    {
+     "year": "2016",
+     "text": {
+      "en": "The BIA Bulletin archive begins: a monthly record of representations and meetings.",
+      "hi": "बीआईए बुलेटिन संग्रह की शुरुआत: प्रतिवेदनों एवं बैठकों का मासिक अभिलेख।"
+     }
+    },
+    {
+     "year": "2023",
+     "text": {
+      "en": "New membership tariff takes effect from 1 October 2023. Outreach programmes reach industrial areas across Bihar.",
+      "hi": "1 अक्टूबर 2023 से नई सदस्यता शुल्क दरें लागू। आउटरीच कार्यक्रम बिहार के औद्योगिक क्षेत्रों तक पहुँचे।"
+     }
+    },
+    {
+     "year": "2026",
+     "text": {
+      "en": "Destination Bihar Expo 2026 at Gandhi Maidan; 82nd Annual General Meeting elects the 2026-27 office bearers.",
+      "hi": "गांधी मैदान में डेस्टिनेशन बिहार एक्सपो 2026; 82वीं वार्षिक आम सभा में 2026-27 के पदाधिकारी निर्वाचित।"
+     }
+    }
+   ]
+  },
+  "leadership": {
+   "title": {
+    "en": "Leadership & committees",
+    "hi": "नेतृत्व एवं समितियाँ"
+   },
+   "intro": {
+    "en": "BIA is run by office bearers and an Executive Council elected at the Annual General Meeting, supported by 22 subject committees and cells.",
+    "hi": "बीआईए का संचालन वार्षिक आम सभा में निर्वाचित पदाधिकारियों और कार्यकारिणी परिषद द्वारा होता है, जिन्हें 22 विषयगत समितियाँ एवं प्रकोष्ठ सहयोग देते हैं।"
+   }
+  },
+  "policies": {
+   "title": {
+    "en": "Policies & Updates",
+    "hi": "नीतियाँ एवं अपडेट"
+   },
+   "intro": {
+    "en": "Industrial policies of India and Bihar, and GST and income-tax changes, each with a short BIA summary. Every document shows its date and whether it is still in force.",
+    "hi": "भारत एवं बिहार की औद्योगिक नीतियाँ, और जीएसटी तथा आयकर में बदलाव, हर एक के साथ बीआईए का संक्षिप्त सारांश। हर दस्तावेज़ पर उसकी तिथि और लागू होने की स्थिति दी गई है।"
+   },
+   "newDays": 60,
+   "disclaimer": {
+    "en": "Summaries are for general information. Always rely on the official notification.",
+    "hi": "सारांश सामान्य जानकारी के लिए हैं। हमेशा आधिकारिक अधिसूचना पर ही भरोसा करें।"
+   }
+  },
+  "membership": {
+   "title": {
+    "en": "Membership",
+    "hi": "सदस्यता"
+   },
+   "intro": {
+    "en": "Membership is open to any industry, enterprise, financial institution, professional or association with an interest in the industrial development of Bihar.",
+    "hi": "सदस्यता बिहार के औद्योगिक विकास में रुचि रखने वाले किसी भी उद्योग, उद्यम, वित्तीय संस्था, पेशेवर या संगठन के लिए खुली है।"
+   },
+   "benefits": [
+    {
+     "en": "Your concerns taken to the State and Central Governments",
+     "hi": "आपकी समस्याएँ राज्य एवं केंद्र सरकार तक पहुँचाई जाती हैं"
+    },
+    {
+     "en": "Inputs to government on industrial policy, with a say in BIA’s representations",
+     "hi": "औद्योगिक नीति पर सरकार को सुझाव, और बीआईए के प्रतिवेदनों में आपकी भागीदारी"
+    },
+    {
+     "en": "Seminars, workshops and interactive sessions with ministers and officials",
+     "hi": "मंत्रियों एवं अधिकारियों के साथ संगोष्ठी, कार्यशाला एवं संवाद कार्यक्रम"
+    },
+    {
+     "en": "Timely updates on policies, rules and notifications, and the monthly BIA Bulletin",
+     "hi": "नीतियों, नियमों एवं अधिसूचनाओं की समय पर जानकारी और मासिक बीआईए बुलेटिन"
+    },
+    {
+     "en": "Networking with industry, trade and government",
+     "hi": "उद्योग, व्यापार एवं सरकार के साथ नेटवर्किंग"
+    },
+    {
+     "en": "Priority to showcase your products and services at BIA exhibitions",
+     "hi": "बीआईए की प्रदर्शनियों में अपने उत्पाद एवं सेवाएँ प्रदर्शित करने में प्राथमिकता"
+    }
+   ],
+   "categories": [
+    {
+     "name": {
+      "en": "Company, firm, LLP or proprietorship",
+      "hi": "कंपनी, फर्म, एलएलपी या प्रोप्राइटरशिप"
+     },
+     "text": {
+      "en": "Enterprises engaged in manufacturing or service activity.",
+      "hi": "विनिर्माण या सेवा गतिविधि में लगे उद्यम।"
+     }
+    },
+    {
+     "name": {
+      "en": "Bank or financial institution",
+      "hi": "बैंक या वित्तीय संस्था"
+     },
+     "text": {
+      "en": "Registered with or licensed by the RBI.",
+      "hi": "आरबीआई में पंजीकृत या उससे लाइसेंस प्राप्त।"
+     }
+    },
+    {
+     "name": {
+      "en": "Service sector",
+      "hi": "सेवा क्षेत्र"
+     },
+     "text": {
+      "en": "Service enterprises as defined in the MSME Act, 2006. Does not include enterprises that are mainly traders or C&F agents.",
+      "hi": "एमएसएमई अधिनियम, 2006 में परिभाषित सेवा उद्यम। मुख्यतः व्यापारी या सी एंड एफ एजेंट इसमें शामिल नहीं।"
+     }
+    },
+    {
+     "name": {
+      "en": "Professional member",
+      "hi": "पेशेवर सदस्य"
+     },
+     "text": {
+      "en": "Chartered and cost accountants, company secretaries, tax and labour lawyers, consultants, chartered engineers, valuers, architects, CFAs and similar professionals.",
+      "hi": "चार्टर्ड एवं कॉस्ट अकाउंटेंट, कंपनी सचिव, कर एवं श्रम अधिवक्ता, सलाहकार, चार्टर्ड इंजीनियर, मूल्यांकक, आर्किटेक्ट, सीएफए एवं समान पेशेवर।"
+     }
+    },
+    {
+     "name": {
+      "en": "Special category (sick unit)",
+      "hi": "विशेष श्रेणी (रुग्ण इकाई)"
+     },
+     "text": {
+      "en": "A registered sick unit or enterprise.",
+      "hi": "पंजीकृत रुग्ण इकाई या उद्यम।"
+     }
+    },
+    {
+     "name": {
+      "en": "Associate member",
+      "hi": "सहयोगी सदस्य"
+     },
+     "text": {
+      "en": "An industry, including a startup, with capital outlay up to ₹25 lakh.",
+      "hi": "₹25 लाख तक पूंजी निवेश वाला उद्योग, स्टार्टअप सहित।"
+     }
+    },
+    {
+     "name": {
+      "en": "Affiliated organisation",
+      "hi": "संबद्ध संगठन"
+     },
+     "text": {
+      "en": "An association or chamber with more than 30 members that promotes industry.",
+      "hi": "30 से अधिक सदस्यों वाला कोई संघ या चैंबर जो उद्योग को बढ़ावा देता हो।"
+     }
+    },
+    {
+     "name": {
+      "en": "Member Emeritus",
+      "hi": "मानद सदस्य (एमेरिटस)"
+     },
+     "text": {
+      "en": "A member of 25 continuous years whose unit has closed or been sold may be nominated by the Council for up to two years.",
+      "hi": "25 वर्ष की निरंतर सदस्यता वाले सदस्य, जिनकी इकाई बंद या बिक गई हो, उन्हें परिषद अधिकतम दो वर्षों के लिए नामित कर सकती है।"
+     }
+    }
+   ],
+   "representatives": {
+    "en": "Companies, partnership firms and LLPs may name up to three authorised representatives, in order of seniority. Proprietorships, individuals, professionals and associate members name one. Representatives must be a proprietor, partner, director or senior executive.",
+    "hi": "कंपनी, साझेदारी फर्म और एलएलपी वरिष्ठता क्रम में अधिकतम तीन अधिकृत प्रतिनिधि नामित कर सकते हैं। प्रोप्राइटरशिप, व्यक्तिगत, पेशेवर एवं सहयोगी सदस्य एक प्रतिनिधि नामित करते हैं। प्रतिनिधि स्वामी, साझेदार, निदेशक या वरिष्ठ अधिकारी होना चाहिए।"
+   },
+   "tariffDate": "2023-10-01",
+   "gstRate": 18,
+   "fees": [
+    {
+     "group": "industry",
+     "label": {
+      "en": "₹50 crore and above",
+      "hi": "₹50 करोड़ एवं अधिक"
+     },
+     "yearly": 20000,
+     "admission": 50000
+    },
+    {
+     "group": "industry",
+     "label": {
+      "en": "₹10 crore to ₹50 crore",
+      "hi": "₹10 करोड़ से ₹50 करोड़"
+     },
+     "yearly": 14000,
+     "admission": 15000
+    },
+    {
+     "group": "industry",
+     "label": {
+      "en": "₹5 crore to ₹10 crore",
+      "hi": "₹5 करोड़ से ₹10 करोड़"
+     },
+     "yearly": 12500,
+     "admission": 10000
+    },
+    {
+     "group": "industry",
+     "label": {
+      "en": "₹2 crore to ₹5 crore",
+      "hi": "₹2 करोड़ से ₹5 करोड़"
+     },
+     "yearly": 10000,
+     "admission": 5000
+    },
+    {
+     "group": "industry",
+     "label": {
+      "en": "₹50 lakh to ₹2 crore",
+      "hi": "₹50 लाख से ₹2 करोड़"
+     },
+     "yearly": 6000,
+     "admission": 1500
+    },
+    {
+     "group": "industry",
+     "label": {
+      "en": "₹25 lakh to ₹50 lakh",
+      "hi": "₹25 लाख से ₹50 लाख"
+     },
+     "yearly": 2400,
+     "admission": 1000
+    },
+    {
+     "group": "service",
+     "label": {
+      "en": "₹5 crore and above",
+      "hi": "₹5 करोड़ एवं अधिक"
+     },
+     "yearly": 12500,
+     "admission": 10000
+    },
+    {
+     "group": "service",
+     "label": {
+      "en": "₹2 crore to ₹5 crore",
+      "hi": "₹2 करोड़ से ₹5 करोड़"
+     },
+     "yearly": 10000,
+     "admission": 5000
+    },
+    {
+     "group": "service",
+     "label": {
+      "en": "₹10 lakh to ₹2 crore",
+      "hi": "₹10 लाख से ₹2 करोड़"
+     },
+     "yearly": 6000,
+     "admission": 3000
+    },
+    {
+     "group": "service",
+     "label": {
+      "en": "Below ₹10 lakh",
+      "hi": "₹10 लाख से कम"
+     },
+     "yearly": 2000,
+     "admission": 1000
+    },
+    {
+     "group": "other",
+     "label": {
+      "en": "Bank or financial institution",
+      "hi": "बैंक या वित्तीय संस्था"
+     },
+     "yearly": 20000,
+     "admission": 10000
+    },
+    {
+     "group": "other",
+     "label": {
+      "en": "Professional member",
+      "hi": "पेशेवर सदस्य"
+     },
+     "yearly": 3000,
+     "admission": 5000
+    },
+    {
+     "group": "other",
+     "label": {
+      "en": "Affiliated organisation",
+      "hi": "संबद्ध संगठन"
+     },
+     "yearly": 2500,
+     "admission": 1000
+    },
+    {
+     "group": "other",
+     "label": {
+      "en": "Associate member (up to ₹25 lakh)",
+      "hi": "सहयोगी सदस्य (₹25 लाख तक)"
+     },
+     "yearly": 1000,
+     "admission": 1000
+    }
+   ],
+   "sickNote": {
+    "en": "Special category (sick unit): 50% of the subscription that applies to the unit during the period of sickness, plus a one-time admission fee of ₹1,000, with 18% GST.",
+    "hi": "विशेष श्रेणी (रुग्ण इकाई): रुग्णता की अवधि में इकाई पर लागू शुल्क का 50%, साथ में ₹1,000 का एकमुश्त प्रवेश शुल्क, 18% जीएसटी सहित।"
+   },
+   "capitalNote": {
+    "en": "Capital outlay means all investment in the gross block of fixed assets.",
+    "hi": "पूंजी निवेश का अर्थ है स्थिर परिसंपत्तियों के सकल ब्लॉक में किया गया कुल निवेश।"
+   },
+   "applyTitle": {
+    "en": "Apply for membership",
+    "hi": "सदस्यता के लिए आवेदन करें"
+   },
+   "applyText": {
+    "en": "Fill in the form below. It opens an email to the BIA office with your details, so the office can contact you about documents and payment.",
+    "hi": "नीचे दिया फ़ॉर्म भरें। यह आपके विवरण के साथ बीआईए कार्यालय को ईमेल तैयार करता है, ताकि कार्यालय दस्तावेज़ और भुगतान के लिए आपसे संपर्क कर सके।"
+   },
+   "downloads": [
+    {
+     "label": {
+      "en": "Membership form (Word)",
+      "hi": "सदस्यता फ़ॉर्म (वर्ड)"
+     },
+     "url": "https://www.biabihar.com/wp-content/uploads/BIA-Membership-Form.docx"
+    }
+   ]
+  },
+  "events": {
+   "title": {
+    "en": "Events",
+    "hi": "कार्यक्रम"
+   },
+   "intro": {
+    "en": "Seminars, interactive sessions, outreach programmes and BIA’s flagship annual events.",
+    "hi": "संगोष्ठियाँ, संवाद कार्यक्रम, आउटरीच कार्यक्रम और बीआईए के प्रमुख वार्षिक आयोजन।"
+   },
+   "upcoming": [],
+   "annual": [
+    {
+     "name": {
+      "en": "Destination Bihar Expo",
+      "hi": "डेस्टिनेशन बिहार एक्सपो"
+     },
+     "when": {
+      "en": "February – March",
+      "hi": "फरवरी – मार्च"
+     },
+     "text": {
+      "en": "BIA’s industrial exhibition at Gandhi Maidan, Patna, held with the Department of Industries.",
+      "hi": "उद्योग विभाग के सहयोग से गांधी मैदान, पटना में बीआईए की औद्योगिक प्रदर्शनी।"
+     },
+     "link": "#/news/destination-bihar-expo-2026"
+    },
+    {
+     "name": {
+      "en": "Deshratna Dr. Rajendra Prasad Memorial Lecture",
+      "hi": "देशरत्न डॉ. राजेंद्र प्रसाद स्मृति व्याख्यान"
+     },
+     "when": {
+      "en": "February",
+      "hi": "फरवरी"
+     },
+     "text": {
+      "en": "Annual lecture on the death anniversary of India’s first President.",
+      "hi": "भारत के प्रथम राष्ट्रपति की पुण्यतिथि पर वार्षिक व्याख्यान।"
+     },
+     "link": "#/news/rajendra-prasad-lecture-2026"
+    },
+    {
+     "name": {
+      "en": "Engineers’ Day",
+      "hi": "इंजीनियर्स डे"
+     },
+     "when": {
+      "en": "September",
+      "hi": "सितंबर"
+     },
+     "text": {
+      "en": "Honouring the engineers of Bihar, with skill-centre certificates.",
+      "hi": "बिहार के इंजीनियरों का सम्मान और कौशल केंद्र प्रमाणपत्र वितरण।"
+     },
+     "link": "#/news/engineers-day-2026"
+    },
+    {
+     "name": {
+      "en": "Annual General Meeting and Annual Function",
+      "hi": "वार्षिक आम सभा एवं वार्षिक समारोह"
+     },
+     "when": {
+      "en": "September",
+      "hi": "सितंबर"
+     },
+     "text": {
+      "en": "Members elect the office bearers and Executive Council for the year.",
+      "hi": "सदस्य वर्ष के लिए पदाधिकारियों एवं कार्यकारिणी परिषद का चुनाव करते हैं।"
+     },
+     "link": "#/news/agm-82"
+    }
+   ]
+  },
+  "news": {
+   "title": {
+    "en": "News",
+    "hi": "समाचार"
+   },
+   "intro": {
+    "en": "Meetings, interactive sessions, awareness programmes and exhibitions.",
+    "hi": "बैठकें, संवाद कार्यक्रम, जागरूकता कार्यक्रम और प्रदर्शनियाँ।"
+   },
+   "categories": {
+    "meeting": {
+     "en": "Meetings & AGM",
+     "hi": "बैठकें एवं आम सभा"
+    },
+    "session": {
+     "en": "Interactive sessions",
+     "hi": "संवाद कार्यक्रम"
+    },
+    "awareness": {
+     "en": "Awareness programmes",
+     "hi": "जागरूकता कार्यक्रम"
+    },
+    "exhibition": {
+     "en": "Exhibitions",
+     "hi": "प्रदर्शनियाँ"
+    },
+    "outreach": {
+     "en": "Outreach",
+     "hi": "आउटरीच"
+    },
+    "lecture": {
+     "en": "Lectures",
+     "hi": "व्याख्यान"
+    },
+    "event": {
+     "en": "Events",
+     "hi": "आयोजन"
+    }
+   }
+  },
+  "bulletin": {
+   "title": {
+    "en": "BIA Bulletin",
+    "hi": "बीआईए बुलेटिन"
+   },
+   "intro": {
+    "en": "BIA’s monthly bulletin: representations to government, meetings, notifications and news from members.",
+    "hi": "बीआईए का मासिक बुलेटिन: सरकार को दिए गए प्रतिवेदन, बैठकें, अधिसूचनाएँ और सदस्यों के समाचार।"
+   },
+   "olderNote": {
+    "en": "Issues from 2016 to 2022 are on the earlier BIA website.",
+    "hi": "2016 से 2022 तक के अंक बीआईए की पुरानी वेबसाइट पर उपलब्ध हैं।"
+   },
+   "olderLink": "https://www.biabihar.com/bulletin-archives/"
+  },
+  "gallery": {
+   "title": {
+    "en": "Gallery",
+    "hi": "गैलरी"
+   },
+   "intro": {
+    "en": "Photographs from BIA’s events, exhibitions and sessions.",
+    "hi": "बीआईए के कार्यक्रमों, प्रदर्शनियों एवं सत्रों की तस्वीरें।"
+   }
+  },
+  "initiatives": {
+   "title": {
+    "en": "Initiatives",
+    "hi": "पहल"
+   },
+   "intro": {
+    "en": "Alongside its work with government, BIA runs programmes for skills, startups, districts and public life.",
+    "hi": "सरकार के साथ अपने कार्य के अलावा बीआईए कौशल, स्टार्टअप, ज़िलों और सार्वजनिक जीवन के लिए कार्यक्रम चलाता है।"
+   },
+   "items": [
+    {
+     "icon": "skill",
+     "title": {
+      "en": "Kaushal Vikas Kendra",
+      "hi": "कौशल विकास केंद्र"
+     },
+     "text": {
+      "en": "Free computer training for young people from families who cannot afford it, supported by Krishan Foundation. Trainees receive certificates every year on Engineers’ Day.",
+      "hi": "कृष्ण फाउंडेशन के सहयोग से आर्थिक रूप से कमज़ोर परिवारों के युवाओं के लिए निःशुल्क कंप्यूटर प्रशिक्षण। हर वर्ष इंजीनियर्स डे पर प्रशिक्षुओं को प्रमाणपत्र दिए जाते हैं।"
+     },
+     "link": "#/news/engineers-day-2026",
+     "linkLabel": {
+      "en": "Latest certificate ceremony",
+      "hi": "नवीनतम प्रमाणपत्र समारोह"
+     }
+    },
+    {
+     "icon": "outreach",
+     "title": {
+      "en": "Outreach programme",
+      "hi": "आउटरीच कार्यक्रम"
+     },
+     "text": {
+      "en": "BIA travels to industrial areas and districts, from Bihta and Hajipur to Kishanganj and Jamui, to share MSME policies and hear local entrepreneurs.",
+      "hi": "बीआईए बिहटा और हाजीपुर से लेकर किशनगंज और जमुई तक औद्योगिक क्षेत्रों एवं ज़िलों में जाकर एमएसएमई नीतियों की जानकारी देता है और स्थानीय उद्यमियों की बात सुनता है।"
+     },
+     "link": "#/news/adbhut-jamui",
+     "linkLabel": {
+      "en": "Latest outreach",
+      "hi": "नवीनतम आउटरीच"
+     }
+    },
+    {
+     "icon": "startup",
+     "title": {
+      "en": "BIA VenturePark",
+      "hi": "बीआईए वेंचरपार्क"
+     },
+     "text": {
+      "en": "BIA’s incubator connects startups with senior members of Bihar’s business community for guidance and market access.",
+      "hi": "बीआईए का इनक्यूबेटर स्टार्टअप को मार्गदर्शन और बाज़ार तक पहुँच के लिए बिहार के वरिष्ठ उद्यमियों से जोड़ता है।"
+     },
+     "link": "https://biaventurepark.com/",
+     "linkLabel": {
+      "en": "Visit VenturePark",
+      "hi": "वेंचरपार्क देखें"
+     }
+    },
+    {
+     "icon": "expo",
+     "title": {
+      "en": "Destination Bihar Expo",
+      "hi": "डेस्टिनेशन बिहार एक्सपो"
+     },
+     "text": {
+      "en": "An annual industrial exhibition at Gandhi Maidan that showcases what Bihar makes and attracts investment.",
+      "hi": "गांधी मैदान में वार्षिक औद्योगिक प्रदर्शनी जो बिहार के उत्पादों को प्रदर्शित करती है और निवेश आकर्षित करती है।"
+     },
+     "link": "#/news/destination-bihar-expo-2026",
+     "linkLabel": {
+      "en": "Expo 2026 report",
+      "hi": "एक्सपो 2026 रिपोर्ट"
+     }
+    },
+    {
+     "icon": "award",
+     "title": {
+      "en": "BIA Awards",
+      "hi": "बीआईए पुरस्कार"
+     },
+     "text": {
+      "en": "Recognition for outstanding enterprises and entrepreneurs of Bihar.",
+      "hi": "बिहार के उत्कृष्ट उद्यमों एवं उद्यमियों का सम्मान।"
+     },
+     "link": "https://www.biabihar.com/wp-content/uploads/AWARD-Yearwise-2023.pdf",
+     "linkLabel": {
+      "en": "Award winners by year (PDF)",
+      "hi": "वर्षवार पुरस्कार विजेता (पीडीएफ)"
+     }
+    },
+    {
+     "icon": "lecture",
+     "title": {
+      "en": "Dr. Rajendra Prasad Memorial Lecture",
+      "hi": "डॉ. राजेंद्र प्रसाद स्मृति व्याख्यान"
+     },
+     "text": {
+      "en": "An annual lecture in memory of Deshratna Dr. Rajendra Prasad, India’s first President.",
+      "hi": "भारत के प्रथम राष्ट्रपति देशरत्न डॉ. राजेंद्र प्रसाद की स्मृति में वार्षिक व्याख्यान।"
+     },
+     "link": "https://www.biabihar.com/wp-content/uploads/Deshratna-Dr.-Rajendra-Prasad-Memorial-Lecture-pdf.pdf",
+     "linkLabel": {
+      "en": "Past lectures (PDF)",
+      "hi": "पिछले व्याख्यान (पीडीएफ)"
+     }
+    }
+   ]
+  },
+  "contact": {
+   "title": {
+    "en": "Contact BIA",
+    "hi": "बीआईए से संपर्क करें"
+   },
+   "intro": {
+    "en": "Write, call or visit the BIA office at Industry House, Patna.",
+    "hi": "इंडस्ट्री हाउस, पटना स्थित बीआईए कार्यालय में लिखें, फ़ोन करें या आएँ।"
+   },
+   "formTitle": {
+    "en": "Send a message",
+    "hi": "संदेश भेजें"
+   },
+   "topics": [
+    {
+     "en": "Membership",
+     "hi": "सदस्यता"
+    },
+    {
+     "en": "Events",
+     "hi": "कार्यक्रम"
+    },
+    {
+     "en": "Policy or tax question",
+     "hi": "नीति या कर संबंधी प्रश्न"
+    },
+    {
+     "en": "Media",
+     "hi": "मीडिया"
+    },
+    {
+     "en": "Other",
+     "hi": "अन्य"
+    }
+   ]
+  }
+ },
+ "leadership": {
+  "year": "2026-27",
+  "officeBearers": [
+   {
+    "name": {
+     "en": "Shri Ram Lall Khetan",
+     "hi": "श्री राम लाल खेतान"
+    },
+    "role": "president",
+    "photo": "img/Shri-Ram-Lall-Khetan-768x768.jpg"
+   },
+   {
+    "name": {
+     "en": "Shri Basudeo Prasad",
+     "hi": "श्री बासुदेव प्रसाद"
+    },
+    "role": "vp",
+    "photo": ""
+   },
+   {
+    "name": {
+     "en": "Shri Deo Prakash Singh",
+     "hi": "श्री देव प्रकाश सिंह"
+    },
+    "role": "vp",
+    "photo": ""
+   },
+   {
+    "name": {
+     "en": "Shri Hemant Raj",
+     "hi": "श्री हेमंत राज"
+    },
+    "role": "vp",
+    "photo": ""
+   },
+   {
+    "name": {
+     "en": "Shri Manish Kumar",
+     "hi": "श्री मनीष कुमार"
+    },
+    "role": "sg",
+    "photo": ""
+   },
+   {
+    "name": {
+     "en": "Shri Alok Poddar",
+     "hi": "श्री आलोक पोद्दार"
+    },
+    "role": "treasurer",
+    "photo": ""
+   }
+  ],
+  "councilYear": "2025-26",
+  "council": [
+   {
+    "name": {
+     "en": "Shri Aditya Mundra",
+     "hi": "Shri Aditya Mundra"
+    },
+    "org": {
+     "en": "Multyply Industries",
+     "hi": "Multyply Industries"
+    }
+   },
+   {
+    "name": {
+     "en": "CA Anil Kumar Agarwal",
+     "hi": "CA Anil Kumar Agarwal"
+    },
+    "org": {
+     "en": "Agrawal Anil & Associates",
+     "hi": "Agrawal Anil & Associates"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Basudeo Prasad",
+     "hi": "Shri Basudeo Prasad"
+    },
+    "org": {
+     "en": "Saraf Real Infra Pvt. Ltd.",
+     "hi": "Saraf Real Infra Pvt. Ltd."
+    }
+   },
+   {
+    "name": {
+     "en": "CA Deepak Kumar",
+     "hi": "CA Deepak Kumar"
+    },
+    "org": {
+     "en": "Deepak R Kumar & Associates",
+     "hi": "Deepak R Kumar & Associates"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Harish Raj",
+     "hi": "Shri Harish Raj"
+    },
+    "org": {
+     "en": "Hotel President",
+     "hi": "Hotel President"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Jaideep Jain",
+     "hi": "Shri Jaideep Jain"
+    },
+    "org": {
+     "en": "Nav Bharat Publishing House",
+     "hi": "Nav Bharat Publishing House"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Kamal Kishore Verma",
+     "hi": "Shri Kamal Kishore Verma"
+    },
+    "org": {
+     "en": "Earthing Solutions Pvt. Ltd.",
+     "hi": "Earthing Solutions Pvt. Ltd."
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Kishore Kr. Agrawal",
+     "hi": "Shri Kishore Kr. Agrawal"
+    },
+    "org": {
+     "en": "Kinetic Enterprises (P) Ltd.",
+     "hi": "Kinetic Enterprises (P) Ltd."
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Kumar Manglam",
+     "hi": "Shri Kumar Manglam"
+    },
+    "org": {
+     "en": "Pinax Steel Industries Pvt. Ltd.",
+     "hi": "Pinax Steel Industries Pvt. Ltd."
+    }
+   },
+   {
+    "name": {
+     "en": "CS Kundan Kumar",
+     "hi": "CS Kundan Kumar"
+    },
+    "org": {
+     "en": "Kundan & Associates",
+     "hi": "Kundan & Associates"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Manish Kr. Mittal",
+     "hi": "Shri Manish Kr. Mittal"
+    },
+    "org": {
+     "en": "AFP Manufacturing Co. Pvt. Ltd.",
+     "hi": "AFP Manufacturing Co. Pvt. Ltd."
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Mohit Sah",
+     "hi": "Shri Mohit Sah"
+    },
+    "org": {
+     "en": "Shakambhari Agro Foods Industries",
+     "hi": "Shakambhari Agro Foods Industries"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Nand Kishore Agarwal",
+     "hi": "Shri Nand Kishore Agarwal"
+    },
+    "org": {
+     "en": "Tradewel India Sales Pvt. Ltd.",
+     "hi": "Tradewel India Sales Pvt. Ltd."
+    }
+   },
+   {
+    "name": {
+     "en": "Smt. Nimisha Verma",
+     "hi": "Smt. Nimisha Verma"
+    },
+    "org": {
+     "en": "Skill Foods Pvt. Ltd.",
+     "hi": "Skill Foods Pvt. Ltd."
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Prashant Bhartiya",
+     "hi": "Shri Prashant Bhartiya"
+    },
+    "org": {
+     "en": "Dina Iron & Steel Ltd.",
+     "hi": "Dina Iron & Steel Ltd."
+    }
+   },
+   {
+    "name": {
+     "en": "CA Rajesh Kumar Khetan",
+     "hi": "CA Rajesh Kumar Khetan"
+    },
+    "org": {
+     "en": "Khetan Rajesh Kumar & Co.",
+     "hi": "Khetan Rajesh Kumar & Co."
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Ramashankar Prasad",
+     "hi": "Shri Ramashankar Prasad"
+    },
+    "org": {
+     "en": "Westwell Biorefineries Pvt. Ltd.",
+     "hi": "Westwell Biorefineries Pvt. Ltd."
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Rakesh Mishra",
+     "hi": "Shri Rakesh Mishra"
+    },
+    "org": {
+     "en": "Hanuchem Laboratories",
+     "hi": "Hanuchem Laboratories"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Satyanarayan Agrawal",
+     "hi": "Shri Satyanarayan Agrawal"
+    },
+    "org": {
+     "en": "Ambe Agro Industries Ltd.",
+     "hi": "Ambe Agro Industries Ltd."
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Sudip Kumar",
+     "hi": "Shri Sudip Kumar"
+    },
+    "org": {
+     "en": "Alwindor Glazing and Coating LLP",
+     "hi": "Alwindor Glazing and Coating LLP"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Sunil Kumar Sinha",
+     "hi": "Shri Sunil Kumar Sinha"
+    },
+    "org": {
+     "en": "Raj Industrial & Technical Consultancy Organisation",
+     "hi": "Raj Industrial & Technical Consultancy Organisation"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Mukesh Kumar Nandan",
+     "hi": "Shri Mukesh Kumar Nandan"
+    },
+    "org": {
+     "en": "Aarya Harsh Food Products Pvt. Ltd. · Patna Commissionery",
+     "hi": "Aarya Harsh Food Products Pvt. Ltd. · Patna Commissionery"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Sunil Kumar Choudhary",
+     "hi": "Shri Sunil Kumar Choudhary"
+    },
+    "org": {
+     "en": "S. K. C. & Co. · Bhagalpur Commissionery",
+     "hi": "S. K. C. & Co. · Bhagalpur Commissionery"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Rupesh Kr. Singh",
+     "hi": "Shri Rupesh Kr. Singh"
+    },
+    "org": {
+     "en": "Shuddh Punjabi Food Products Pvt. Ltd. · Purnea Commissionery",
+     "hi": "Shuddh Punjabi Food Products Pvt. Ltd. · Purnea Commissionery"
+    }
+   },
+   {
+    "name": {
+     "en": "Shri Shankar Datta",
+     "hi": "Shri Shankar Datta"
+    },
+    "org": {
+     "en": "Sunbeam Engineering Works · Munger Commissionery",
+     "hi": "Sunbeam Engineering Works · Munger Commissionery"
+    }
+   }
+  ],
+  "committees": [
+   {
+    "name": {
+     "en": "Administrative Committee",
+     "hi": "प्रशासनिक समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Ram Lall Khetan",
+       "hi": "Shri Ram Lall Khetan"
+      },
+      "role": "chairman"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Executive Council",
+     "hi": "कार्यकारिणी परिषद"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Ram Lall Khetan",
+       "hi": "Shri Ram Lall Khetan"
+      },
+      "role": "chairman"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Energy including Renewable Energy Committee",
+     "hi": "ऊर्जा (नवीकरणीय ऊर्जा सहित) समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Sanjay Bhartiya",
+       "hi": "Shri Sanjay Bhartiya"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Umesh Kr. Poddar",
+       "hi": "Shri Umesh Kr. Poddar"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Subodh Kumar",
+       "hi": "Shri Subodh Kumar"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Anup Agarwal",
+       "hi": "Shri Anup Agarwal"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Environment & Ground Water Committee",
+     "hi": "पर्यावरण एवं भूजल समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Gaurav Sah",
+       "hi": "Shri Gaurav Sah"
+      },
+      "role": "mentor"
+     },
+     {
+      "name": {
+       "en": "Shri Prem Kumar",
+       "hi": "Shri Prem Kumar"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Raunak Choudhary",
+       "hi": "Shri Raunak Choudhary"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Finance, Banking & Company Affairs Committee",
+     "hi": "वित्त, बैंकिंग एवं कंपनी मामले समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "CA Ashish Rohatgi",
+       "hi": "CA Ashish Rohatgi"
+      },
+      "role": "mentor"
+     },
+     {
+      "name": {
+       "en": "CA Sudhir Chandra Agrawal",
+       "hi": "CA Sudhir Chandra Agrawal"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "CA Sujeet Kumar Singhania",
+       "hi": "CA Sujeet Kumar Singhania"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "CA Anil Kumar Agarwal",
+       "hi": "CA Anil Kumar Agarwal"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "CS Kundan Kumar",
+       "hi": "CS Kundan Kumar"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Food Processing Committee",
+     "hi": "खाद्य प्रसंस्करण समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Manish Kumar",
+       "hi": "Shri Manish Kumar"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Manoj Kumar Dwivedi",
+       "hi": "Shri Manoj Kumar Dwivedi"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Manish Kr. Mittal",
+       "hi": "Shri Manish Kr. Mittal"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Industrial Land Committee",
+     "hi": "औद्योगिक भूमि समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri G. P. Singh",
+       "hi": "Shri G. P. Singh"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Balraj Kapoor",
+       "hi": "Shri Balraj Kapoor"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Dr. Ravindra Kumar Watsa",
+       "hi": "Dr. Ravindra Kumar Watsa"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Ramashankar Prasad",
+       "hi": "Shri Ramashankar Prasad"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Infrastructure Planning & Development Committee",
+     "hi": "अवसंरचना योजना एवं विकास समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri A. K. P. Sinha",
+       "hi": "Shri A. K. P. Sinha"
+      },
+      "role": "mentor"
+     },
+     {
+      "name": {
+       "en": "Shri Sachin Chandra",
+       "hi": "Shri Sachin Chandra"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Rakesh Kumar Agarwal",
+       "hi": "Shri Rakesh Kumar Agarwal"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "IT, ITeS & Service Sector Committee",
+     "hi": "आईटी, आईटीईएस एवं सेवा क्षेत्र समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Akhilesh Kumar",
+       "hi": "Shri Akhilesh Kumar"
+      },
+      "role": "mentor"
+     },
+     {
+      "name": {
+       "en": "Shri Rajiv Agarwal",
+       "hi": "Shri Rajiv Agarwal"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Kamlesh Kr. Gupta",
+       "hi": "Shri Kamlesh Kr. Gupta"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Labour Resources Committee",
+     "hi": "श्रम संसाधन समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri D. P. Singh",
+       "hi": "Shri D. P. Singh"
+      },
+      "role": "mentor"
+     },
+     {
+      "name": {
+       "en": "Shri Sudhi Ranjan",
+       "hi": "Shri Sudhi Ranjan"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Dr. Ramesh Gandhi",
+       "hi": "Dr. Ramesh Gandhi"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Manufacturing & Government Policy Initiative Committee",
+     "hi": "विनिर्माण एवं सरकारी नीति पहल समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Basudeo Prasad",
+       "hi": "Shri Basudeo Prasad"
+      },
+      "role": "mentor"
+     },
+     {
+      "name": {
+       "en": "Shri Sanjay Goenka",
+       "hi": "Shri Sanjay Goenka"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Arun Banka",
+       "hi": "Shri Arun Banka"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Sumit Agrawal",
+       "hi": "Shri Sumit Agrawal"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Rajesh Kumar Sureka",
+       "hi": "Shri Rajesh Kumar Sureka"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Medium & Large Industries Committee",
+     "hi": "मध्यम एवं बड़े उद्योग समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Ramesh Chandra Gupta",
+       "hi": "Shri Ramesh Chandra Gupta"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Bipin Chachan",
+       "hi": "Shri Bipin Chachan"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Sudip Kumar",
+       "hi": "Shri Sudip Kumar"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Membership Development Committee",
+     "hi": "सदस्यता विकास समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Sujay Saurabh",
+       "hi": "Shri Sujay Saurabh"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Mahesh Jalan",
+       "hi": "Shri Mahesh Jalan"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Ranjoy Roy",
+       "hi": "Shri Ranjoy Roy"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Micro & Small Industries Committee",
+     "hi": "सूक्ष्म एवं लघु उद्योग समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Sanjay Goenka",
+       "hi": "Shri Sanjay Goenka"
+      },
+      "role": "mentor"
+     },
+     {
+      "name": {
+       "en": "Shri Arvind Kr. Singh",
+       "hi": "Shri Arvind Kr. Singh"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Umesh Kumar Soni",
+       "hi": "Shri Umesh Kumar Soni"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri R. K. Choudhary",
+       "hi": "Shri R. K. Choudhary"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Pharmaceutical Industries Committee",
+     "hi": "फार्मास्युटिकल उद्योग समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Prasan Kr. Singh",
+       "hi": "Shri Prasan Kr. Singh"
+      },
+      "role": "mentor"
+     },
+     {
+      "name": {
+       "en": "Shri Rakesh Mishra",
+       "hi": "Shri Rakesh Mishra"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Mukesh Hisaria",
+       "hi": "Shri Mukesh Hisaria"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Rajesh Kumar Sikaria",
+       "hi": "Shri Rajesh Kumar Sikaria"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Taxation Committee",
+     "hi": "कराधान समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Arun Kr. Khowala",
+       "hi": "Shri Arun Kr. Khowala"
+      },
+      "role": "mentor"
+     },
+     {
+      "name": {
+       "en": "Shri Alok Poddar",
+       "hi": "Shri Alok Poddar"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Anil Kr. Pachisia",
+       "hi": "Shri Anil Kr. Pachisia"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri D. B. Gupta",
+       "hi": "Shri D. B. Gupta"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Tourism Committee",
+     "hi": "पर्यटन समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Sunil Kumar Singh",
+       "hi": "Shri Sunil Kumar Singh"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Sanjeev Kr. Sinha",
+       "hi": "Shri Sanjeev Kr. Sinha"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Gokhlesh Kumar",
+       "hi": "Shri Gokhlesh Kumar"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Smt. Tanuja Sinha",
+       "hi": "Smt. Tanuja Sinha"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Urban Development Committee",
+     "hi": "शहरी विकास समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Narendra Kumar",
+       "hi": "Shri Narendra Kumar"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Vishnu Kr. Choudhary",
+       "hi": "Shri Vishnu Kr. Choudhary"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Shri Abhishek Sharma",
+       "hi": "Shri Abhishek Sharma"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Women’s Empowerment Committee",
+     "hi": "महिला सशक्तिकरण समिति"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Smt. Usha Jha",
+       "hi": "Smt. Usha Jha"
+      },
+      "role": "mentor"
+     },
+     {
+      "name": {
+       "en": "Smt. Ila Mittal",
+       "hi": "Smt. Ila Mittal"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Smt. Tanuja Sinha",
+       "hi": "Smt. Tanuja Sinha"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Ms. Abhilasha Sachdeva",
+       "hi": "Ms. Abhilasha Sachdeva"
+      },
+      "role": "cochair"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Ecology & Sustainability in Industry Cell",
+     "hi": "उद्योग में पारिस्थितिकी एवं सततता प्रकोष्ठ"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri K. P. Bhawsinka",
+       "hi": "Shri K. P. Bhawsinka"
+      },
+      "role": "convener"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Networking-cum-Coordination Cell",
+     "hi": "नेटवर्किंग-सह-समन्वय प्रकोष्ठ"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Manish Kr. Tiwari",
+       "hi": "Shri Manish Kr. Tiwari"
+      },
+      "role": "convener"
+     },
+     {
+      "name": {
+       "en": "Shri Diljeet Khanna",
+       "hi": "Shri Diljeet Khanna"
+      },
+      "role": "coconvener"
+     }
+    ]
+   },
+   {
+    "name": {
+     "en": "Young BIA Cell",
+     "hi": "यंग बीआईए प्रकोष्ठ"
+    },
+    "members": [
+     {
+      "name": {
+       "en": "Shri Nikhil Jaiswal",
+       "hi": "Shri Nikhil Jaiswal"
+      },
+      "role": "chairman"
+     },
+     {
+      "name": {
+       "en": "Shri Nikhil Singh",
+       "hi": "Shri Nikhil Singh"
+      },
+      "role": "cochair"
+     },
+     {
+      "name": {
+       "en": "Smt. Roshni Singh",
+       "hi": "Smt. Roshni Singh"
+      },
+      "role": "cochair"
+     }
+    ]
+   }
+  ],
+  "succession": [
+   {
+    "title": {
+     "en": "Presidents",
+     "hi": "अध्यक्ष"
+    },
+    "people": [
+     {
+      "name": {
+       "en": "Late S. P. Jain",
+       "hi": "Late S. P. Jain"
+      },
+      "tenure": "1943-55, 1956-1975"
+     },
+     {
+      "name": {
+       "en": "Late A. K. Jain",
+       "hi": "Late A. K. Jain"
+      },
+      "tenure": "1955-56, 1975-77, 1981-83"
+     },
+     {
+      "name": {
+       "en": "Late S. P. Sinha",
+       "hi": "Late S. P. Sinha"
+      },
+      "tenure": "1977-79, 1985-87"
+     },
+     {
+      "name": {
+       "en": "Late H. P. Bodhanwala",
+       "hi": "Late H. P. Bodhanwala"
+      },
+      "tenure": "1979-81"
+     },
+     {
+      "name": {
+       "en": "Late S. R. Rungta",
+       "hi": "Late S. R. Rungta"
+      },
+      "tenure": "1983-85"
+     },
+     {
+      "name": {
+       "en": "Late R. K. P. N. Singh",
+       "hi": "Late R. K. P. N. Singh"
+      },
+      "tenure": "1987-89"
+     },
+     {
+      "name": {
+       "en": "Late S. K. Mehrotra",
+       "hi": "Late S. K. Mehrotra"
+      },
+      "tenure": "1989-90, 2003-05"
+     },
+     {
+      "name": {
+       "en": "Late S. N. Patwari",
+       "hi": "Late S. N. Patwari"
+      },
+      "tenure": "1990-91"
+     },
+     {
+      "name": {
+       "en": "Shri Shailendra P. Sinha",
+       "hi": "Shri Shailendra P. Sinha"
+      },
+      "tenure": "1991-92, 1994-96, 2009-11"
+     },
+     {
+      "name": {
+       "en": "Late B. P. Gupta",
+       "hi": "Late B. P. Gupta"
+      },
+      "tenure": "1992-94, 1996-97"
+     },
+     {
+      "name": {
+       "en": "Shri K. P. Jhunjhunwala",
+       "hi": "Shri K. P. Jhunjhunwala"
+      },
+      "tenure": "1997-99, 2007-09"
+     },
+     {
+      "name": {
+       "en": "Late A. S. Varma",
+       "hi": "Late A. S. Varma"
+      },
+      "tenure": "1999-2001"
+     },
+     {
+      "name": {
+       "en": "Shri Arun Agarwal",
+       "hi": "Shri Arun Agarwal"
+      },
+      "tenure": "2013-15, 2021-23"
+     },
+     {
+      "name": {
+       "en": "Shri Ram Lall Khetan",
+       "hi": "Shri Ram Lall Khetan"
+      },
+      "tenure": "2015-17, 2019-21"
+     },
+     {
+      "name": {
+       "en": "Shri K. P. S. Keshri",
+       "hi": "Shri K. P. S. Keshri"
+      },
+      "tenure": "2001-03, 2005-07, 2011-13, 2017-19, 2023-25"
+     },
+     {
+      "name": {
+       "en": "Shri Ram Lall Khetan",
+       "hi": "Shri Ram Lall Khetan"
+      },
+      "tenure": "2025-26"
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Vice Presidents",
+     "hi": "उपाध्यक्ष"
+    },
+    "people": [
+     {
+      "name": {
+       "en": "Late S. N. Patwari",
+       "hi": "Late S. N. Patwari"
+      },
+      "tenure": "1989-90"
+     },
+     {
+      "name": {
+       "en": "Late V. K. Mehta",
+       "hi": "Late V. K. Mehta"
+      },
+      "tenure": "1989-90"
+     },
+     {
+      "name": {
+       "en": "Shri K. P. Jhunjhunwala",
+       "hi": "Shri K. P. Jhunjhunwala"
+      },
+      "tenure": "1990-92, 1994-96"
+     },
+     {
+      "name": {
+       "en": "Shri G. P. Dalmia",
+       "hi": "Shri G. P. Dalmia"
+      },
+      "tenure": "1990-92"
+     },
+     {
+      "name": {
+       "en": "Shri K. P. S. Keshri",
+       "hi": "Shri K. P. S. Keshri"
+      },
+      "tenure": "1992-94"
+     },
+     {
+      "name": {
+       "en": "Late S. M. Z. Hassan",
+       "hi": "Late S. M. Z. Hassan"
+      },
+      "tenure": "1992-94"
+     },
+     {
+      "name": {
+       "en": "Late Indra Kumar",
+       "hi": "Late Indra Kumar"
+      },
+      "tenure": "1994-96"
+     },
+     {
+      "name": {
+       "en": "Late D. N. Bareria",
+       "hi": "Late D. N. Bareria"
+      },
+      "tenure": "1996-98"
+     },
+     {
+      "name": {
+       "en": "Late R. S. Harlalka",
+       "hi": "Late R. S. Harlalka"
+      },
+      "tenure": "1996-98"
+     },
+     {
+      "name": {
+       "en": "Shri B. N. Choubey",
+       "hi": "Shri B. N. Choubey"
+      },
+      "tenure": "1998-2000"
+     },
+     {
+      "name": {
+       "en": "Shri A. K. Sinha",
+       "hi": "Shri A. K. Sinha"
+      },
+      "tenure": "1998-99"
+     },
+     {
+      "name": {
+       "en": "Late N. K. Tiwari",
+       "hi": "Late N. K. Tiwari"
+      },
+      "tenure": "1999-01"
+     },
+     {
+      "name": {
+       "en": "Shri Digambar Choudhary",
+       "hi": "Shri Digambar Choudhary"
+      },
+      "tenure": "2000-02"
+     },
+     {
+      "name": {
+       "en": "Shri D. K. Churiwal",
+       "hi": "Shri D. K. Churiwal"
+      },
+      "tenure": "2001-02"
+     },
+     {
+      "name": {
+       "en": "Shri Arun Agarwal",
+       "hi": "Shri Arun Agarwal"
+      },
+      "tenure": "2002-04"
+     },
+     {
+      "name": {
+       "en": "Shri Bharat Lal Gupta",
+       "hi": "Shri Bharat Lal Gupta"
+      },
+      "tenure": "2002-04"
+     },
+     {
+      "name": {
+       "en": "Shri Sanjiv Kumar Choudhary",
+       "hi": "Shri Sanjiv Kumar Choudhary"
+      },
+      "tenure": "2004-06"
+     },
+     {
+      "name": {
+       "en": "Late Pushpa Chopra",
+       "hi": "Late Pushpa Chopra"
+      },
+      "tenure": "2004-06"
+     },
+     {
+      "name": {
+       "en": "Shri Ram Gopal Sureka",
+       "hi": "Shri Ram Gopal Sureka"
+      },
+      "tenure": "2006-07"
+     },
+     {
+      "name": {
+       "en": "Shri Subhash Kumar Patwari",
+       "hi": "Shri Subhash Kumar Patwari"
+      },
+      "tenure": "2006-08, 2009-11"
+     },
+     {
+      "name": {
+       "en": "Late Prof. S. N. Ashraf",
+       "hi": "Late Prof. S. N. Ashraf"
+      },
+      "tenure": "2007-09"
+     },
+     {
+      "name": {
+       "en": "Shri Sunil Kumar Singh",
+       "hi": "Shri Sunil Kumar Singh"
+      },
+      "tenure": "2008-10"
+     },
+     {
+      "name": {
+       "en": "Late N.C.P. Sinha",
+       "hi": "Late N.C.P. Sinha"
+      },
+      "tenure": "2010-12"
+     },
+     {
+      "name": {
+       "en": "Shri Ram Lall Khetan",
+       "hi": "Shri Ram Lall Khetan"
+      },
+      "tenure": "2011-13"
+     },
+     {
+      "name": {
+       "en": "Shri G. P. Singh",
+       "hi": "Shri G. P. Singh"
+      },
+      "tenure": "2012-14"
+     },
+     {
+      "name": {
+       "en": "Shri Nisheeth Jaiswal",
+       "hi": "Shri Nisheeth Jaiswal"
+      },
+      "tenure": "2013-15"
+     },
+     {
+      "name": {
+       "en": "Shri Sanjay Goenka",
+       "hi": "Shri Sanjay Goenka"
+      },
+      "tenure": "2014-16"
+     },
+     {
+      "name": {
+       "en": "Shri A. K. P Sinha",
+       "hi": "Shri A. K. P Sinha"
+      },
+      "tenure": "2015-17"
+     },
+     {
+      "name": {
+       "en": "Shri Umesh Kr. Poddar",
+       "hi": "Shri Umesh Kr. Poddar"
+      },
+      "tenure": "2015-16"
+     },
+     {
+      "name": {
+       "en": "Shri Sheo Kr. Maskara",
+       "hi": "Shri Sheo Kr. Maskara"
+      },
+      "tenure": "2016-18"
+     },
+     {
+      "name": {
+       "en": "Shri Sanjay Bhartiya",
+       "hi": "Shri Sanjay Bhartiya"
+      },
+      "tenure": "2016-18, 2019-21"
+     },
+     {
+      "name": {
+       "en": "Shri Ramesh Chandra Gupta",
+       "hi": "Shri Ramesh Chandra Gupta"
+      },
+      "tenure": "2017-19"
+     },
+     {
+      "name": {
+       "en": "Late Narsingh Pd. Jaiswal",
+       "hi": "Late Narsingh Pd. Jaiswal"
+      },
+      "tenure": "2018-19"
+     },
+     {
+      "name": {
+       "en": "Shri Alok Nandan",
+       "hi": "Shri Alok Nandan"
+      },
+      "tenure": "2018-19"
+     },
+     {
+      "name": {
+       "en": "Shri Sudhir Chandra Agarwal",
+       "hi": "Shri Sudhir Chandra Agarwal"
+      },
+      "tenure": "2019-21"
+     },
+     {
+      "name": {
+       "en": "Shri O. P. Singh",
+       "hi": "Shri O. P. Singh"
+      },
+      "tenure": "2019-21"
+     },
+     {
+      "name": {
+       "en": "Shri Subodh Kr. Goel",
+       "hi": "Shri Subodh Kr. Goel"
+      },
+      "tenure": "2021-22"
+     },
+     {
+      "name": {
+       "en": "Shri Arvind Kumar Singh",
+       "hi": "Shri Arvind Kumar Singh"
+      },
+      "tenure": "2021-23"
+     },
+     {
+      "name": {
+       "en": "Shri Bharat Agarwal",
+       "hi": "Shri Bharat Agarwal"
+      },
+      "tenure": "2021-23"
+     },
+     {
+      "name": {
+       "en": "Shri Narendra Kumar",
+       "hi": "Shri Narendra Kumar"
+      },
+      "tenure": "2022-24"
+     },
+     {
+      "name": {
+       "en": "Shri Prem Narayan Prasad",
+       "hi": "Shri Prem Narayan Prasad"
+      },
+      "tenure": "2023-25"
+     },
+     {
+      "name": {
+       "en": "CA Ashish Rohatgi",
+       "hi": "CA Ashish Rohatgi"
+      },
+      "tenure": "2023-25"
+     },
+     {
+      "name": {
+       "en": "Shri Purushottam Agarwal",
+       "hi": "Shri Purushottam Agarwal"
+      },
+      "tenure": "2024-26"
+     },
+     {
+      "name": {
+       "en": "Shri Deo Prakash Singh",
+       "hi": "Shri Deo Prakash Singh"
+      },
+      "tenure": "2025-26"
+     },
+     {
+      "name": {
+       "en": "Shri Akhilesh Kumar",
+       "hi": "Shri Akhilesh Kumar"
+      },
+      "tenure": "2025-26"
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Secretaries General",
+     "hi": "महासचिव"
+    },
+    "people": [
+     {
+      "name": {
+       "en": "Shri B. N. Choubey",
+       "hi": "Shri B. N. Choubey"
+      },
+      "tenure": "1989-91, 1993-95"
+     },
+     {
+      "name": {
+       "en": "Shri Arun Agarwal",
+       "hi": "Shri Arun Agarwal"
+      },
+      "tenure": "1991-93"
+     },
+     {
+      "name": {
+       "en": "Shri Nisheeth Jaiswal",
+       "hi": "Shri Nisheeth Jaiswal"
+      },
+      "tenure": "1995-97"
+     },
+     {
+      "name": {
+       "en": "Shri D. K. Churiwal",
+       "hi": "Shri D. K. Churiwal"
+      },
+      "tenure": "1997-98, 2000-01"
+     },
+     {
+      "name": {
+       "en": "Shri Sanjiv Kr. Choudhary",
+       "hi": "Shri Sanjiv Kr. Choudhary"
+      },
+      "tenure": "1998-2000"
+     },
+     {
+      "name": {
+       "en": "Shri Bimal K. Gupta",
+       "hi": "Shri Bimal K. Gupta"
+      },
+      "tenure": "2001-03"
+     },
+     {
+      "name": {
+       "en": "Shri Vikash Jain",
+       "hi": "Shri Vikash Jain"
+      },
+      "tenure": "2003-04"
+     },
+     {
+      "name": {
+       "en": "Late C. M. Saxena",
+       "hi": "Late C. M. Saxena"
+      },
+      "tenure": "2004-06"
+     },
+     {
+      "name": {
+       "en": "Shri Sanjay Kumar Khemka",
+       "hi": "Shri Sanjay Kumar Khemka"
+      },
+      "tenure": "2006-08"
+     },
+     {
+      "name": {
+       "en": "Shri Ram Lall Khetan",
+       "hi": "Shri Ram Lall Khetan"
+      },
+      "tenure": "2008-10"
+     },
+     {
+      "name": {
+       "en": "Shri Sanjay Goenka",
+       "hi": "Shri Sanjay Goenka"
+      },
+      "tenure": "2010-12"
+     },
+     {
+      "name": {
+       "en": "Shri Sanjay Bhartiya",
+       "hi": "Shri Sanjay Bhartiya"
+      },
+      "tenure": "2012-14"
+     },
+     {
+      "name": {
+       "en": "Shri Subodh Kumar",
+       "hi": "Shri Subodh Kumar"
+      },
+      "tenure": "2014-16"
+     },
+     {
+      "name": {
+       "en": "Shri Arvind Kumar Singh",
+       "hi": "Shri Arvind Kumar Singh"
+      },
+      "tenure": "2016-18"
+     },
+     {
+      "name": {
+       "en": "Shri Mahabir Pd. Bidasaria",
+       "hi": "Shri Mahabir Pd. Bidasaria"
+      },
+      "tenure": "2018-20"
+     },
+     {
+      "name": {
+       "en": "Shri Ashish Rohatgi",
+       "hi": "Shri Ashish Rohatgi"
+      },
+      "tenure": "2020-22"
+     },
+     {
+      "name": {
+       "en": "Shri Gaurav Sah",
+       "hi": "Shri Gaurav Sah"
+      },
+      "tenure": "2022-24"
+     },
+     {
+      "name": {
+       "en": "Shri Amarnath Jaiswal",
+       "hi": "Shri Amarnath Jaiswal"
+      },
+      "tenure": "2024-26"
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Treasurers",
+     "hi": "कोषाध्यक्ष"
+    },
+    "people": [
+     {
+      "name": {
+       "en": "Late B. P. Agarwala",
+       "hi": "Late B. P. Agarwala"
+      },
+      "tenure": "1953-54 to 1957-58"
+     },
+     {
+      "name": {
+       "en": "Late D. P. Sharma",
+       "hi": "Late D. P. Sharma"
+      },
+      "tenure": "1958-59"
+     },
+     {
+      "name": {
+       "en": "Late P. Mukerji",
+       "hi": "Late P. Mukerji"
+      },
+      "tenure": "1959-60"
+     },
+     {
+      "name": {
+       "en": "Late S. N. Kabra",
+       "hi": "Late S. N. Kabra"
+      },
+      "tenure": "1960-62"
+     },
+     {
+      "name": {
+       "en": "Late B. L. Bidasaria",
+       "hi": "Late B. L. Bidasaria"
+      },
+      "tenure": "1962-64"
+     },
+     {
+      "name": {
+       "en": "Late P. Lal",
+       "hi": "Late P. Lal"
+      },
+      "tenure": "1964-66"
+     },
+     {
+      "name": {
+       "en": "Late O. P. Kochhar",
+       "hi": "Late O. P. Kochhar"
+      },
+      "tenure": "1966-67"
+     },
+     {
+      "name": {
+       "en": "Late P. S. Kalsi",
+       "hi": "Late P. S. Kalsi"
+      },
+      "tenure": "1966-67"
+     },
+     {
+      "name": {
+       "en": "Late M. S. Uban",
+       "hi": "Late M. S. Uban"
+      },
+      "tenure": "1967-68"
+     },
+     {
+      "name": {
+       "en": "Late K. P. Kayan",
+       "hi": "Late K. P. Kayan"
+      },
+      "tenure": "1968-69"
+     },
+     {
+      "name": {
+       "en": "Late C. M. Saxena",
+       "hi": "Late C. M. Saxena"
+      },
+      "tenure": "1968-69"
+     },
+     {
+      "name": {
+       "en": "Shri T. R. Gupta",
+       "hi": "Shri T. R. Gupta"
+      },
+      "tenure": "1969-70"
+     },
+     {
+      "name": {
+       "en": "Late S. B. Mehrotra",
+       "hi": "Late S. B. Mehrotra"
+      },
+      "tenure": "1970-73"
+     },
+     {
+      "name": {
+       "en": "Late H. G. Khaitan",
+       "hi": "Late H. G. Khaitan"
+      },
+      "tenure": "1973-74"
+     },
+     {
+      "name": {
+       "en": "Late D. P. Saboo",
+       "hi": "Late D. P. Saboo"
+      },
+      "tenure": "1974-75"
+     },
+     {
+      "name": {
+       "en": "Late D. P. Lohia",
+       "hi": "Late D. P. Lohia"
+      },
+      "tenure": "1975-77"
+     },
+     {
+      "name": {
+       "en": "Late S. N. Patwari",
+       "hi": "Late S. N. Patwari"
+      },
+      "tenure": "1977-79"
+     },
+     {
+      "name": {
+       "en": "Late D. N. Bareria",
+       "hi": "Late D. N. Bareria"
+      },
+      "tenure": "1979-81"
+     },
+     {
+      "name": {
+       "en": "Late B. P. Gupta",
+       "hi": "Late B. P. Gupta"
+      },
+      "tenure": "1981-83"
+     },
+     {
+      "name": {
+       "en": "Shri O. M. Patwari",
+       "hi": "Shri O. M. Patwari"
+      },
+      "tenure": "1983-85"
+     },
+     {
+      "name": {
+       "en": "Shri B. N. Choubey",
+       "hi": "Shri B. N. Choubey"
+      },
+      "tenure": "1985-87"
+     },
+     {
+      "name": {
+       "en": "Shri D. Choudhary",
+       "hi": "Shri D. Choudhary"
+      },
+      "tenure": "1987-89"
+     },
+     {
+      "name": {
+       "en": "Shri K. P. S. Keshri",
+       "hi": "Shri K. P. S. Keshri"
+      },
+      "tenure": "1989-90"
+     },
+     {
+      "name": {
+       "en": "Late S. L. Goel",
+       "hi": "Late S. L. Goel"
+      },
+      "tenure": "1990-92"
+     },
+     {
+      "name": {
+       "en": "Shri V. Singh",
+       "hi": "Shri V. Singh"
+      },
+      "tenure": "1992-94"
+     },
+     {
+      "name": {
+       "en": "Shri D. K. Churiwal",
+       "hi": "Shri D. K. Churiwal"
+      },
+      "tenure": "1994-96"
+     },
+     {
+      "name": {
+       "en": "Smt. Pushpa Chopra",
+       "hi": "Smt. Pushpa Chopra"
+      },
+      "tenure": "1996-98"
+     },
+     {
+      "name": {
+       "en": "Shri S. K. Patwari",
+       "hi": "Shri S. K. Patwari"
+      },
+      "tenure": "1998-2000"
+     },
+     {
+      "name": {
+       "en": "Shri A. K. Salampuria",
+       "hi": "Shri A. K. Salampuria"
+      },
+      "tenure": "2000-02"
+     },
+     {
+      "name": {
+       "en": "Shri K. P. Bhawsinka",
+       "hi": "Shri K. P. Bhawsinka"
+      },
+      "tenure": "2002-03, 2003-04"
+     },
+     {
+      "name": {
+       "en": "Late C. M. Saxena",
+       "hi": "Late C. M. Saxena"
+      },
+      "tenure": "2003-04"
+     },
+     {
+      "name": {
+       "en": "Late H. G. Khaitan",
+       "hi": "Late H. G. Khaitan"
+      },
+      "tenure": "2004-05"
+     },
+     {
+      "name": {
+       "en": "Shri Ram Lall Khetan",
+       "hi": "Shri Ram Lall Khetan"
+      },
+      "tenure": "2005-07"
+     },
+     {
+      "name": {
+       "en": "Shri Hemant Kumar Das",
+       "hi": "Shri Hemant Kumar Das"
+      },
+      "tenure": "2007-09"
+     },
+     {
+      "name": {
+       "en": "Shri Subodh Kumar",
+       "hi": "Shri Subodh Kumar"
+      },
+      "tenure": "2009-11"
+     },
+     {
+      "name": {
+       "en": "Shri Narsingh Pd. Jaiswal",
+       "hi": "Shri Narsingh Pd. Jaiswal"
+      },
+      "tenure": "2011-13"
+     },
+     {
+      "name": {
+       "en": "Shri Ramesh Chandra Gupta",
+       "hi": "Shri Ramesh Chandra Gupta"
+      },
+      "tenure": "2013-15"
+     },
+     {
+      "name": {
+       "en": "Shri Ashwani Gupta",
+       "hi": "Shri Ashwani Gupta"
+      },
+      "tenure": "2015-17"
+     },
+     {
+      "name": {
+       "en": "Shri Subodh Goel",
+       "hi": "Shri Subodh Goel"
+      },
+      "tenure": "2017-19"
+     },
+     {
+      "name": {
+       "en": "Shri Sujay Saurabh",
+       "hi": "Shri Sujay Saurabh"
+      },
+      "tenure": "2019-21"
+     },
+     {
+      "name": {
+       "en": "Shri Manish Kumar Tiwari",
+       "hi": "Shri Manish Kumar Tiwari"
+      },
+      "tenure": "2021-22"
+     },
+     {
+      "name": {
+       "en": "Shri Manish Kumar",
+       "hi": "Shri Manish Kumar"
+      },
+      "tenure": "2022-24"
+     },
+     {
+      "name": {
+       "en": "CA Arvind Kumar",
+       "hi": "CA Arvind Kumar"
+      },
+      "tenure": "2024-26"
+     }
+    ]
+   }
+  ]
+ },
+ "policies": {
+  "sections": [
+   {
+    "id": "national",
+    "title": {
+     "en": "National Industrial Policy",
+     "hi": "राष्ट्रीय औद्योगिक नीति"
+    },
+    "intro": {
+     "en": "Industrial policy of the Government of India and related national programmes for manufacturing, MSMEs and startups.",
+     "hi": "भारत सरकार की औद्योगिक नीति तथा विनिर्माण, एमएसएमई एवं स्टार्टअप से जुड़े राष्ट्रीय कार्यक्रम।"
+    }
+   },
+   {
+    "id": "bihar",
+    "title": {
+     "en": "Bihar Industrial Policy",
+     "hi": "बिहार औद्योगिक नीति"
+    },
+    "intro": {
+     "en": "Investment promotion policies and packages of the Government of Bihar, BIADA policies and sector policies.",
+     "hi": "बिहार सरकार की निवेश प्रोत्साहन नीतियाँ एवं पैकेज, बियाडा की नीतियाँ और क्षेत्रवार नीतियाँ।"
+    }
+   },
+   {
+    "id": "gst",
+    "title": {
+     "en": "GST updates",
+     "hi": "जीएसटी अपडेट"
+    },
+    "intro": {
+     "en": "Rate changes, notifications, Bihar SGST gazettes and BIA sessions on GST.",
+     "hi": "दरों में बदलाव, अधिसूचनाएँ, बिहार एसजीएसटी राजपत्र और जीएसटी पर बीआईए के सत्र।"
+    }
+   },
+   {
+    "id": "incometax",
+    "title": {
+     "en": "Income tax updates",
+     "hi": "आयकर अपडेट"
+    },
+    "intro": {
+     "en": "The new income-tax law and rules, CBDT notifications and Budget changes that affect business.",
+     "hi": "नया आयकर कानून एवं नियम, सीबीडीटी अधिसूचनाएँ और व्यवसाय को प्रभावित करने वाले बजट बदलाव।"
+    }
+   },
+   {
+    "id": "notifications",
+    "title": {
+     "en": "Other notifications",
+     "hi": "अन्य अधिसूचनाएँ"
+    },
+    "intro": {
+     "en": "Circulars and notifications from other departments and regulators that matter to members.",
+     "hi": "अन्य विभागों एवं नियामकों के परिपत्र और अधिसूचनाएँ जो सदस्यों के लिए महत्वपूर्ण हैं।"
+    }
+   }
+  ],
+  "newPolicy": {
+   "show": true,
+   "section": "national",
+   "title": {
+    "en": "New National Industrial Policy",
+    "hi": "नई राष्ट्रीय औद्योगिक नीति"
+   },
+   "status": "awaited",
+   "text": {
+    "en": "When the Government of India releases a new National Industrial Policy, BIA will publish it here with a summary in Hindi and English, and Chanakya will start answering questions about it.",
+    "hi": "भारत सरकार द्वारा नई राष्ट्रीय औद्योगिक नीति जारी होते ही बीआईए उसे हिंदी और अंग्रेज़ी सारांश के साथ यहाँ प्रकाशित करेगा, और चाणक्य उससे जुड़े सवालों के जवाब देने लगेगा।"
+   },
+   "date": "",
+   "fileEn": "",
+   "fileHi": "",
+   "source": "https://dpiit.gov.in/"
+  },
+  "items": [
+   {
+    "id": "industrial-policy-1991",
+    "section": "national",
+    "type": "policy",
+    "title": {
+     "en": "Statement on Industrial Policy, 1991",
+     "hi": "औद्योगिक नीति वक्तव्य, 1991"
+    },
+    "issuer": {
+     "en": "Ministry of Industry, Government of India",
+     "hi": "उद्योग मंत्रालय, भारत सरकार"
+    },
+    "ref": "",
+    "date": "1991-07-24",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "The base of India’s present industrial policy: ended industrial licensing for most sectors and opened the economy to private and foreign investment.",
+      "hi": "भारत की वर्तमान औद्योगिक नीति का आधार: अधिकांश क्षेत्रों में औद्योगिक लाइसेंस समाप्त किए और अर्थव्यवस्था को निजी एवं विदेशी निवेश के लिए खोला।"
+     },
+     {
+      "en": "Remains the reference point until a new National Industrial Policy is notified.",
+      "hi": "नई राष्ट्रीय औद्योगिक नीति अधिसूचित होने तक यही मूल संदर्भ है।"
+     }
+    ],
+    "fileEn": "",
+    "fileHi": "",
+    "source": "https://dpiit.gov.in/"
+   },
+   {
+    "id": "national-manufacturing-mission",
+    "section": "national",
+    "type": "scheme",
+    "title": {
+     "en": "National Manufacturing Mission",
+     "hi": "राष्ट्रीय विनिर्माण मिशन"
+    },
+    "issuer": {
+     "en": "Union Budget 2025-26, Government of India",
+     "hi": "केंद्रीय बजट 2025-26, भारत सरकार"
+    },
+    "ref": "",
+    "date": "2025-02-01",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "Announced in the Union Budget 2025-26 to support small, medium and large industries under “Make in India”.",
+      "hi": "“मेक इन इंडिया” के अंतर्गत लघु, मध्यम एवं बड़े उद्योगों को सहयोग देने के लिए केंद्रीय बजट 2025-26 में घोषित।"
+     },
+     {
+      "en": "Covers policy support, execution roadmaps and governance for central ministries and states.",
+      "hi": "केंद्रीय मंत्रालयों एवं राज्यों के लिए नीतिगत सहयोग, क्रियान्वयन रोडमैप और शासन व्यवस्था शामिल।"
+     }
+    ],
+    "fileEn": "",
+    "fileHi": "",
+    "source": "https://www.indiabudget.gov.in/"
+   },
+   {
+    "id": "startup-gsr-501",
+    "section": "national",
+    "type": "notification",
+    "title": {
+     "en": "Startup recognition notification, G.S.R. 501(E)",
+     "hi": "स्टार्टअप मान्यता अधिसूचना, जी.एस.आर. 501(ई)"
+    },
+    "issuer": {
+     "en": "DPIIT, Ministry of Commerce & Industry",
+     "hi": "डीपीआईआईटी, वाणिज्य एवं उद्योग मंत्रालय"
+    },
+    "ref": "G.S.R. 501(E)",
+    "date": "2018-04-11",
+    "effective": "",
+    "status": "amended",
+    "summary": [
+     {
+      "en": "Defines which entities count as a startup for government schemes and tax benefits.",
+      "hi": "सरकारी योजनाओं एवं कर लाभ के लिए स्टार्टअप की परिभाषा तय करती है।"
+     },
+     {
+      "en": "Later amended; check Startup India for the current definition.",
+      "hi": "बाद में संशोधित; वर्तमान परिभाषा के लिए स्टार्टअप इंडिया देखें।"
+     }
+    ],
+    "fileEn": "",
+    "fileHi": "",
+    "source": "https://www.startupindia.gov.in/"
+   },
+   {
+    "id": "biipp-2025",
+    "section": "bihar",
+    "type": "policy",
+    "title": {
+     "en": "Bihar Industrial Investment Promotion Package, 2025",
+     "hi": "बिहार औद्योगिक निवेश प्रोत्साहन पैकेज, 2025"
+    },
+    "issuer": {
+     "en": "Department of Industries, Government of Bihar",
+     "hi": "उद्योग विभाग, बिहार सरकार"
+    },
+    "ref": "",
+    "date": "2025-07-01",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "Additional incentives for new investment in Bihar, read together with the Bihar Industrial Investment Promotion Policy, 2016.",
+      "hi": "बिहार में नए निवेश के लिए अतिरिक्त प्रोत्साहन, जिसे बिहार औद्योगिक निवेश प्रोत्साहन नीति, 2016 के साथ पढ़ा जाए।"
+     },
+     {
+      "en": "Members planning a new unit or expansion should check eligibility before applying for land or approvals.",
+      "hi": "नई इकाई या विस्तार की योजना बना रहे सदस्य भूमि या स्वीकृति हेतु आवेदन से पहले पात्रता अवश्य जाँचें।"
+     }
+    ],
+    "fileEn": "https://www.biabihar.com/wp-content/uploads/Bihar-Industrial-Investment-Policy-Promotion-Package-2025.pdf",
+    "fileHi": "",
+    "source": ""
+   },
+   {
+    "id": "biipp-2016",
+    "section": "bihar",
+    "type": "policy",
+    "title": {
+     "en": "Bihar Industrial Investment Promotion Policy, 2016",
+     "hi": "बिहार औद्योगिक निवेश प्रोत्साहन नीति, 2016"
+    },
+    "issuer": {
+     "en": "Department of Industries, Government of Bihar",
+     "hi": "उद्योग विभाग, बिहार सरकार"
+    },
+    "ref": "",
+    "date": "2016-09-01",
+    "effective": "",
+    "status": "amended",
+    "summary": [
+     {
+      "en": "The State’s main industrial policy: priority sectors, capital and interest subsidies, and the single-window framework.",
+      "hi": "राज्य की मुख्य औद्योगिक नीति: प्राथमिकता क्षेत्र, पूंजी एवं ब्याज अनुदान और सिंगल-विंडो व्यवस्था।"
+     },
+     {
+      "en": "Extended and supplemented since; see the 2025 Promotion Package.",
+      "hi": "इसके बाद विस्तारित एवं पूरक की गई; 2025 प्रोत्साहन पैकेज देखें।"
+     }
+    ],
+    "fileEn": "",
+    "fileHi": "",
+    "source": "https://state.bihar.gov.in/industries/CitizenHome.html"
+   },
+   {
+    "id": "biada-amnesty-2025",
+    "section": "bihar",
+    "type": "policy",
+    "title": {
+     "en": "BIADA Amnesty Policy, 2025",
+     "hi": "बियाडा एमनेस्टी नीति, 2025"
+    },
+    "issuer": {
+     "en": "Bihar Industrial Area Development Authority",
+     "hi": "बिहार औद्योगिक क्षेत्र विकास प्राधिकार"
+    },
+    "ref": "",
+    "date": "2025-06-01",
+    "effective": "",
+    "status": "amended",
+    "summary": [
+     {
+      "en": "One-time settlement for allottees in BIADA industrial areas with dues or pending conditions.",
+      "hi": "बियाडा औद्योगिक क्षेत्रों के उन आवंटियों के लिए एकमुश्त समाधान जिनके बकाया या शर्तें लंबित हैं।"
+     },
+     {
+      "en": "Amended in September 2025; read with the amendment below.",
+      "hi": "सितंबर 2025 में संशोधित; नीचे दिए संशोधन के साथ पढ़ें।"
+     }
+    ],
+    "fileEn": "https://www.biabihar.com/wp-content/uploads/BIADA-Amnesty-Policy-2025-3.pdf",
+    "fileHi": "",
+    "source": ""
+   },
+   {
+    "id": "biada-amnesty-2025-amendment",
+    "section": "bihar",
+    "type": "notification",
+    "title": {
+     "en": "BIADA Amnesty Policy, 2025 – Amendment",
+     "hi": "बियाडा एमनेस्टी नीति, 2025 – संशोधन"
+    },
+    "issuer": {
+     "en": "Bihar Industrial Area Development Authority",
+     "hi": "बिहार औद्योगिक क्षेत्र विकास प्राधिकार"
+    },
+    "ref": "",
+    "date": "2025-09-29",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "Amends the BIADA Amnesty Policy, 2025.",
+      "hi": "बियाडा एमनेस्टी नीति, 2025 में संशोधन।"
+     }
+    ],
+    "fileEn": "https://biada1.bihar.gov.in/UploadFile/ActRule/2025/Sep/29-Sep-2025/IMG_26c99199-04c3-46c4-a174-129f5ded9b26.pdf",
+    "fileHi": "",
+    "source": ""
+   },
+   {
+    "id": "textile-leather-2022",
+    "section": "bihar",
+    "type": "policy",
+    "title": {
+     "en": "Bihar Textile and Leather Policy, 2022",
+     "hi": "बिहार वस्त्र एवं चर्म नीति, 2022"
+    },
+    "issuer": {
+     "en": "Government of Bihar",
+     "hi": "बिहार सरकार"
+    },
+    "ref": "",
+    "date": "2022-06-01",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "Sector policy with incentives for textile, apparel and leather units in Bihar.",
+      "hi": "बिहार में वस्त्र, परिधान एवं चर्म इकाइयों के लिए प्रोत्साहन सहित क्षेत्रीय नीति।"
+     }
+    ],
+    "fileEn": "https://static.investindia.gov.in/s3fs-public/2023-05/Textile-Leather-Policy-2022-English.pdf",
+    "fileHi": "",
+    "source": ""
+   },
+   {
+    "id": "building-byelaws-2025",
+    "section": "bihar",
+    "type": "notification",
+    "title": {
+     "en": "Bihar Building Bye-laws (Amendment), 2025",
+     "hi": "बिहार भवन उपविधि (संशोधन), 2025"
+    },
+    "issuer": {
+     "en": "Government of Bihar",
+     "hi": "बिहार सरकार"
+    },
+    "ref": "",
+    "date": "2025-02-07",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "Amendments to building bye-laws that apply to industrial and commercial buildings.",
+      "hi": "भवन उपविधियों में संशोधन जो औद्योगिक एवं वाणिज्यिक भवनों पर लागू होते हैं।"
+     }
+    ],
+    "fileEn": "https://www.biabihar.com/wp-content/uploads/07-02-2025-Bihar-Building-ByeLaws-Amdt.-Eng.pdf",
+    "fileHi": "https://www.biabihar.com/wp-content/uploads/07-02-2025-Bihar-Building-ByeLaws-Amdt.-Hindi.pdf",
+    "source": ""
+   },
+   {
+    "id": "vyavsayi-durghatna-2025",
+    "section": "bihar",
+    "type": "scheme",
+    "title": {
+     "en": "Bihar Vyavsayi Durghatna Anudan Yojana",
+     "hi": "बिहार व्यवसायी दुर्घटना अनुदान योजना"
+    },
+    "issuer": {
+     "en": "Government of Bihar",
+     "hi": "बिहार सरकार"
+    },
+    "ref": "",
+    "date": "2025-06-15",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "Financial assistance to the families of traders and entrepreneurs in case of accidental death.",
+      "hi": "दुर्घटना में मृत्यु की स्थिति में व्यापारियों एवं उद्यमियों के परिवार को आर्थिक सहायता।"
+     }
+    ],
+    "fileEn": "https://www.biabihar.com/wp-content/uploads/1244-bihar-vyaysayi-durghatna-Anudaan-yojana.pdf",
+    "fileHi": "",
+    "source": ""
+   },
+   {
+    "id": "gst-rationalisation-2025",
+    "section": "gst",
+    "type": "notification",
+    "title": {
+     "en": "GST rate rationalisation (“GST 2.0”)",
+     "hi": "जीएसटी दरों का युक्तिकरण (“जीएसटी 2.0”)"
+    },
+    "issuer": {
+     "en": "GST Council, Government of India",
+     "hi": "जीएसटी परिषद, भारत सरकार"
+    },
+    "ref": "",
+    "date": "2025-09-03",
+    "effective": "2025-09-22",
+    "status": "current",
+    "summary": [
+     {
+      "en": "Most goods move to two main slabs, 5% and 18%, with a higher rate for a small list of items.",
+      "hi": "अधिकांश वस्तुएँ दो मुख्य स्लैब, 5% और 18%, में; कुछ चुनी हुई वस्तुओं पर ऊँची दर।"
+     },
+     {
+      "en": "New rates took effect from 22 September 2025. Check the HSN-wise notifications for your products.",
+      "hi": "नई दरें 22 सितंबर 2025 से प्रभावी। अपने उत्पादों के लिए एचएसएन-वार अधिसूचनाएँ देखें।"
+     }
+    ],
+    "fileEn": "",
+    "fileHi": "",
+    "source": "https://gstcouncil.gov.in/"
+   },
+   {
+    "id": "bihar-gst-gazette-2025-07",
+    "section": "gst",
+    "type": "gazette",
+    "title": {
+     "en": "Bihar GST Gazette, 22 July 2025",
+     "hi": "बिहार जीएसटी राजपत्र, 22 जुलाई 2025"
+    },
+    "issuer": {
+     "en": "Commercial Taxes Department, Government of Bihar",
+     "hi": "वाणिज्य कर विभाग, बिहार सरकार"
+    },
+    "ref": "",
+    "date": "2025-07-22",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "State GST notification published in the Bihar Gazette.",
+      "hi": "बिहार राजपत्र में प्रकाशित राज्य जीएसटी अधिसूचना।"
+     }
+    ],
+    "fileEn": "https://www.biabihar.com/wp-content/uploads/22.07.2025-BIHAR-GST-Gazette.pdf",
+    "fileHi": "",
+    "source": ""
+   },
+   {
+    "id": "gst-reforms-session",
+    "section": "gst",
+    "type": "explainer",
+    "title": {
+     "en": "BIA session: GST Reforms 2.0 with Shri Shashank Priya",
+     "hi": "बीआईए सत्र: श्री शशांक प्रिय के साथ जीएसटी रिफॉर्म्स 2.0"
+    },
+    "issuer": {
+     "en": "Bihar Industries Association",
+     "hi": "बिहार इंडस्ट्रीज़ एसोसिएशन"
+    },
+    "ref": "",
+    "date": "2025-10-10",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "Special Secretary and Member, CBIC explained the new rate structure and answered members’ questions.",
+      "hi": "सीबीआईसी के विशेष सचिव एवं सदस्य ने नई दर संरचना समझाई और सदस्यों के प्रश्नों के उत्तर दिए।"
+     }
+    ],
+    "fileEn": "",
+    "fileHi": "",
+    "source": "#/news/gst-reforms-2"
+   },
+   {
+    "id": "gstat-awareness",
+    "section": "gst",
+    "type": "explainer",
+    "title": {
+     "en": "BIA session: GST Appellate Tribunal for Bihar",
+     "hi": "बीआईए सत्र: बिहार के लिए जीएसटी अपीलीय न्यायाधिकरण"
+    },
+    "issuer": {
+     "en": "Bihar Industries Association",
+     "hi": "बिहार इंडस्ट्रीज़ एसोसिएशन"
+    },
+    "ref": "",
+    "date": "2026-06-16",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "How the newly constituted GST Appellate Tribunal for Bihar works and how to file appeals.",
+      "hi": "बिहार के लिए नवगठित जीएसटी अपीलीय न्यायाधिकरण कैसे काम करता है और अपील कैसे दायर करें।"
+     }
+    ],
+    "fileEn": "",
+    "fileHi": "",
+    "source": "#/news/gstat-awareness"
+   },
+   {
+    "id": "income-tax-act-2025",
+    "section": "incometax",
+    "type": "act",
+    "title": {
+     "en": "Income-tax Act, 2025",
+     "hi": "आयकर अधिनियम, 2025"
+    },
+    "issuer": {
+     "en": "Parliament of India",
+     "hi": "भारत की संसद"
+    },
+    "ref": "",
+    "date": "2025-08-21",
+    "effective": "2026-04-01",
+    "status": "current",
+    "summary": [
+     {
+      "en": "Replaces the Income-tax Act, 1961 from 1 April 2026, in simpler language with renumbered sections.",
+      "hi": "1 अप्रैल 2026 से आयकर अधिनियम, 1961 का स्थान लेता है; सरल भाषा और नई धारा संख्याएँ।"
+     },
+     {
+      "en": "A single “tax year” replaces the old previous year and assessment year.",
+      "hi": "पुराने “पिछला वर्ष” और “निर्धारण वर्ष” की जगह एक “कर वर्ष”।"
+     },
+     {
+      "en": "Check the section mapping before quoting old section numbers in returns, notices and agreements.",
+      "hi": "रिटर्न, नोटिस और अनुबंधों में पुरानी धाराएँ लिखने से पहले धारा-मिलान तालिका देखें।"
+     }
+    ],
+    "fileEn": "",
+    "fileHi": "",
+    "source": "https://www.incometaxindia.gov.in/"
+   },
+   {
+    "id": "sebi-physical-transfer",
+    "section": "notifications",
+    "type": "circular",
+    "title": {
+     "en": "SEBI circular on re-lodgement of physical share transfers",
+     "hi": "भौतिक शेयर हस्तांतरण के पुनः प्रस्तुतीकरण पर सेबी परिपत्र"
+    },
+    "issuer": {
+     "en": "Securities and Exchange Board of India",
+     "hi": "भारतीय प्रतिभूति और विनिमय बोर्ड"
+    },
+    "ref": "",
+    "date": "2025-07-02",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "A special window to re-lodge transfer requests for physical shares that were rejected earlier.",
+      "hi": "पहले अस्वीकृत भौतिक शेयर हस्तांतरण अनुरोधों को दोबारा प्रस्तुत करने की विशेष अवधि।"
+     }
+    ],
+    "fileEn": "https://www.biabihar.com/wp-content/uploads/2-July-2025-SEBI-Circular-for-physical-transfer-of-Shares.pdf",
+    "fileHi": "",
+    "source": ""
+   },
+   {
+    "id": "spree-2025",
+    "section": "notifications",
+    "type": "scheme",
+    "title": {
+     "en": "ESIC SPREE 2025 registration scheme",
+     "hi": "ईएसआईसी स्प्री 2025 पंजीकरण योजना"
+    },
+    "issuer": {
+     "en": "Employees’ State Insurance Corporation",
+     "hi": "कर्मचारी राज्य बीमा निगम"
+    },
+    "ref": "",
+    "date": "2025-07-01",
+    "effective": "",
+    "status": "current",
+    "summary": [
+     {
+      "en": "A one-time window for employers to register unregistered units and employees under ESI without penalty for past periods.",
+      "hi": "नियोक्ताओं के लिए अपंजीकृत इकाइयों एवं कर्मचारियों का ईएसआई में बिना पिछली अवधि के दंड के पंजीकरण का एकमुश्त अवसर।"
+     }
+    ],
+    "fileEn": "img/01-July-2025-SPREE-2025-.jpeg",
+    "fileHi": "",
+    "source": ""
+   }
+  ]
+ },
+ "news": [
+  {
+   "id": "agm-82",
+   "date": "2026-09-28",
+   "category": "meeting",
+   "title": {
+    "en": "BIA holds its 82nd Annual General Meeting",
+    "hi": "बीआईए की 82वीं वार्षिक आम सभा सम्पन्न"
+   },
+   "summary": {
+    "en": "Members met at the BIA auditorium on 25 September 2026 and elected the office bearers and Executive Council for 2026-27. All posts except two Vice President (general category) seats were filled unopposed; those two went to a secret ballot.",
+    "hi": "25 सितंबर 2026 को बीआईए सभागार में सदस्यों ने वर्ष 2026-27 के लिए पदाधिकारियों एवं कार्यकारिणी परिषद का चुनाव किया। उपाध्यक्ष (सामान्य श्रेणी) के दो पदों को छोड़ सभी पद निर्विरोध भरे गए; इन दो पदों के लिए गुप्त मतदान हुआ।"
+   },
+   "body": {
+    "en": "In the ballot for the two Vice President (general category) posts, Shri Basudeo Prasad received 247 votes and Shri Deo Prakash Singh 237, and both were declared elected. Shri Ram Lall Khetan continues as President, with Shri Manish Kumar as Secretary General and Shri Alok Poddar as Treasurer.",
+    "hi": "दिनांक 25 सितम्बर, 2026 को बीआईए का 82वाँ वार्षिक आम सभा का आयोजन एसोसिएशन सभागार में आयेजित किया गया, जिसमें सदस्यों ने वर्ष 2026-27 के लिए पदाधिकारियों के साथ-साथ कार्यकारिणी परिषद के सदस्यों का चुनाव किया।\n\nउपाध्यक्ष (सामान्य श्रेणी) के दो पद को छोड़ कर सभी पदाधिकारियों सहित कार्यकारिणी परिषद के सदस्यों का चुनाव निर्विरोध हुआ। उपाध्यक्ष (सामान्य श्रेणी) के दो पद के विरूद्ध तीन उम्मीदवार होने की वजह से गुप्त मतदान के माध्यम से शांतिपूर्ण ढंग से सफलतापूर्वक सम्पन्न चुनाव में श्री देव प्रकाश सिंह के पक्ष में 237 मत और श्री बासुदेव प्रसाद के पक्ष में 247 मत मिले, जबकि श्री सच्चिदानंद सिंह के पक्ष में मात्र 46 सदस्यों का मत प्राप्त हुआ। मतदान के आधार पर उपाध्यक्ष (सामान्य श्रेणी) पद के लिए श्री बासुदेव प्रसाद तथा श्री देव प्रकाश सिंह निर्वाचित घोषित किए गये। उपाध्यक्ष (कमिश्नरी श्रेणी) के पद पर श्री हेमन्त राज निर्विरोध निर्वाचित हुए।\n\nअध्यक्ष पद पर वर्तमान अध्यक्ष श्री राम लाल खेतान एक बार पुनः सत्र 2026-27 के लिये निर्विरोध निर्वाचित हुए। श्री मनीष कुमार महासचिव पद के लिए तथा श्री आलोक पोद्यार कोषाध्यक्ष के पद पर सत्र 2026-27 के लिए निर्विरोध निर्वाचित किए गये।"
+   },
+   "image": "img/6.-Elected-Office-bearers-768x512.jpg",
+   "photos": [
+    "img/1.1-Election-Process-767x511.jpg",
+    "img/1.2-Election-process-767x511.jpg",
+    "img/1.4-Election-process-767x511.jpg",
+    "img/7.1-Sanjay-Goenka-767x511.jpg",
+    "img/7.3-Sanjay-Bhartiya-767x511.jpg",
+    "img/3.-S.G.-Annual-Report-767x511.jpg",
+    "img/7.2-Alok-Poddar_Taxation-767x511.jpg",
+    "img/7.4-Sunil-Singh-767x511.jpg"
+   ],
+   "source": "https://www.biabihar.com/%e0%a4%ac%e0%a5%80%e0%a4%86%e0%a4%88%e0%a4%8f-%e0%a4%95%e0%a4%be-82%e0%a4%b5%e0%a4%be%e0%a4%81-%e0%a4%b5%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%b7%e0%a4%bf%e0%a4%95-%e0%a4%86%e0%a4%ae-%e0%a4%b8%e0%a4%ad/"
+  },
+  {
+   "id": "engineers-day-2026",
+   "date": "2026-09-21",
+   "category": "event",
+   "title": {
+    "en": "Engineers’ Day and Kaushal Vikas Kendra certificates",
+    "hi": "इंजीनियर्स डे एवं कौशल विकास केंद्र प्रमाणपत्र वितरण समारोह"
+   },
+   "summary": {
+    "en": "On 18 September 2026 BIA honoured eminent engineers of the state and presented certificates to trainees of its Kaushal Vikas Kendra. The Chairman of the Bihar Legislative Council, Shri Awadhesh Narain Singh, was the chief guest.",
+    "hi": "18 सितंबर 2026 को बीआईए ने राज्य के प्रतिष्ठित इंजीनियरों को सम्मानित किया और कौशल विकास केंद्र के प्रशिक्षुओं को प्रमाणपत्र दिए। बिहार विधान परिषद के माननीय सभापति श्री अवधेश नारायण सिंह मुख्य अतिथि थे।"
+   },
+   "body": {
+    "en": "Thirteen engineers were honoured, along with former President Shri K. P. S. Keshri. The chief guest spoke on the role of engineers in building Bihar, and certificates were handed to students who completed free computer training at the Kaushal Vikas Kendra.",
+    "hi": "बिहार इंडस्ट्रीज़ एसोसिएशन द्वारा इंजीनियर्स डे के अवसर पर 18 सितम्बर, 2026 को संध्या 4 बजे एक गरिमामय समारोह आयोजित किया गया। इस अवसर पर मुख्य अतिथि बिहार विधान परिषद के माननीय अध्यक्ष श्री अवधेश नारायण सिंन्हा का स्वागत अध्यक्ष श्री रामलाल खेतान द्वारा किया गया।\n\nकार्यक्रम में राज्य के प्रतिष्ठित इंजीनियरों का सम्मान मुख्य अतिथि द्वारा किया गया। सम्मानित व्यक्तियों में Er. राजेश्वर प्रसाद सिंह, Er. नरेंद्र कुमार, Er. शुब्हानंद मुकेश, Er. रूहैल रंजन, Er. अर्जित शाश्वत चौबे, Er. नीरज सक्सेना, Er. गौतम कुमार, Er. मनोज कुमार, Er. एच. एन. प्रसाद, Er. उपेन्द्र किशोर, Er. राकेश कुमार, Er. निखिल जायसवाल तथा Er. रौनक चौधरी शामिल रहे। इस अवसर पर पूर्व अध्यक्ष श्री के. पी. एस. केशरी भी सम्मानित किये गए व उन्होंने भी अपने विचार व्यक्त किए।\n\nमुख्य अतिथि श्री अवधेश नारायण सिंह ने अपने उद्बोधन में इंजीनियरों की भूमिका को राज्य के विकास में अत्यंत महत्वपूर्ण बताते हुए उनके योगदान की सराहना की।\n\nइसके उपरांत संध्या 5 बजे बीआईए द्वारा कौशल विकास केंद्र के 31वें बैच की छात्राओं एवं 32वें बैच के छात्रों को प्रमाणपत्र मुख्य अतिथि द्वारा प्रदान किए गए। इस अवसर पर सीएस कुंदन कुमार ने केंद्र का संक्षिप्त परिचय दिया तथा महासचिव श्री अमरनाथ जायसवाल ने धन्यवाद ज्ञापन प्रस्तुत किया।\n\nकार्यक्रम का संचालन श्री मनीष कुमार तिवारी, पूर्व कोषाध्यक्ष, बीआईए ने किया।"
+   },
+   "image": "img/DSC_0536-1-768x512.jpg",
+   "photos": [
+    "img/DSC_0540-767x511.jpg",
+    "img/DSC_0610-767x511.jpg",
+    "img/DSC_0751-767x511.jpg",
+    "img/DSC_0750-767x511.jpg"
+   ],
+   "source": "https://www.biabihar.com/%e0%a4%87%e0%a4%82%e0%a4%9c%e0%a5%80%e0%a4%a8%e0%a4%bf%e0%a4%af%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%a1%e0%a5%87-%e0%a4%8f%e0%a4%b5%e0%a4%82-%e0%a4%95%e0%a5%8c%e0%a4%b6%e0%a4%b2-%e0%a4%b5%e0%a4%bf/"
+  },
+  {
+   "id": "satish-chandra-dubey",
+   "date": "2026-07-28",
+   "category": "session",
+   "title": {
+    "en": "Interaction with Union Minister of State Shri Satish Chandra Dubey",
+    "hi": "केंद्रीय राज्य मंत्री श्री सतीश चंद्र दुबे के साथ संवाद"
+   },
+   "summary": {
+    "en": "On 24 July 2026 the Union Minister of State for Coal and Mines met industrialists, entrepreneurs and investors of Bihar at BIA to discuss opportunities in the coal and mining value chain.",
+    "hi": "24 जुलाई 2026 को कोयला एवं खान मंत्रालय के केंद्रीय राज्य मंत्री ने बीआईए में बिहार के उद्योगपतियों, उद्यमियों एवं निवेशकों से कोयला एवं खनन मूल्य श्रृंखला में अवसरों पर संवाद किया।"
+   },
+   "body": {
+    "en": "Members raised issues of raw-material supply and mineral-based industry in Bihar. The Minister assured that the points raised would be examined by the Ministry.",
+    "hi": "बिहार इंडस्ट्रीज एसोसिएशन (बीआईए) में 24 जुलाई 2026 को संवाद कार्यक्रम का आयोजन किया गया, जिसमें भारत सरकार के कोयला एवं खान मंत्रालय के केंद्रीय राज्य मंत्री श्री सतीश चंद्र दुबे मुख्य अतिथि के रूप में उपस्थित हुए। कार्यक्रम में बिहार के उद्योगपतियों, उद्यमियों एवं निवेशकों ने बड़ी संख्या में भाग लेकर राज्य के औद्योगिक विकास से जुड़े विभिन्न विषयों पर अपने विचार एवं सुझाव प्रस्तुत किए।\n\nकार्यक्रम की अध्यक्षता बिहार इंडस्ट्रीज एसोसिएशन के अध्यक्ष ने की। अपने अध्यक्षीय स्वागत संबोधन मे उन्होंने माननीय मंत्री श्री सतीश चंद्र दुबे का हार्दिक स्वागत करते हुए कहा कि बिहार इंडस्ट्रीज एसोसिएशन लगभग आठ दशकों से अधिक समय से राज्य के औद्योगिक विकास में सरकार और उद्योग जगत के बीच एक सशक्त सेतु के रूप में कार्य कर रहा है। उन्होंने कहा कि बिहार आज औद्योगिक विकास के नए चरण में प्रवेश कर रहा है और राज्य में निवेश, आधारभूत संरचना तथा उद्योग-अनुकूल वातावरण के निर्माण की दिशा में उल्लेखनीय प्रगति हुई है।\n\nउन्होंने अपने संबोधन में केंद्र सरकार से बिहार में व्यापक भू-वैज्ञानिक एवं खनिज अन्वेषण अभियान को गति देने, संभावित खनिज क्षेत्रों के शीघ्र विकास, खनिज आधारित उद्योगों को प्रोत्साहन, कोयले की उपलब्धता से संबंधित उद्योगों की समस्याओं के समाधान तथा कोयला गैसीकरण एवं क्लीन कोल टेक्नोलॉजी जैसी आधुनिक परियोजनाओं में बिहार को विशेष अवसर प्रदान करने का आग्रह किया।"
+   },
+   "image": "img/DSC_8597-768x513.jpg",
+   "photos": [
+    "img/DSC_8656-768x513.jpg",
+    "img/DSC_8659-768x513.jpg",
+    "img/DSC_8578-768x513.jpg",
+    "img/DSC_8670-768x513.jpg",
+    "img/DSC_8685-768x513.jpg"
+   ],
+   "source": "https://www.biabihar.com/%e0%a4%ac%e0%a4%bf%e0%a4%b9%e0%a4%be%e0%a4%b0-%e0%a4%95%e0%a5%87-%e0%a4%89%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a4%aa%e0%a4%a4%e0%a4%bf%e0%a4%af%e0%a5%8b%e0%a4%82-%e0%a4%89%e0%a4%a6/"
+  },
+  {
+   "id": "advocate-general",
+   "date": "2026-07-17",
+   "category": "session",
+   "title": {
+    "en": "Industry–law dialogue with the Advocate General of Bihar",
+    "hi": "महाधिवक्ता के साथ उद्योग-कानून संवाद"
+   },
+   "summary": {
+    "en": "On 13 July 2026 BIA felicitated Shri Satyadarshi Sanjay on his appointment as Advocate General of Bihar and held a dialogue on legal issues faced by industry.",
+    "hi": "13 जुलाई 2026 को बीआईए ने बिहार के नवनियुक्त महाधिवक्ता श्री सत्यदर्शी संजय का सम्मान किया और उद्योग से जुड़े कानूनी विषयों पर संवाद आयोजित किया।"
+   },
+   "body": {
+    "en": "The programme, chaired by President Shri Ram Lall Khetan, brought together industry, institutions, academics and the media.",
+    "hi": "बीआईए द्वारा बिहार के नवनियुक्त माननीय महाधिवक्ता श्री सत्यदर्शी संजय का विशेष सम्मान समारोह एवं उद्योग-कानून संवाद कार्यक्रम आयोजित कर सम्मानित किया गया। यह कार्यक्रम 13 जुलाई को आयोजित हुआ।\n\nकार्यक्रम की अध्यक्षता अध्यक्ष श्री राम लाल खेतान ने की, जिसमें उद्योग जगत, विभिन्न संस्थाओं, शिक्षाविदों तथा मीडिया प्रतिनिधियों की उपस्थिति रही। इस अवसर पर अध्यक्ष ने महाधिवक्ता को बधाई देते हुए न्याय व्यवस्था को राज्य के आर्थिक विकास की आधारशिला बताया तथा उद्योग जगत और न्यायपालिका के बीच रचनात्मक संवाद की आवश्यकता पर बल दिया।\n\nमहाधिवक्ता श्री सत्यदर्शी संजय ने उद्योगों के विकास, विधि शासन, निवेश-अनुकूल वातावरण और रोजगार सृजन को स्थायी औद्योगिकरण से जोड़ते हुए कहा कि बिहार जैसे अधिक जनसंख्या घनत्व वाले राज्य में बेरोजगारी की समस्या का स्थायी समाधान केवल मजबूत औद्योगीकरण से ही संभव है और इसके लिए आकर्षक औद्योगिक नीतियाँ बनाना पर्याप्त नहीं बल्कि उनका प्रभावी व पारदर्शी क्रियान्वयन भी उतना ही आवश्यक है।\n\nनिवेशकों का विश्वास तभी मजबूत होगा जब सरकारी नीतियाँ गंभीरता से धरातल पर लागू हों। उन्होंने कहा कि सरकार, उद्योग व न्याय व्यवस्था के बीच बेहतर तालमेल से बिहार निवेश के लिए अधिक आकर्षक राज्य बन सकता है।\n\nकार्यक्रम में उपस्थित सदस्यों ने विधिक एवं प्रशासनिक चुनौतियों पर सुझाव दिए और अंत में महासचिव श्री अमरनाथ जायसवाल ने धन्यवाद ज्ञापन प्रस्तुत किया।"
+   },
+   "image": "img/DSC_9903-768x512.jpg",
+   "photos": [],
+   "source": "https://www.biabihar.com/%e0%a4%ae%e0%a4%be%e0%a4%a8%e0%a4%a8%e0%a5%80%e0%a4%af-%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%a7%e0%a4%bf%e0%a4%b5%e0%a4%95%e0%a5%8d%e0%a4%a4%e0%a4%be-%e0%a4%b6%e0%a5%8d%e0%a4%b0%e0%a5%80-%e0%a4%b8/"
+  },
+  {
+   "id": "gstat-awareness",
+   "date": "2026-06-22",
+   "category": "awareness",
+   "title": {
+    "en": "Awareness programme on the GST Appellate Tribunal",
+    "hi": "जीएसटी अपीलीय न्यायाधिकरण पर जागरूकता कार्यक्रम"
+   },
+   "summary": {
+    "en": "On 16 June 2026 members of the newly constituted GST Appellate Tribunal for Bihar explained how the Tribunal works and how businesses can file appeals.",
+    "hi": "16 जून 2026 को बिहार के लिए नवगठित जीएसटी अपीलीय न्यायाधिकरण के सदस्यों ने न्यायाधिकरण की कार्यप्रणाली और अपील दायर करने की प्रक्रिया समझाई।"
+   },
+   "body": {
+    "en": "The session was held at BIA’s premises with the Tribunal and covered filing, hearings and timelines for GST disputes.",
+    "hi": "वस्तु एवं सेवा कर (GST) से संबंधित विवादों के निपटारे हेतु राज्य में गठित जीएसटी अपीलीय न्यायाधिकरण (GST Appellate Tribunal) की कार्यप्रणाली एवं उससे जुड़े विभिन्न विषयों पर हितधारकों को जागरूक करने के उद्देश्य से बीआईए के सहयोग से एसोसिएशन परिसर में 16 जून, 2026 को एक विशेष जागरूकता कार्यक्रम का आयोजन किया गया। कार्यक्रम में बिहार के लिए नवगठित जीएसटी अपीलीय न्यायाधिकरण के माननीय वाइस प्रेसिडेंट श्री मनोज शंकर, न्यायिक सदस्य श्री मनोज कुमार सिन्हा, तकनीकी सदस्य श्री संजय कुमार मावंडिया सहित न्यायाधिकरण के अन्य अधिकारी एवं टीम के सदस्य उपस्थित रहे। कार्यक्रम में उद्योग जगत, व्यापारिक संगठनों, कर सलाहकारों एवं करदाताओं की भी बड़ी संख्या में सहभागिता रही। कार्यक्रम का शुभारंभ महासचिव श्री अमरनाथ जयसवाल के स्वागत भाषण से हुआ।\n\nमाननीय वाइस प्रेसिडेंट श्री मनोज शंकर ने बिहार में ई-फाइलिंग की कम संख्या, इसकी अंतिम तिथि, और उपलब्ध सहायता प्रणालियों पर जानकारी देते हुए 2017 के एक अधिनियम का संदर्भ दिया गया, जिसके तहत ट्रिब्यूनल के गठन में लगभग आठ साल लगे। 01 अप्रैल 2026 से पूर्व वस्तु एवं सेवा कर के अंतर्गत पारित किसी भी आदेश के विरुद्ध अपील, न्यायाधिकरण के समक्ष दायर की जा सकती है। ऐसी अपीलें दायर करने की अंतिम तिथि 30 जून 2026 निर्धारित की गई है। उन्होंने आगाह किया कि निर्धारित तिथि के बाद पोर्टल बंद हो जाएगा और 01 अप्रैल 2026 से पूर्व के मामलों में अपील दायर नहीं की जा सकेगी।"
+   },
+   "image": "img/2-4-768x512.jpg",
+   "photos": [],
+   "source": "https://www.biabihar.com/%e0%a4%9c%e0%a5%80%e0%a4%8f%e0%a4%b8%e0%a4%9f%e0%a5%80-%e0%a4%85%e0%a4%aa%e0%a5%80%e0%a4%b2%e0%a5%80%e0%a4%af-%e0%a4%a8%e0%a5%8d%e0%a4%af%e0%a4%be%e0%a4%af%e0%a4%be%e0%a4%a7%e0%a4%bf%e0%a4%95%e0%a4%b0/"
+  },
+  {
+   "id": "shreyasi-singh",
+   "date": "2026-05-27",
+   "category": "session",
+   "title": {
+    "en": "Dialogue with Industries Minister Ms. Shreyasi Singh",
+    "hi": "उद्योग मंत्री सुश्री श्रेयसी सिंह के साथ संवाद"
+   },
+   "summary": {
+    "en": "On 25 May 2026 industry associations and entrepreneurs discussed industrialisation, investment, jobs and practical problems of industry with Bihar’s Industries Minister.",
+    "hi": "25 मई 2026 को औद्योगिक संगठनों एवं उद्यमियों ने बिहार की उद्योग मंत्री के साथ औद्योगीकरण, निवेश, रोजगार और उद्योग की व्यावहारिक समस्याओं पर चर्चा की।"
+   },
+   "body": {
+    "en": "BIA presented members’ issues on land, power, approvals and incentives, and the Minister responded to each.",
+    "hi": "बिहार इंडस्ट्रीज एसोसिएशन द्वारा दिनांक 25 मई, 2026 को माननीया उद्योग मंत्री सुश्री श्रेयसी सिंह के साथ राज्य के विभिन्न औद्योगिक संगठनों एवं उद्यमी प्रतिनिधियों की एक महत्वपूर्ण परिचर्चा का आयोजन किया गया। इस बैठक में राज्य के औद्योगिकीकरण, निवेश संवर्धन, रोजगार सृजन तथा उद्योग जगत से जुड़ी विभिन्न व्यवहारिक समस्याओं पर विस्तृत चर्चा हुई।\n\nकार्यक्रम का शुभारंभ दीप प्रज्ज्वलित कर किया गया। अध्यक्ष श्री रामलाल खेतान ने अपने स्वागत संबोधन में कहा कि माननीया मंत्री महोदया के युवा, ऊर्जावान एवं दूरदर्शी नेतृत्व से बिहार के औद्योगिक विकास को नई दिशा और गति मिलेगी।\n\nउन्होंने राज्य सरकार द्वारा पाँच लाख करोड़ रुपये निवेश लक्ष्य एवं साख – जमा अनुपात को 100 प्रतिषत करने की पहल को सराहनीय बताया। उन्होंने कहा कि यह कदम बिहार के औद्योगिक इतिहास में एक महत्वपूर्ण मील का पत्थर सिद्ध होगा। उन्होंने इस अवसर पर यह भी उल्लेख किया कि औद्योगिक विकास को स्थायित्व प्रदान करने के लिए सरकार और उद्योग जगत के बीच निरंतर संवाद आवश्यक है। साथ ही उन्होंने नीतियों के प्रभावी एवं समयबद्ध क्रियान्वयन पर बल देते हुए कहा कि उद्यमियों की समस्याओं का समाधान और चल रहे उद्योगों को बंद होने से बचाना अत्यंत आवश्यक है।\n\nअंत में अध्यक्ष ने बिहार को “उद्योग की नगरी” बनाने का संकल्प व्यक्त करते हुए प्रेरक नारे प्रस्तुत किएः\n\n“बनाओ बिहार में, बेचो दुनियाँ में” “न नीति में देरी, न नियति में कमी”"
+   },
+   "image": "img/2.3-Shreyasi-Singh-Felicitation-768x513.jpg",
+   "photos": [
+    "img/1.-Stage-768x513.jpg",
+    "img/DSC_1698-768x513.jpg",
+    "img/DSC_1746-768x513.jpg",
+    "img/DSC_1787-768x513.jpg",
+    "img/DSC_1819-768x513.jpg",
+    "img/DSC_1829-768x513.jpg",
+    "img/DSC_1822-768x513.jpg",
+    "img/DSC_1842-768x513.jpg"
+   ],
+   "source": "https://www.biabihar.com/%e0%a4%ae%e0%a4%be%e0%a4%a8%e0%a4%a8%e0%a5%80%e0%a4%af%e0%a4%be-%e0%a4%89%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97-%e0%a4%ae%e0%a4%82%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a5%80-%e0%a4%b8%e0%a5%81/"
+  },
+  {
+   "id": "adbhut-jamui",
+   "date": "2026-05-01",
+   "category": "outreach",
+   "title": {
+    "en": "“Adbhut Jamui”: outreach on tourism and industry",
+    "hi": "“अद्भुत जमुई”: पर्यटन एवं उद्योग पर आउटरीच"
+   },
+   "summary": {
+    "en": "On 29 April 2026 BIA and the Jamui district administration held a one-day outreach programme on the district’s potential for tourism and industry.",
+    "hi": "29 अप्रैल 2026 को बीआईए और जमुई जिला प्रशासन ने जिले में पर्यटन एवं उद्योग की संभावनाओं पर एक दिवसीय आउटरीच कार्यक्रम आयोजित किया।"
+   },
+   "body": {
+    "en": "Organised by BIA’s Tourism Committee at the Jamui Collectorate, the programme brought together officials and local entrepreneurs.",
+    "hi": "जमुई जिला प्रशासन एवं बिहार इंडस्ट्रीज एसोसिएशन के संयुक्त तत्वावधान में 29 अप्रैल, 2026 को एक दिवसीय ‘आउटरीच कार्यक्रम’ का आयोजन जमुई समाहरणालय के संवाद कक्ष में आयोजित किया गया। इसमें “अद्भुत जमुईः पर्यटन एवं उद्योग विकास की नई दिशा” की संभावनाओं पर मंथन किया गया।\n\nदीप प्रज्वलित कर उद़घाटन के उपरान्त कार्यक्रम के संयोजक -बीआईए पर्यटन समिति के चेयरमैन श्री सुनील कुमार सिंह ने जमुई की समृद्ध विरासत और खनिज संपदा का उल्लेख करते हुए कहा कि स्वर्ण भंडार से समृद्ध यह धरती प्राकृतिक सौंदर्य से भरपूर है और सत्तर के दशक का ‘स्लीपिंग टाउन’ अब पर्यटन के क्षेत्र में नई पहचान बनाने को तैयार है।\n\nउन्होंने हेरिटेज, विलेज और एडवेंचर टूरिज्म की अपार संभावनाओं पर जोर देते हुए कुकुरझप डैम पर रोपवे निर्माण, पर्यटन स्थलों पर साइनेज लगाने तथा स्थानीय युवाओं को टूरिस्ट गाइड के रूप में प्रशिक्षित करने का सुझाव दिया। साथ ही ‘होम-स्टे’ योजना के तहत मिलने वाले 20 लाख रूपये के ऋण का लाभ उठाकर स्थानीय समुदाओं को सशक्त बनाने का आह्वान किया।\n\nऔद्योगिक संभावनाओं पर प्रकाश डालते हुए पूर्व उपाध्यक्ष श्री संजय गोयनका ने निवेशकों को राज्य सरकार की औद्योगिक नीतियों के तहत मिलने वाली सुविधाओं के साथ बैंकिंग सुविधाओं की जानकारी दी।"
+   },
+   "image": "img/6.1-29.04.2026-Jamui-Tourism-1-768x345.jpeg",
+   "photos": [],
+   "source": "https://www.biabihar.com/%e0%a4%85%e0%a4%a6%e0%a5%8d%e0%a4%ad%e0%a5%81%e0%a4%a4-%e0%a4%9c%e0%a4%ae%e0%a5%81%e0%a4%88%e0%a4%83-%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%af%e0%a4%9f%e0%a4%a8-%e0%a4%8f%e0%a4%b5%e0%a4%82/"
+  },
+  {
+   "id": "export-awareness",
+   "date": "2026-04-23",
+   "category": "awareness",
+   "title": {
+    "en": "Export awareness programme with SIDBI",
+    "hi": "सिडबी के सहयोग से निर्यात जागरूकता कार्यक्रम"
+   },
+   "summary": {
+    "en": "On 21 April 2026 BIA and SIDBI held the second programme in a series to help Bihar’s entrepreneurs and young people take products to international markets.",
+    "hi": "21 अप्रैल 2026 को बीआईए और सिडबी ने बिहार के उद्यमियों एवं युवाओं को अंतर्राष्ट्रीय बाज़ार तक पहुँचाने के लिए श्रृंखला का दूसरा कार्यक्रम आयोजित किया।"
+   },
+   "body": {
+    "en": "Experts covered export procedures, documentation, finance and government support for exporters.",
+    "hi": "बिहार से निर्यात को बढ़ावा देने और राज्य के उत्पादों को अंतर्राष्ट्रीय बाज़ार में स्थापित करने तथा उद्यमियों एवं युवाओं को निर्यात क्षेत्र में अवसरों के प्रति जागरूक करने के उद्देश्य से बिहार इंडस्ट्रीज एसोसिएशन द्वारा सिडबी के सहयोग से दिनांक 21 अप्रैल, 2026 को निर्यात जागरूकता कार्यक्रमों की श्रृंखला के अंतर्गत दूसरा कार्यक्रम आयोजित किया गया।\n\nकार्यक्रम का शुभारंभ दीप प्रज्ज्वलित कर किया गया, जिसमें बीआईए के अधिकारियों के अलावे राज्य सरकार के वानिकी निदेशक श्री अभिषेक कुमार, सिडबी के महाप्रबंधक (बिहार-झारखंड) श्री आशीष तोपदार, उप-महाप्रबंधक श्रीमती रश्मि रंजन, एपीडा के फील्ड ऑफिसर श्री आनंद प्रकाश, ईपीसीएच के सहायक महाप्रबंधक श्री नितेश कुमार झा तथा कार्यक्रम के प्रशिक्षक डॉ. जगत शाह ने भाग लिया।\n\nसर्वप्रथम अध्यक्ष श्री रामलाल खेतान ने अपने स्वागत संबोधन में कहा कि कृषि रोडमैप और औद्योगिक निवेश में वृद्धि के कारण बिहार विकास के नए आयाम छू रहा है। सड़क, बिजली और सूचना प्रौद्योगिकी के क्षेत्र में गुणात्मक सुधार ने निर्यात के लिए एक ठोस आधार प्रदान किया है। आधारभूत संरचना का विकास और एपीडा जैसी संस्थाओं की सक्रिय भागीदारी बिहार को वैश्विक बाजार से जोड़ने में महत्वपूर्ण भूमिका निभा रही है।\n\nबिहार के पास मखाना, लीची जैसे विशिष्ट कृषि उत्पाद हैं, जिनकी राष्ट्रीय और अंतर्राष्ट्रीय स्तर पर मजबूत पहचान है।"
+   },
+   "image": "img/3.1-Inauguration-768x354.jpeg",
+   "photos": [],
+   "source": "https://www.biabihar.com/%e0%a4%a8%e0%a4%bf%e0%a4%b0%e0%a5%8d%e0%a4%af%e0%a4%be%e0%a4%a4-%e0%a4%9c%e0%a4%be%e0%a4%97%e0%a4%b0%e0%a5%82%e0%a4%95%e0%a4%a4%e0%a4%be-%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%af%e0%a4%95%e0%a5%8d/"
+  },
+  {
+   "id": "destination-bihar-expo-2026",
+   "date": "2026-03-09",
+   "category": "exhibition",
+   "title": {
+    "en": "Destination Bihar Expo 2026 at Gandhi Maidan",
+    "hi": "गांधी मैदान में डेस्टिनेशन बिहार एक्सपो 2026"
+   },
+   "summary": {
+    "en": "From 26 February to 2 March 2026 BIA held its industrial exhibition at Gandhi Maidan, Patna, with the Department of Industries and CREDAI: 2.5 lakh sq ft, five German hangars, 60 cottages and 10 food stalls.",
+    "hi": "26 फरवरी से 2 मार्च 2026 तक बीआईए ने उद्योग विभाग एवं क्रेडाई के सहयोग से गांधी मैदान, पटना में औद्योगिक प्रदर्शनी आयोजित की: 2.5 लाख वर्गफीट, पाँच जर्मन हैंगर, 60 कॉटेज और 10 फूड स्टॉल।"
+   },
+   "body": {
+    "en": "The Expo was inaugurated by Rural Works Minister Shri Ashok Choudhary. Separate hangars were given to real estate (CREDAI), energy, food processing, plant and machinery, and other products and services.",
+    "hi": "बिहार में उद्योग को बढ़ावा देने, निवेश को आकर्षित करने, राज्य के आर्थिक औद्योगिक विकास के लिए उपलब्ध संसाधनों को प्रदर्शित करने के उद्देश्य से बीआईए द्वारा उद्योग विभाग, बिहार सरकार और क्रेडाई के सहयोग से औद्योगिक प्रदर्शनी, “डेस्टिनेशन बिहार एक्सपो 2026“ का आयोजन 26 फरवरी से लेकर 2 मार्च तक किया गया। कार्यक्रम का उद्घाटन ग्रामीण कार्य मंत्री श्री अशोक चौधरी ने किया।\n\nगांधी मैदान, पटना में आयोजित इस औद्योगिक प्रदर्शनी में 2.5 लाख वर्गफीट क्षेत्रफल में 5 जर्मन हैंगर के साथ 60 कॉटेज और 10 फूड स्टॉल लगाये गये। इसमें 1 – 1 हैंगर विशेष रूप से क्रमशः क्रेडाई और ऊर्जा के लिये समर्पित था। इसी तरह 1 हैंगर खाद्य प्रसंस्करण उद्योगों के लिए, 1 हैंगर प्लांट व मशीनरी के लिए व 1 हैंगर अन्य उत्पादों / सेवाओं के लिए समर्पित था।\n\nऔद्योगिक प्रदर्शनी में रूबन अस्पताल की ओर से निःशुल्क स्वास्थ्य जाँच कैंप, साईं नेत्रालय द्वारा निःशुल्क आँख जाँच व माँ वैष्णो देवी सेवा समिति द्वारा एक दिन रक्तदान शिविर का आयोजन किया गया।\n\nऔद्योगिक प्रदर्शनी को उद्योग विभाग, बिहार सरकार के अलावे स्टेट बैंक ऑफ इंडिया, अर्बन डेवलपमेंट एंड हाउसिंग डिपार्टमेंट बिहार सरकार ने प्लेटिनम प्रायोजक के रूप में अपना सहयोग दिया।"
+   },
+   "image": "img/DSC_4423-768x511.jpg",
+   "photos": [
+    "img/DSC_4267-768x511.jpg",
+    "img/DSC_4390-768x511.jpg",
+    "img/DSC_4405-768x511.jpg",
+    "img/DSC_4480-768x511.jpg",
+    "img/DSC_4744-768x511.jpg",
+    "img/DSC_4726-768x511.jpg",
+    "img/DSC_4743-768x511.jpg",
+    "img/DSC_4691-768x511.jpg"
+   ],
+   "source": "https://www.biabihar.com/destination-bihar-expo2026/"
+  },
+  {
+   "id": "rajendra-prasad-lecture-2026",
+   "date": "2026-03-06",
+   "category": "lecture",
+   "title": {
+    "en": "Deshratna Dr. Rajendra Prasad Memorial Lecture 2026",
+    "hi": "देशरत्न डॉ. राजेंद्र प्रसाद स्मृति व्याख्यान 2026"
+   },
+   "summary": {
+    "en": "On 25 February 2026, the Governor of Bihar, Shri Arif Mohammed Khan, delivered BIA’s annual memorial lecture in honour of India’s first President.",
+    "hi": "25 फरवरी 2026 को बिहार के राज्यपाल श्री आरिफ मोहम्मद खान ने भारत के प्रथम राष्ट्रपति की स्मृति में बीआईए का वार्षिक स्मृति व्याख्यान दिया।"
+   },
+   "body": {
+    "en": "BIA holds the lecture every year on Dr. Rajendra Prasad’s death anniversary to remember his life and work.",
+    "hi": "प्रत्येक वर्ष की तरह देशरत्न डॉ. राजेंद्र प्रसाद की पुण्यतिथि पर बिहार इंडस्ट्रीज एसोसिएशन द्वारा श्रद्धांजलि अर्पित करने एवं उनके व्यक्तित्व-कृतित्व को स्मरण करने हेतु एक गरिमामयी स्मृति व्याख्यान का आयोजन 25 फरवरी, 2026 को किया गया।\n\nइस अवसर पर बिहार के राज्यपाल माननीय आरिफ मोहम्मद खान मुख्य अतिथि एवं वक्ता के रूप में उपस्थित रहे। उन्होंने अपने अनुभवों एवं चिंतन को साझा करते हुए कहा कि जिस राष्ट्र की अर्थव्यवस्था कृषि पर आधारित हो, उसके समग्र विकास के लिए उद्योगों का सुदृढ़ होना अत्यंत आवश्यक है। उन्होंने स्पष्ट किया कि कृषि का वास्तविक विकास तभी संभव है जब कृषि आधारित उद्योगों का विस्तार हो, जिससे राष्ट्र की प्रगति को नई दिशा मिल सके। राज्यपाल महोदय ने अपने व्याख्यान में देशरत्न डॉ. राजेंद्र प्रसाद के व्यक्तित्व एवं कृतित्व पर भी गहन प्रकाश डाला।\n\nकार्यक्रम की शुरुआत अध्यक्ष श्री रामलाल खेतान के स्वागत संबोधन से हुई। उन्होंने स्मृति व्याख्यान आयोजित करने के उद्देश्य पर प्रकाश डाला तथा अब तक इस व्याख्यान श्रृंखला में पधार चुके विशिष्ट अतिथियों की संक्षिप्त जानकारी दी।\n\nर्कायक्रम में बड़ी संख्या में उद्यमी, उद्योग जगत से जुड़े गणमान्य व्यक्ति एवं अन्य आमंत्रित अतिथि उपस्थित रहे।"
+   },
+   "image": "img/DSC_7153-768x511.jpg",
+   "photos": [
+    "img/DSC_7168-768x511.jpg",
+    "img/DSC_7183-768x511.jpg",
+    "img/DSC_7192-768x511.jpg",
+    "img/DSC_7205-768x511.jpg",
+    "img/DSC_7211-768x511.jpg"
+   ],
+   "source": "https://www.biabihar.com/%e0%a4%a6%e0%a5%87%e0%a4%b6%e0%a4%b0%e0%a4%a4%e0%a5%8d%e0%a4%a8-%e0%a4%a1%e0%a5%89-%e0%a4%b0%e0%a4%be%e0%a4%9c%e0%a5%87%e0%a4%82%e0%a4%a6%e0%a5%8d%e0%a4%b0-%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%b8/"
+  },
+  {
+   "id": "dilip-jaiswal",
+   "date": "2025-12-11",
+   "category": "session",
+   "title": {
+    "en": "Dialogue with Industries Minister Dr. Dilip Kumar Jaiswal",
+    "hi": "उद्योग मंत्री डॉ. दिलीप कुमार जायसवाल के साथ संवाद"
+   },
+   "summary": {
+    "en": "On 9 December 2025 BIA hosted the Industries Minister with CII Bihar, the Bihar Mahila Udyog Sangh, the Sugar Mills Association and other industry bodies.",
+    "hi": "9 दिसंबर 2025 को बीआईए ने सीआईआई बिहार, बिहार महिला उद्योग संघ, शुगर मिल एसोसिएशन एवं अन्य संगठनों के साथ उद्योग मंत्री की मेज़बानी की।"
+   },
+   "body": {
+    "en": "President Shri Ram Lall Khetan welcomed the guests and presented the main concerns of Bihar’s industry.",
+    "hi": "माननीय उद्योग मंत्री डॉ. दिलीप कुमार जायसवाल के साथ बीआईए में 9 दिसम्बर, 2025 को एक ’संवाद कार्यक्रम’ का आयोजन किया गया।\n\nअध्यक्ष श्री राम लाल खेतान ने सभी अतिथियों का स्वागत किया।\n\nइस कार्यक्रम में सीआईआई की ओर से बिहार इकाई के चेयरमैन श्री गौरव साह, बिहार महिला उद्योग संघ की अध्यक्षा श्रीमती उषा झा सहित बिहार सुगर मिल एसोसिएशन, हाजीपुर इंडस्ट्रीज एसोसिएशन, राइस मिलर्स एसोसिएशन ऑफ बिहार, लघु उद्योग भारती, पाटलीपुत्रा इंडस्ट्रीयल स्टेट एसोसिएशन, फार्मा इंडस्ट्रीज एसोसिएशन, वस्त्र उद्योग बुनकर सेवा समिति, वूमन इंटरप्रेन्योर कॉरपोट सोसाइटी, टी गार्डेन एसोसिएशन ऑफ बिहार के प्रतिनिधियों ने भाग लिया और माननीय उद्योग मंत्री के समक्ष अपनी समस्याओं व सुझावों को उनके समक्ष रखा।\n\nबीआईए की ओर से मैन्युफैक्चरिंग समिति के अध्यक्ष श्री संजय गोयनका ने विस्तृत ज्ञापन प्रस्तुत किया, जिसमें राज्य के औद्योगिक विकास हेतु अनेक महत्वपूर्ण सुझाव दिए गए।\n\nमाननीय उद्योग मंत्री डॉ. दिलीप कुमार जायसवाल ने अपने संबोधन में कहा कि सभी सुझावों पर गंभीरता से विचार कर आवश्यक कार्रवाई की जाएगी। वे स्वयं अध्ययन करेंगे और 25 जनवरी 2026 के बाद वे एक ‘उद्योग संवाद’ का आयोजन करेंगे जिसमें विभिन्न विभागों के विभागाध्यक्ष के साथ मुख्य सचिव को भी रखा जायेगा। उन्होंने सरकार के बिहार इण्डस्ट्रीयल सिक्युरिटी फोर्स के गठन का प्रस्ताव को अवगत कराया।"
+   },
+   "image": "img/DSC_1838-1-768x513.jpg",
+   "photos": [],
+   "source": "https://www.biabihar.com/%e0%a4%ae%e0%a4%be%e0%a4%a8%e0%a4%a8%e0%a5%80%e0%a4%af-%e0%a4%89%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97-%e0%a4%ae%e0%a4%82%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a5%80-%e0%a4%a1%e0%a5%89-%e0%a4%a6/"
+  },
+  {
+   "id": "nara-lokesh",
+   "date": "2025-11-10",
+   "category": "session",
+   "title": {
+    "en": "Interactive session with Shri Nara Lokesh, Minister of IT, Andhra Pradesh",
+    "hi": "आंध्र प्रदेश के आईटी मंत्री श्री नारा लोकेश के साथ संवाद"
+   },
+   "summary": {
+    "en": "On 8 November 2025 the Andhra Pradesh Minister for IT and Education shared his state’s experience in IT, real-time governance, digital transformation and artificial intelligence.",
+    "hi": "8 नवंबर 2025 को आंध्र प्रदेश के आईटी एवं शिक्षा मंत्री ने सूचना प्रौद्योगिकी, रियल टाइम गवर्नेंस, डिजिटल परिवर्तन और कृत्रिम बुद्धिमत्ता में अपने राज्य के अनुभव साझा किए।"
+   },
+   "body": {
+    "en": "Members discussed what Bihar could adopt from Andhra Pradesh’s approach to investment and governance.",
+    "hi": "आन्ध्र प्रदेश के माननीय सूचना प्रौद्योगिकी एवं शिक्षा मंत्री श्री नारा लोकेश जी के साथ बीआईए में अंतर-संवाद कार्यक्रम का आयोजन 8 नवंबर, 2025 को किया गया। अध्यक्ष श्री रामलाल खेतान ने माननीय अतिथियों का स्वागत किया।\n\nअपने स्वागत संवोधन में अध्यक्ष ने आन्ध्र प्रदेश सरकार द्वारा सूचना प्रौद्योगिकी, रियल टाइम गवर्नेंस, डिजिटल ट्रांसफार्मशन और कृत्रिम बुद्धिमता के क्षेत्र में की गयी उल्लेखनिय प्रगति की सराहना करते हुए कहा कि इन क्षेत्रों में आंध्र प्रदेश ने एक आर्दश मॉडल प्रस्तुत किया है। उन्होंने सुझाव दिया कि दोनों राज्यों क बीच डिजिटल स्किलिंग, ई-गवर्नेंस, स्टार्टअप प्रमोशन और टेक्नोलॉजी ट्रांसफर जैसे क्षेत्रों में सयुक्त पहल की जा सकती है।\n\nपूर्व उपाध्यक्ष श्री संजय गोयनका ने आंध्र प्रदेश में उद्योग से संबंधित हाल हीं में निवेष की जानकारी देते हुए कहा कि रिलायंस इंडस्ट्रीज़, आर्सेलर मित्तल और निप्पॉन स्टील, अडानी ग्रुप, LG इलेक्ट्रॉनिक्स, टाटा पावर रिन्यूएबल एनर्जी, भारत पेट्रोलियम यहां निवेष कर रहे हैं। हाल ही में गूगल ने विशाखापत्तनम में एक नया AI हब बनाने के लिए 15 बिलियन डॉलर का निवेष किया है। मौजूदा सरकार में कुल निवेष 8,08,899 करोड़ तक पहुँच गया है।\n\nकार्यक्रम में बिहार विधान परिषद के सदस्य श्री संजय मयूख, आन्ध्र प्रदेश के विभिन्न स्थानों से सांसद, बीआईए के उपाध्यक्ष श्री देव प्रकाश सिंह, कोषाध्यक्ष श्री अरविन्द कुमार, व सदस्यगण शामिल हुए।"
+   },
+   "image": "img/DSC_4216-768x513.jpg",
+   "photos": [
+    "img/DSC_4143-768x513.jpg",
+    "img/DSC_4262-768x513.jpg",
+    "img/DSC_4190-768x513.jpg",
+    "img/DSC_4193-768x513.jpg",
+    "img/DSC_4194-768x513.jpg"
+   ],
+   "source": "https://www.biabihar.com/interactive-session-with-shri-nara-lokesh-ji-honble-it-minister-andhra-pradesh/"
+  },
+  {
+   "id": "piyush-goyal",
+   "date": "2025-11-04",
+   "category": "session",
+   "title": {
+    "en": "Interactive session with Union Commerce Minister Shri Piyush Goyal",
+    "hi": "केंद्रीय वाणिज्य मंत्री श्री पीयूष गोयल के साथ संवाद"
+   },
+   "summary": {
+    "en": "On 1 November 2025 the Union Minister of Commerce and Industry held a detailed dialogue with Bihar’s industry and entrepreneurs at BIA.",
+    "hi": "1 नवंबर 2025 को केंद्रीय वाणिज्य एवं उद्योग मंत्री ने बीआईए में बिहार के उद्योग जगत एवं उद्यमियों से विस्तृत संवाद किया।"
+   },
+   "body": {
+    "en": "MLC Shri Sanjay Mayukh was the special guest. President Shri Ram Lall Khetan welcomed the Minister and presented Bihar’s case for industrial investment.",
+    "hi": "बीआईए में माननीय केंद्रीय वाणिज्य एवं उद्योग मंत्री श्री पीयूष गोयल जी के साथ अंतर-संवाद कार्यक्रम का आयोजन 1 नवंबर, 2025 को किया गया, जिसमें राज्य के उद्योग जगत एवं उद्यमियों से विस्तृत संवाद किया गया। इस कार्यक्रम में विशिष्ट अतिथि के रूप में बिहार विधान परिषद के सदस्य श्री संजय मयूख उपस्थित रहे।\n\nअध्यक्ष श्री रामलाल खेतान ने माननीय केंद्रीय मंत्री एवं सभी अतिथियों का स्वागत किया तथा बिहार के आर्थिक एवं औद्योगिक परिदृश्य पर एक संक्षिप्त विवरण प्रस्तुत किया। पूर्व उपाध्यक्ष श्री संजय गोयनका ने एसोसिएशन और राज्य के उद्योग जगत की ओर से राज्य के आर्थिक-औद्योगिक विकास की संभावनाओं, उद्यमियों द्वारा अनुभव की जा रही समस्याओं तथा उनके संभावित समाधान पर आधारित एक विस्तृत ज्ञापन माननीय मंत्री जी को सौंपा।\n\nमाननीय केंद्रीय मंत्री ने केंद्र सरकार द्वारा देश के आर्थिक एवं औद्योगिक विकास को गति देने के लिए किए जा रहे विभिन्न प्रयासों पर प्रकाश डाला व बिहार के औद्योगिक विकास के लिए केंद्र सरकार द्वारा दी जा रही सहायता की चर्चा करते हुए कहा कि केंद्र और राज्य सरकार मिलकर बिहार को औद्योगिक दृष्टि से सशक्त बनाने के लिए प्रतिबद्ध हैं। उन्होंने यह भी आश्वासन दिया कि बीआईए द्वारा प्रस्तुत ज्ञापन को वे अपने मंत्रालय एवं केंद्र सरकार के समक्ष रखेंगे और उद्योग जगत की समस्याओं के निराकरण हेतु हरसंभव प्रयास करेंगे।\n\nमहासचिव श्री अमरनाथ जयसवाल के धन्यवाद ज्ञापन के साथ कार्यक्रम का समापन हुआ।"
+   },
+   "image": "img/DSC_3490-768x513.jpg",
+   "photos": [
+    "img/DSC_3389-768x513.jpg",
+    "img/DSC_3426-768x513.jpg",
+    "img/DSC_3523-768x513.jpg",
+    "img/DSC_3421-768x513.jpg",
+    "img/DSC_3485-768x513.jpg"
+   ],
+   "source": "https://www.biabihar.com/interactive-session-with-shri-piyush-goyal/"
+  },
+  {
+   "id": "gst-reforms-2",
+   "date": "2025-10-11",
+   "category": "session",
+   "title": {
+    "en": "Session on GST Reforms 2.0 with Shri Shashank Priya",
+    "hi": "श्री शशांक प्रिय के साथ जीएसटी रिफॉर्म्स 2.0 पर सत्र"
+   },
+   "summary": {
+    "en": "On 10 October 2025 the Special Secretary, Ministry of Finance and Member, CBIC, explained the GST rate rationalisation to members.",
+    "hi": "10 अक्टूबर 2025 को वित्त मंत्रालय के विशेष सचिव एवं सीबीआईसी के सदस्य ने सदस्यों को जीएसटी दरों के युक्तिकरण की जानकारी दी।"
+   },
+   "body": {
+    "en": "The Chief Commissioner of CGST for Bihar–Jharkhand, Shri Pradeep Saxena, and his team also answered questions from members.",
+    "hi": "बीआईए में जीएसटी रिफॉर्म्स 2.0 पर परिचर्चा का आयोजन 10 अक्टुबर, 2025 को किया गया। कार्यक्रम में भारत सरकार के वित्त विभाग में विशेष सचिव तथा सीबीआईसी के सदस्य श्री शशांक प्रिय मुख्य वक्ता के रूप में उपस्थिति थे। वस्तु एवं सेवा कर, बिहर-झारखंड के मुख्य आयुक्त श्री प्रदीप सक्सेना और उनकी टीम भी उपस्थित थी।\n\nअध्यक्ष श्री रामलाल खेतान ने उपस्थित अतिथियों का स्वागत किया एवं सदस्यों को संबोधित किया। उपाध्यक्ष श्री पुरूषोत्तम अग्रवाल ने बीआईए की ओर से जीएसटी कानून एवं उसकी प्रक्रिया से जुड़े विषयों पर विस्तृत ज्ञापन प्रस्तुत किया।\n\nमुख्य संबोधन में श्री शशांक प्रिया ने जीएसटी के लागू होने के उपरान्त, अब तक के सफर और हाल में ही लागू किए गये जीएसटी सुधार 2.0 पर विस्तृत प्रकाश डाला।\n\nकार्यक्रम में उपस्थित उद्यमी सदस्यों, चार्टर्ड एकाउंटेंट्स, टैक्स विशेषज्ञों एवं व्यापार प्रतिनिधियों ने भी जीएसटी से संबंधित सुझाव एवं जिज्ञाषाऐं साझा की जिनपर अधिकारियों द्वारा समुचित उत्तर दिया गया।\n\nमहासचिव श्री अमरनाथ जयसवाल के धन्यवाद ज्ञापन के साथ कार्यक्रम का समापन हुआ।"
+   },
+   "image": "img/DSC_2758-768x513.jpg",
+   "photos": [],
+   "source": "https://www.biabihar.com/session-gst-reforms-2-0/"
+  },
+  {
+   "id": "annual-function-81",
+   "date": "2025-09-26",
+   "category": "meeting",
+   "title": {
+    "en": "81st Annual Function of BIA",
+    "hi": "बीआईए का 81वाँ वार्षिक समारोह"
+   },
+   "summary": {
+    "en": "The 81st Annual Function was held at the BIA auditorium with Industries Minister Shri Nitish Mishra as chief guest.",
+    "hi": "बीआईए सभागार में 81वाँ वार्षिक समारोह आयोजित हुआ, जिसमें उद्योग मंत्री श्री नीतीश मिश्रा मुख्य अतिथि थे।"
+   },
+   "body": {
+    "en": "Special guests included the Additional Chief Secretary of the Industries Department, Shri Mihir Kumar Singh, and the MD & CEO of Punjab National Bank, Shri Ashok Chandra. The function was chaired by the then President, Shri K. P. S. Keshri.",
+    "hi": "बीआईए का 81वां वार्षिक समारोह बीआईए सभागार में आयोजित किया गया।\n\nमुख्य अतिथि माननीय उद्योग मंत्री श्री नीतीश मिश्रा, विशिष्ट अतिथि उद्योग विभाग के अपर मुख्य सचिव श्री मिहिर कुमार सिंह व पंजाब नेशनल बैंक के प्रबंध निदेशक-सह-सीईओ श्री अशोक चंद्रा सहित बीआईए के अन्य अधिकारियों व सदस्यों ने दीप प्रज्ज्वलन कर समारोह का उद्घाटन किया।\n\nअध्यक्ष श्री के.पी.एस. केशरी ने कार्यक्रम की अध्यक्षता की। अपने स्वागत संबोधन में उन्होंने कहा कि बिहार को तेजी से औद्योगिक प्रगति की दिशा में आगे बढ़ना होगा। भारत को यदि विकसित राष्ट्र बनना है, तो बिहार को भी विकसित होना होगा।\n\nअपर मुख्य सचिव श्री मिहिर कुमार सिंह ने उद्योग विभाग की भावी योजनाओं की जानकारी दी। पंजाब नेशनल बैंक के एमडी श्री अशोक चंद्रा ने औद्योगिक विकास में बैंकिंग क्षेत्र की भूमिका पर प्रकाश डालते हुए कहा कि पंजाब नेशनल बैंक राज्य के उद्यमियों को हरसंभव वित्तीय सहयोग देने के लिए प्रतिबद्ध है।\n\nमाननीय उद्योग मंत्री श्री नीतीश मिश्र ने इस अवसर पर कहा कि सरकार राज्य को औद्योगिक मानचित्र पर नयी पहचान दिलाने के लिए ठोस और व्यापक कदम उठा रही है। राज्य सरकार का लक्ष्य है कि बिहार को आने वाले वर्षों में पूर्वी भारत का औद्योगिक हब बनाया जाये। उन्होंने बताया कि हाल ही में घोषित नयी औद्योगिक निवेष प्रोत्साहन नीति के तहत उद्यमियों को आकर्षित करने के लिए अनेक प्रावधान किये गये हैं।"
+   },
+   "image": "img/DSC_1162-768x512.jpg",
+   "photos": [],
+   "source": "https://www.biabihar.com/81st-annual-function-of-bia/"
+  }
+ ],
+ "bulletins": [
+  {
+   "month": "2026-09",
+   "title": {
+    "en": "September 2026",
+    "hi": "सितंबर 2026"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin_Issue-09_-September-2026.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2026-08",
+   "title": {
+    "en": "August 2026",
+    "hi": "अगस्त 2026"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-BULLETIN-AUGUST-2026.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2026-07",
+   "title": {
+    "en": "July 2026",
+    "hi": "जुलाई 2026"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-BULLETIN-JULY-2026.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2026-06",
+   "title": {
+    "en": "June 2026",
+    "hi": "जून 2026"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-Issue-06-June-2026_compressed.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2026-03",
+   "title": {
+    "en": "November 2025 – March 2026",
+    "hi": "नवंबर 2025 – मार्च 2026"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/11Nov-Dec-2025Jan-Mar-2026.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2025-10",
+   "title": {
+    "en": "October 2025",
+    "hi": "अक्टूबर 2025"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin_Issue-10_October-2025-1.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2025-09",
+   "title": {
+    "en": "September 2025",
+    "hi": "सितंबर 2025"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/September-Newsletter-1.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2025-08",
+   "title": {
+    "en": "August 2025",
+    "hi": "अगस्त 2025"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-_-Issue-08_AUGUST-2025.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2025-07",
+   "title": {
+    "en": "July 2025",
+    "hi": "जुलाई 2025"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin_Issue-07_July-2025.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2025-04",
+   "title": {
+    "en": "April 2025",
+    "hi": "अप्रैल 2025"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin_Issue-04_April-2025.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2025-03",
+   "title": {
+    "en": "March 2025",
+    "hi": "मार्च 2025"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin_Issue-03_-March-2025.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2025-02",
+   "title": {
+    "en": "February 2025",
+    "hi": "फरवरी 2025"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-_-February-2025.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2025-01",
+   "title": {
+    "en": "January 2025",
+    "hi": "जनवरी 2025"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin_Issue-01_-January-2025.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2024-12",
+   "title": {
+    "en": "December 2024",
+    "hi": "दिसंबर 2024"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-Issue-12-December-2024.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2024-11",
+   "title": {
+    "en": "November 2024",
+    "hi": "नवंबर 2024"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin_Issue-11_November-2024.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2024-10",
+   "title": {
+    "en": "October 2024",
+    "hi": "अक्टूबर 2024"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-Issue-10-October-2024.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2024-09",
+   "title": {
+    "en": "September 2024",
+    "hi": "सितंबर 2024"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-BULLETIN-SEPTEMBER-2024.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2024-08",
+   "title": {
+    "en": "August 2024",
+    "hi": "अगस्त 2024"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-BULLETIN-August-2024.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2024-07",
+   "title": {
+    "en": "July 2024",
+    "hi": "जुलाई 2024"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-Issue-07-_-JULY-2024.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2024-06",
+   "title": {
+    "en": "June 2024",
+    "hi": "जून 2024"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/002JUNE-2024.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2024-05",
+   "title": {
+    "en": "April – May 2024",
+    "hi": "अप्रैल – मई 2024"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-Issue-APRIL-MAY-2024.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2024-03",
+   "title": {
+    "en": "December 2023 – March 2024",
+    "hi": "दिसंबर 2023 – मार्च 2024"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/DOC-20240509-WA0000.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2023-11",
+   "title": {
+    "en": "October – November 2023",
+    "hi": "अक्टूबर – नवंबर 2023"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/OCT-NOV-NEWSLETTER-2.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2023-09",
+   "title": {
+    "en": "September 2023",
+    "hi": "सितंबर 2023"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin_Issue-09_September-2023.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2023-08",
+   "title": {
+    "en": "August 2023",
+    "hi": "अगस्त 2023"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin_Issue-No.-08August-2023.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2023-07",
+   "title": {
+    "en": "July 2023",
+    "hi": "जुलाई 2023"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-BULLETIN-JULY-2023-2.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2023-06",
+   "title": {
+    "en": "June 2023",
+    "hi": "जून 2023"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-_-June-2023.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2023-05",
+   "title": {
+    "en": "May 2023",
+    "hi": "मई 2023"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-MAY-2023.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2023-04",
+   "title": {
+    "en": "April 2023",
+    "hi": "अप्रैल 2023"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA_Bulletin-APRIL_2023.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2023-03",
+   "title": {
+    "en": "March 2023",
+    "hi": "मार्च 2023"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-MARCH-2023-2.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2023-02",
+   "title": {
+    "en": "February 2023",
+    "hi": "फरवरी 2023"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BIA-Bulletin-FEBRUARY-2023.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  },
+  {
+   "month": "2023-01",
+   "title": {
+    "en": "January 2023",
+    "hi": "जनवरी 2023"
+   },
+   "url": "https://www.biabihar.com/wp-content/uploads/BULLETIN-_-JANUARY-2023.pdf",
+   "highlights": {
+    "en": "",
+    "hi": ""
+   }
+  }
+ ],
+ "gallery": [
+  {
+   "id": "expo-2026",
+   "title": {
+    "en": "Destination Bihar Expo 2026",
+    "hi": "डेस्टिनेशन बिहार एक्सपो 2026"
+   },
+   "date": "2026-03-02",
+   "photos": [
+    "img/DSC_4267-768x511.jpg",
+    "img/DSC_4390-768x511.jpg",
+    "img/DSC_4405-768x511.jpg",
+    "img/DSC_4480-768x511.jpg",
+    "img/DSC_4744-768x511.jpg",
+    "img/DSC_4726-768x511.jpg",
+    "img/DSC_4743-768x511.jpg",
+    "img/DSC_4691-768x511.jpg",
+    "img/DSC_4900-768x511.jpg",
+    "img/DSC_4931-768x511.jpg"
+   ]
+  },
+  {
+   "id": "agm-82",
+   "title": {
+    "en": "82nd Annual General Meeting",
+    "hi": "82वीं वार्षिक आम सभा"
+   },
+   "date": "2026-09-25",
+   "photos": [
+    "img/1.1-Election-Process-767x511.jpg",
+    "img/1.2-Election-process-767x511.jpg",
+    "img/1.4-Election-process-767x511.jpg",
+    "img/7.1-Sanjay-Goenka-767x511.jpg",
+    "img/7.3-Sanjay-Bhartiya-767x511.jpg",
+    "img/3.-S.G.-Annual-Report-767x511.jpg",
+    "img/7.2-Alok-Poddar_Taxation-767x511.jpg",
+    "img/7.4-Sunil-Singh-767x511.jpg",
+    "img/5.-Crowd-767x511.jpg"
+   ]
+  },
+  {
+   "id": "shreyasi-singh",
+   "title": {
+    "en": "Dialogue with Industries Minister Ms. Shreyasi Singh",
+    "hi": "उद्योग मंत्री सुश्री श्रेयसी सिंह के साथ संवाद"
+   },
+   "date": "2026-05-25",
+   "photos": [
+    "img/1.-Stage-768x513.jpg",
+    "img/DSC_1698-768x513.jpg",
+    "img/DSC_1746-768x513.jpg",
+    "img/DSC_1787-768x513.jpg",
+    "img/DSC_1819-768x513.jpg",
+    "img/DSC_1829-768x513.jpg",
+    "img/DSC_1822-768x513.jpg",
+    "img/DSC_1842-768x513.jpg",
+    "img/DSC_1851-768x513.jpg"
+   ]
+  },
+  {
+   "id": "lecture-2026",
+   "title": {
+    "en": "Dr. Rajendra Prasad Memorial Lecture 2026",
+    "hi": "डॉ. राजेंद्र प्रसाद स्मृति व्याख्यान 2026"
+   },
+   "date": "2026-02-25",
+   "photos": [
+    "img/DSC_7168-768x511.jpg",
+    "img/DSC_7183-768x511.jpg",
+    "img/DSC_7192-768x511.jpg",
+    "img/DSC_7205-768x511.jpg",
+    "img/DSC_7211-768x511.jpg"
+   ]
+  },
+  {
+   "id": "engineers-day",
+   "title": {
+    "en": "Engineers’ Day 2026",
+    "hi": "इंजीनियर्स डे 2026"
+   },
+   "date": "2026-09-18",
+   "photos": [
+    "img/DSC_0540-767x511.jpg",
+    "img/DSC_0610-767x511.jpg",
+    "img/DSC_0751-767x511.jpg",
+    "img/DSC_0750-767x511.jpg"
+   ]
+  },
+  {
+   "id": "dubey",
+   "title": {
+    "en": "Interaction with Shri Satish Chandra Dubey",
+    "hi": "श्री सतीश चंद्र दुबे के साथ संवाद"
+   },
+   "date": "2026-07-24",
+   "photos": [
+    "img/DSC_8656-768x513.jpg",
+    "img/DSC_8659-768x513.jpg",
+    "img/DSC_8578-768x513.jpg",
+    "img/DSC_8670-768x513.jpg",
+    "img/DSC_8685-768x513.jpg"
+   ]
+  },
+  {
+   "id": "goyal",
+   "title": {
+    "en": "Session with Shri Piyush Goyal",
+    "hi": "श्री पीयूष गोयल के साथ सत्र"
+   },
+   "date": "2025-11-01",
+   "photos": [
+    "img/DSC_3389-768x513.jpg",
+    "img/DSC_3426-768x513.jpg",
+    "img/DSC_3523-768x513.jpg",
+    "img/DSC_3421-768x513.jpg",
+    "img/DSC_3485-768x513.jpg"
+   ]
+  },
+  {
+   "id": "lokesh",
+   "title": {
+    "en": "Session with Shri Nara Lokesh",
+    "hi": "श्री नारा लोकेश के साथ सत्र"
+   },
+   "date": "2025-11-08",
+   "photos": [
+    "img/DSC_4143-768x513.jpg",
+    "img/DSC_4262-768x513.jpg",
+    "img/DSC_4190-768x513.jpg",
+    "img/DSC_4193-768x513.jpg",
+    "img/DSC_4194-768x513.jpg"
+   ]
+  }
+ ],
+ "bot": {
+  "enabled": true,
+  "name": {
+   "en": "Chanakya",
+   "hi": "चाणक्य"
+  },
+  "tagline": {
+   "en": "Policy talk, for industry",
+   "hi": "नीति की बात, उद्योग के साथ"
+  },
+  "greeting": {
+   "en": "Namaste! I am Chanakya, BIA’s guide. Ask me about membership, fees, policies, GST, income tax or events, or tap a topic below.",
+   "hi": "नमस्ते! मैं चाणक्य हूँ, बीआईए का मार्गदर्शक। सदस्यता, शुल्क, नीतियाँ, जीएसटी, आयकर या कार्यक्रमों के बारे में पूछें, या नीचे कोई विषय चुनें।"
+  },
+  "quick": [
+   {
+    "label": {
+     "en": "Membership fee",
+     "hi": "सदस्यता शुल्क"
+    },
+    "ask": "membership fee"
+   },
+   {
+    "label": {
+     "en": "How to join",
+     "hi": "सदस्य कैसे बनें"
+    },
+    "ask": "how to become a member"
+   },
+   {
+    "label": {
+     "en": "Latest GST update",
+     "hi": "नवीनतम जीएसटी अपडेट"
+    },
+    "ask": "latest gst update"
+   },
+   {
+    "label": {
+     "en": "New national policy",
+     "hi": "नई राष्ट्रीय नीति"
+    },
+    "ask": "new national industrial policy"
+   },
+   {
+    "label": {
+     "en": "Bihar policy",
+     "hi": "बिहार नीति"
+    },
+    "ask": "bihar industrial policy"
+   },
+   {
+    "label": {
+     "en": "Contact BIA",
+     "hi": "बीआईए से संपर्क"
+    },
+    "ask": "contact address phone"
+   }
+  ],
+  "fallback": {
+   "en": "I’m not sure about that one. Here are the closest questions I know, or you can reach the BIA office directly.",
+   "hi": "इसके बारे में मुझे पक्का पता नहीं है। ये मिलते-जुलते प्रश्न देखें, या सीधे बीआईए कार्यालय से संपर्क करें।"
+  },
+  "disclaimer": {
+   "en": "General information only, not legal or tax advice.",
+   "hi": "केवल सामान्य जानकारी, कानूनी या कर सलाह नहीं।"
+  },
+  "threshold": 0.34,
+  "synonyms": [
+   "fee fees shulk शुल्क charge charges cost kitna kitni कितना कितनी paisa amount subscription चंदा",
+   "member membership sadasya sadasyata सदस्य सदस्यता",
+   "join become bane bano banna banein judna jude judein जुड़ना जुड़ें बनें बने बनना",
+   "apply application aavedan आवेदन form फ़ॉर्म फॉर्म register",
+   "gst जीएसटी goods services tax",
+   "incometax income tax aaykar आयकर itr tds",
+   "policy policies niti neeti नीति नीतियाँ",
+   "national rashtriya राष्ट्रीय india bharat भारत central kendra केंद्र",
+   "bihar बिहार state rajya राज्य",
+   "event events karyakram कार्यक्रम programme program seminar session",
+   "contact sampark संपर्क phone number call address pata पता office karyalay कार्यालय email",
+   "latest new naya नया नई recent update updates अपडेट",
+   "bulletin newsletter patrika पत्रिका बुलेटिन",
+   "president adhyaksh अध्यक्ष head",
+   "committee committees samiti समिति",
+   "skill computer training kaushal कौशल prashikshan प्रशिक्षण",
+   "expo exhibition pradarshani प्रदर्शनी mela मेला",
+   "startup venturepark incubator",
+   "subsidy incentive anudan अनुदान protsahan प्रोत्साहन package पैकेज",
+   "land bhoomi भूमि biada बियाडा plot"
+  ],
+  "faqs": [
+   {
+    "q": {
+     "en": "How much is the membership fee?",
+     "hi": "सदस्यता शुल्क कितना है?"
+    },
+    "keywords": "fee membership cost",
+    "action": "fees",
+    "a": {
+     "en": "The fee depends on your category and capital outlay. Choose one below and I’ll work it out.",
+     "hi": "शुल्क आपकी श्रेणी और पूंजी निवेश पर निर्भर करता है। नीचे एक विकल्प चुनें, मैं हिसाब बता देता हूँ।"
+    },
+    "link": "#/membership"
+   },
+   {
+    "q": {
+     "en": "How do I become a member of BIA?",
+     "hi": "बीआईए का सदस्य कैसे बनें?"
+    },
+    "keywords": "member join apply application how",
+    "action": "",
+    "a": {
+     "en": "Choose your member category, check the fee, then fill in the application on the Membership page. The office will contact you about documents and payment. Companies can name up to three representatives.",
+     "hi": "अपनी सदस्य श्रेणी चुनें, शुल्क देखें, फिर सदस्यता पेज पर आवेदन भरें। कार्यालय दस्तावेज़ एवं भुगतान के लिए आपसे संपर्क करेगा। कंपनियाँ अधिकतम तीन प्रतिनिधि नामित कर सकती हैं।"
+    },
+    "link": "#/membership"
+   },
+   {
+    "q": {
+     "en": "What are the member categories?",
+     "hi": "सदस्यता की श्रेणियाँ कौन-सी हैं?"
+    },
+    "keywords": "member category categories type",
+    "action": "",
+    "a": {
+     "en": "Company/firm/LLP/proprietorship, bank or financial institution, service sector, professional, special category (sick unit), associate (up to ₹25 lakh, including startups), affiliated organisation, and Member Emeritus.",
+     "hi": "कंपनी/फर्म/एलएलपी/प्रोप्राइटरशिप, बैंक या वित्तीय संस्था, सेवा क्षेत्र, पेशेवर, विशेष श्रेणी (रुग्ण इकाई), सहयोगी (₹25 लाख तक, स्टार्टअप सहित), संबद्ध संगठन और मानद सदस्य।"
+    },
+    "link": "#/membership"
+   },
+   {
+    "q": {
+     "en": "What are the benefits of membership?",
+     "hi": "सदस्यता के क्या लाभ हैं?"
+    },
+    "keywords": "member benefit benefits why advantage labh लाभ fayda फायदा",
+    "action": "",
+    "a": {
+     "en": "BIA takes your concerns to government, keeps you updated on policies and notifications, sends the monthly Bulletin, and gives you a platform at seminars, sessions with ministers and exhibitions.",
+     "hi": "बीआईए आपकी समस्याएँ सरकार तक पहुँचाता है, नीतियों एवं अधिसूचनाओं की जानकारी देता है, मासिक बुलेटिन भेजता है, और संगोष्ठियों, मंत्रियों के साथ सत्रों एवं प्रदर्शनियों में मंच देता है।"
+    },
+    "link": "#/membership"
+   },
+   {
+    "q": {
+     "en": "Can a startup become a member?",
+     "hi": "क्या स्टार्टअप सदस्य बन सकता है?"
+    },
+    "keywords": "startup member associate small",
+    "action": "",
+    "a": {
+     "en": "Yes. Startups and industries with capital outlay up to ₹25 lakh can join as Associate Members. The first-year cost is ₹2,360 including GST.",
+     "hi": "हाँ। ₹25 लाख तक पूंजी निवेश वाले स्टार्टअप एवं उद्योग सहयोगी सदस्य बन सकते हैं। पहले वर्ष का खर्च जीएसटी सहित ₹2,360 है।"
+    },
+    "link": "#/membership"
+   },
+   {
+    "q": {
+     "en": "What is the fee for a sick unit?",
+     "hi": "रुग्ण इकाई का शुल्क क्या है?"
+    },
+    "keywords": "sick unit fee special",
+    "action": "",
+    "a": {
+     "en": "A registered sick unit pays 50% of the subscription that would apply to it, plus a one-time admission fee of ₹1,000, with 18% GST.",
+     "hi": "पंजीकृत रुग्ण इकाई को लागू शुल्क का 50% तथा ₹1,000 का एकमुश्त प्रवेश शुल्क, 18% जीएसटी सहित, देना होता है।"
+    },
+    "link": "#/membership"
+   },
+   {
+    "q": {
+     "en": "What is the latest GST update?",
+     "hi": "नवीनतम जीएसटी अपडेट क्या है?"
+    },
+    "keywords": "gst latest new update",
+    "action": "latest:gst",
+    "a": {
+     "en": "Here are the latest GST items in BIA’s library:",
+     "hi": "बीआईए की लाइब्रेरी में जीएसटी के नवीनतम अपडेट:"
+    },
+    "link": "#/policies/gst"
+   },
+   {
+    "q": {
+     "en": "What is the latest income tax update?",
+     "hi": "आयकर का नवीनतम अपडेट क्या है?"
+    },
+    "keywords": "income tax latest new update",
+    "action": "latest:incometax",
+    "a": {
+     "en": "Here are the latest income-tax items in BIA’s library:",
+     "hi": "बीआईए की लाइब्रेरी में आयकर के नवीनतम अपडेट:"
+    },
+    "link": "#/policies/incometax"
+   },
+   {
+    "q": {
+     "en": "Has the new National Industrial Policy come out?",
+     "hi": "क्या नई राष्ट्रीय औद्योगिक नीति आ गई है?"
+    },
+    "keywords": "new national industrial policy",
+    "action": "newpolicy",
+    "a": {
+     "en": "Here is where the new National Industrial Policy stands:",
+     "hi": "नई राष्ट्रीय औद्योगिक नीति की वर्तमान स्थिति:"
+    },
+    "link": "#/policies/national"
+   },
+   {
+    "q": {
+     "en": "What is Bihar’s industrial policy?",
+     "hi": "बिहार की औद्योगिक नीति क्या है?"
+    },
+    "keywords": "bihar industrial policy package subsidy",
+    "action": "latest:bihar",
+    "a": {
+     "en": "Bihar’s main policy is the Bihar Industrial Investment Promotion Policy, 2016, with additional incentives in the Promotion Package, 2025. Latest items:",
+     "hi": "बिहार की मुख्य नीति बिहार औद्योगिक निवेश प्रोत्साहन नीति, 2016 है, और 2025 के प्रोत्साहन पैकेज में अतिरिक्त प्रोत्साहन हैं। नवीनतम दस्तावेज़:"
+    },
+    "link": "#/policies/bihar"
+   },
+   {
+    "q": {
+     "en": "What is new in policies and notifications?",
+     "hi": "नीतियों एवं अधिसूचनाओं में नया क्या है?"
+    },
+    "keywords": "latest new update notification",
+    "action": "latest:all",
+    "a": {
+     "en": "The most recent additions to BIA’s library:",
+     "hi": "बीआईए की लाइब्रेरी में हाल ही में जोड़े गए दस्तावेज़:"
+    },
+    "link": "#/policies"
+   },
+   {
+    "q": {
+     "en": "What is the new Income-tax Act, 2025?",
+     "hi": "नया आयकर अधिनियम, 2025 क्या है?"
+    },
+    "keywords": "income tax act 2025 new law",
+    "action": "",
+    "a": {
+     "en": "It replaces the Income-tax Act, 1961 from 1 April 2026. It uses simpler language, renumbers the sections, and uses a single “tax year” in place of previous year and assessment year.",
+     "hi": "यह 1 अप्रैल 2026 से आयकर अधिनियम, 1961 का स्थान लेता है। इसमें सरल भाषा, नई धारा संख्याएँ, और पिछले वर्ष व निर्धारण वर्ष की जगह एक “कर वर्ष” है।"
+    },
+    "link": "#/policies/incometax"
+   },
+   {
+    "q": {
+     "en": "What are the new GST rates?",
+     "hi": "जीएसटी की नई दरें क्या हैं?"
+    },
+    "keywords": "gst rate rates slab new",
+    "action": "",
+    "a": {
+     "en": "Since 22 September 2025 most goods fall in two main slabs, 5% and 18%, with a higher rate for a short list of items. Check the HSN-wise notification for your product.",
+     "hi": "22 सितंबर 2025 से अधिकांश वस्तुएँ दो मुख्य स्लैब, 5% और 18%, में हैं; कुछ वस्तुओं पर ऊँची दर। अपने उत्पाद के लिए एचएसएन-वार अधिसूचना देखें।"
+    },
+    "link": "#/policies/gst"
+   },
+   {
+    "q": {
+     "en": "Where can I appeal a GST order in Bihar?",
+     "hi": "बिहार में जीएसटी आदेश के विरुद्ध अपील कहाँ करें?"
+    },
+    "keywords": "gst appeal tribunal order gstat",
+    "action": "",
+    "a": {
+     "en": "Bihar now has a bench of the GST Appellate Tribunal. BIA held an awareness session with the Tribunal in June 2026; see the report for how appeals work.",
+     "hi": "बिहार में अब जीएसटी अपीलीय न्यायाधिकरण की पीठ है। बीआईए ने जून 2026 में न्यायाधिकरण के साथ जागरूकता सत्र आयोजित किया; अपील प्रक्रिया के लिए रिपोर्ट देखें।"
+    },
+    "link": "#/news/gstat-awareness"
+   },
+   {
+    "q": {
+     "en": "What is the BIADA Amnesty Policy?",
+     "hi": "बियाडा एमनेस्टी नीति क्या है?"
+    },
+    "keywords": "biada amnesty land plot dues",
+    "action": "",
+    "a": {
+     "en": "A one-time settlement for allottees in BIADA industrial areas with dues or pending conditions. It was amended in September 2025; both documents are in the library.",
+     "hi": "बियाडा औद्योगिक क्षेत्रों के उन आवंटियों के लिए एकमुश्त समाधान जिनके बकाया या शर्तें लंबित हैं। सितंबर 2025 में संशोधित; दोनों दस्तावेज़ लाइब्रेरी में हैं।"
+    },
+    "link": "#/policies/bihar"
+   },
+   {
+    "q": {
+     "en": "Are there upcoming events?",
+     "hi": "आगामी कार्यक्रम कौन-से हैं?"
+    },
+    "keywords": "event upcoming next programme",
+    "action": "events",
+    "a": {
+     "en": "Here is what’s on BIA’s calendar:",
+     "hi": "बीआईए के कैलेंडर में:"
+    },
+    "link": "#/events"
+   },
+   {
+    "q": {
+     "en": "When is Destination Bihar Expo?",
+     "hi": "डेस्टिनेशन बिहार एक्सपो कब होता है?"
+    },
+    "keywords": "expo exhibition destination bihar when stall",
+    "action": "",
+    "a": {
+     "en": "BIA holds Destination Bihar Expo at Gandhi Maidan, Patna, usually in February–March. The 2026 edition ran from 26 February to 2 March with 5 hangars and 60 cottages.",
+     "hi": "बीआईए डेस्टिनेशन बिहार एक्सपो गांधी मैदान, पटना में आमतौर पर फरवरी–मार्च में आयोजित करता है। 2026 का संस्करण 26 फरवरी से 2 मार्च तक 5 हैंगर और 60 कॉटेज के साथ हुआ।"
+    },
+    "link": "#/news/destination-bihar-expo-2026"
+   },
+   {
+    "q": {
+     "en": "Where is the BIA office and how do I contact it?",
+     "hi": "बीआईए कार्यालय कहाँ है और संपर्क कैसे करें?"
+    },
+    "keywords": "contact address phone office email where",
+    "action": "contact",
+    "a": {
+     "en": "BIA office:",
+     "hi": "बीआईए कार्यालय:"
+    },
+    "link": "#/contact"
+   },
+   {
+    "q": {
+     "en": "Who is the President of BIA?",
+     "hi": "बीआईए के अध्यक्ष कौन हैं?"
+    },
+    "keywords": "president head office bearer",
+    "action": "",
+    "a": {
+     "en": "Shri Ram Lall Khetan is President for 2026-27. Vice Presidents: Shri Basudeo Prasad, Shri Deo Prakash Singh and Shri Hemant Raj. Secretary General: Shri Manish Kumar. Treasurer: Shri Alok Poddar.",
+     "hi": "2026-27 के लिए श्री राम लाल खेतान अध्यक्ष हैं। उपाध्यक्ष: श्री बासुदेव प्रसाद, श्री देव प्रकाश सिंह और श्री हेमंत राज। महासचिव: श्री मनीष कुमार। कोषाध्यक्ष: श्री आलोक पोद्दार।"
+    },
+    "link": "#/leadership"
+   },
+   {
+    "q": {
+     "en": "When was BIA founded?",
+     "hi": "बीआईए की स्थापना कब हुई?"
+    },
+    "keywords": "founded history established 1943 old",
+    "action": "",
+    "a": {
+     "en": "BIA was founded in Patna in 1943. Until 2000 it was the only apex industry body of undivided Bihar.",
+     "hi": "बीआईए की स्थापना 1943 में पटना में हुई। वर्ष 2000 तक यह अविभाजित बिहार की एकमात्र शीर्ष औद्योगिक संस्था थी।"
+    },
+    "link": "#/about"
+   },
+   {
+    "q": {
+     "en": "Which committees does BIA have?",
+     "hi": "बीआईए की कौन-सी समितियाँ हैं?"
+    },
+    "keywords": "committee committees taxation energy",
+    "action": "",
+    "a": {
+     "en": "BIA has 22 committees and cells, including Taxation, Energy, Food Processing, Industrial Land, MSME, Pharmaceuticals, Tourism, Women’s Empowerment and Young BIA.",
+     "hi": "बीआईए की 22 समितियाँ एवं प्रकोष्ठ हैं, जिनमें कराधान, ऊर्जा, खाद्य प्रसंस्करण, औद्योगिक भूमि, एमएसएमई, फार्मा, पर्यटन, महिला सशक्तिकरण और यंग बीआईए शामिल हैं।"
+    },
+    "link": "#/leadership"
+   },
+   {
+    "q": {
+     "en": "Where can I read the BIA Bulletin?",
+     "hi": "बीआईए बुलेटिन कहाँ पढ़ें?"
+    },
+    "keywords": "bulletin newsletter read latest",
+    "action": "",
+    "a": {
+     "en": "All issues since January 2023 are on the Bulletin page, newest first.",
+     "hi": "जनवरी 2023 से अब तक के सभी अंक बुलेटिन पेज पर, नवीनतम पहले।"
+    },
+    "link": "#/bulletin"
+   },
+   {
+    "q": {
+     "en": "How can I join the free computer training?",
+     "hi": "निःशुल्क कंप्यूटर प्रशिक्षण में कैसे जुड़ें?"
+    },
+    "keywords": "skill computer training free course kaushal",
+    "action": "",
+    "a": {
+     "en": "BIA’s Kaushal Vikas Kendra offers free computer training for young people from families with limited means. Contact the BIA office for the next batch.",
+     "hi": "बीआईए का कौशल विकास केंद्र सीमित साधनों वाले परिवारों के युवाओं को निःशुल्क कंप्यूटर प्रशिक्षण देता है। अगले बैच के लिए बीआईए कार्यालय से संपर्क करें।"
+    },
+    "link": "#/initiatives"
+   },
+   {
+    "q": {
+     "en": "Does BIA help startups?",
+     "hi": "क्या बीआईए स्टार्टअप की मदद करता है?"
+    },
+    "keywords": "startup incubator venturepark mentor",
+    "action": "",
+    "a": {
+     "en": "Yes. BIA VenturePark, BIA’s incubator, connects startups with senior members for mentoring and market access, and startups can join BIA as Associate Members.",
+     "hi": "हाँ। बीआईए का इनक्यूबेटर बीआईए वेंचरपार्क स्टार्टअप को मार्गदर्शन एवं बाज़ार के लिए वरिष्ठ सदस्यों से जोड़ता है, और स्टार्टअप सहयोगी सदस्य बन सकते हैं।"
+    },
+    "link": "https://biaventurepark.com/"
+   },
+   {
+    "q": {
+     "en": "Can BIA help with a problem with a government department?",
+     "hi": "क्या बीआईए किसी सरकारी विभाग से जुड़ी समस्या में मदद कर सकता है?"
+    },
+    "keywords": "problem issue grievance help department complaint shikayat शिकायत samasya समस्या",
+    "action": "contact",
+    "a": {
+     "en": "Yes. Taking members’ issues to government is BIA’s core work. Write to the office with details, and it will reach the right committee.",
+     "hi": "हाँ। सदस्यों की समस्याएँ सरकार तक पहुँचाना बीआईए का मुख्य कार्य है। विवरण के साथ कार्यालय को लिखें, यह संबंधित समिति तक पहुँचेगा।"
+    },
+    "link": "#/contact"
+   }
+  ]
+ },
+ "ui": {
+  "skip": {
+   "en": "Skip to content",
+   "hi": "मुख्य सामग्री पर जाएँ"
+  },
+  "menu": {
+   "en": "Menu",
+   "hi": "मेन्यू"
+  },
+  "close": {
+   "en": "Close",
+   "hi": "बंद करें"
+  },
+  "langSwitch": {
+   "en": "हिन्दी",
+   "hi": "English"
+  },
+  "langSwitchLabel": {
+   "en": "Switch to Hindi",
+   "hi": "अंग्रेज़ी में देखें"
+  },
+  "themeDark": {
+   "en": "Switch to dark mode",
+   "hi": "डार्क मोड चालू करें"
+  },
+  "themeLight": {
+   "en": "Switch to light mode",
+   "hi": "लाइट मोड चालू करें"
+  },
+  "becomeMember": {
+   "en": "Become a member",
+   "hi": "सदस्य बनें"
+  },
+  "readMore": {
+   "en": "Read more",
+   "hi": "और पढ़ें"
+  },
+  "viewAll": {
+   "en": "View all",
+   "hi": "सभी देखें"
+  },
+  "back": {
+   "en": "Back",
+   "hi": "वापस"
+  },
+  "home": {
+   "en": "Home",
+   "hi": "होम"
+  },
+  "notFound": {
+   "en": "This page doesn’t exist.",
+   "hi": "यह पेज मौजूद नहीं है।"
+  },
+  "goHome": {
+   "en": "Go to the home page",
+   "hi": "होम पेज पर जाएँ"
+  },
+  "loading": {
+   "en": "Loading…",
+   "hi": "लोड हो रहा है…"
+  },
+  "loadError": {
+   "en": "The site content could not be loaded. Check your connection and refresh.",
+   "hi": "साइट की सामग्री लोड नहीं हो सकी। कनेक्शन जाँचें और पेज रीफ़्रेश करें।"
+  },
+  "search": {
+   "en": "Search",
+   "hi": "खोजें"
+  },
+  "all": {
+   "en": "All",
+   "hi": "सभी"
+  },
+  "noResults": {
+   "en": "Nothing matches. Try another word or clear the filters.",
+   "hi": "कुछ नहीं मिला। कोई और शब्द आज़माएँ या फ़िल्टर हटाएँ।"
+  },
+  "clearFilters": {
+   "en": "Clear filters",
+   "hi": "फ़िल्टर हटाएँ"
+  },
+  "allYears": {
+   "en": "All years",
+   "hi": "सभी वर्ष"
+  },
+  "allStatus": {
+   "en": "Any status",
+   "hi": "कोई भी स्थिति"
+  },
+  "libSearch": {
+   "en": "Search policies and updates",
+   "hi": "नीतियाँ एवं अपडेट खोजें"
+  },
+  "newsSearch": {
+   "en": "Search news",
+   "hi": "समाचार खोजें"
+  },
+  "st_current": {
+   "en": "In force",
+   "hi": "लागू"
+  },
+  "st_amended": {
+   "en": "Amended",
+   "hi": "संशोधित"
+  },
+  "st_superseded": {
+   "en": "Superseded",
+   "hi": "प्रतिस्थापित"
+  },
+  "st_draft": {
+   "en": "Draft",
+   "hi": "मसौदा"
+  },
+  "st_awaited": {
+   "en": "Awaited",
+   "hi": "प्रतीक्षित"
+  },
+  "st_notified": {
+   "en": "Notified",
+   "hi": "अधिसूचित"
+  },
+  "ty_policy": {
+   "en": "Policy",
+   "hi": "नीति"
+  },
+  "ty_act": {
+   "en": "Act",
+   "hi": "अधिनियम"
+  },
+  "ty_rules": {
+   "en": "Rules",
+   "hi": "नियमावली"
+  },
+  "ty_notification": {
+   "en": "Notification",
+   "hi": "अधिसूचना"
+  },
+  "ty_circular": {
+   "en": "Circular",
+   "hi": "परिपत्र"
+  },
+  "ty_scheme": {
+   "en": "Scheme",
+   "hi": "योजना"
+  },
+  "ty_gazette": {
+   "en": "Gazette",
+   "hi": "राजपत्र"
+  },
+  "ty_explainer": {
+   "en": "BIA explainer",
+   "hi": "बीआईए व्याख्या"
+  },
+  "issued": {
+   "en": "Issued",
+   "hi": "जारी"
+  },
+  "effective": {
+   "en": "In effect from",
+   "hi": "प्रभावी तिथि"
+  },
+  "openDoc": {
+   "en": "Open document",
+   "hi": "दस्तावेज़ खोलें"
+  },
+  "hindiPdf": {
+   "en": "Hindi version",
+   "hi": "हिंदी संस्करण"
+  },
+  "officialSource": {
+   "en": "Official source",
+   "hi": "आधिकारिक स्रोत"
+  },
+  "readReport": {
+   "en": "Read BIA report",
+   "hi": "बीआईए रिपोर्ट पढ़ें"
+  },
+  "bySummary": {
+   "en": "BIA summary",
+   "hi": "बीआईए सारांश"
+  },
+  "newBadge": {
+   "en": "New",
+   "hi": "नया"
+  },
+  "documents": {
+   "en": "documents",
+   "hi": "दस्तावेज़"
+  },
+  "np_awaited": {
+   "en": "Awaited",
+   "hi": "प्रतीक्षित"
+  },
+  "np_draft": {
+   "en": "Draft released",
+   "hi": "मसौदा जारी"
+  },
+  "np_notified": {
+   "en": "Notified",
+   "hi": "अधिसूचित"
+  },
+  "fees": {
+   "en": "Fees",
+   "hi": "शुल्क"
+  },
+  "feeCalc": {
+   "en": "Fee calculator",
+   "hi": "शुल्क कैलकुलेटर"
+  },
+  "chooseCategory": {
+   "en": "Your category",
+   "hi": "आपकी श्रेणी"
+  },
+  "g_industry": {
+   "en": "Industry, by capital outlay",
+   "hi": "उद्योग, पूंजी निवेश के अनुसार"
+  },
+  "g_service": {
+   "en": "Service sector, by capital outlay",
+   "hi": "सेवा क्षेत्र, पूंजी निवेश के अनुसार"
+  },
+  "g_other": {
+   "en": "Other categories",
+   "hi": "अन्य श्रेणियाँ"
+  },
+  "yearly": {
+   "en": "Yearly subscription",
+   "hi": "वार्षिक शुल्क"
+  },
+  "admission": {
+   "en": "Admission fee (one time)",
+   "hi": "प्रवेश शुल्क (एक बार)"
+  },
+  "gst": {
+   "en": "GST",
+   "hi": "जीएसटी"
+  },
+  "firstYear": {
+   "en": "First year",
+   "hi": "पहला वर्ष"
+  },
+  "renewal": {
+   "en": "Every year after",
+   "hi": "उसके बाद हर वर्ष"
+  },
+  "total": {
+   "en": "Total",
+   "hi": "कुल"
+  },
+  "tariffFrom": {
+   "en": "Tariff in effect from",
+   "hi": "शुल्क दरें प्रभावी"
+  },
+  "benefits": {
+   "en": "Why join",
+   "hi": "क्यों जुड़ें"
+  },
+  "categories": {
+   "en": "Member categories",
+   "hi": "सदस्य श्रेणियाँ"
+  },
+  "representatives": {
+   "en": "Representatives",
+   "hi": "प्रतिनिधि"
+  },
+  "downloads": {
+   "en": "Downloads",
+   "hi": "डाउनलोड"
+  },
+  "f_org": {
+   "en": "Name of organisation",
+   "hi": "संगठन का नाम"
+  },
+  "f_person": {
+   "en": "Your name",
+   "hi": "आपका नाम"
+  },
+  "f_designation": {
+   "en": "Designation",
+   "hi": "पद"
+  },
+  "f_email": {
+   "en": "Email",
+   "hi": "ईमेल"
+  },
+  "f_phone": {
+   "en": "Phone / WhatsApp",
+   "hi": "फ़ोन / व्हाट्सऐप"
+  },
+  "f_city": {
+   "en": "City or district",
+   "hi": "शहर या ज़िला"
+  },
+  "f_category": {
+   "en": "Member category",
+   "hi": "सदस्य श्रेणी"
+  },
+  "f_activity": {
+   "en": "What you make or the service you offer",
+   "hi": "आप क्या बनाते हैं या कौन-सी सेवा देते हैं"
+  },
+  "f_topic": {
+   "en": "Topic",
+   "hi": "विषय"
+  },
+  "f_message": {
+   "en": "Message",
+   "hi": "संदेश"
+  },
+  "f_required": {
+   "en": "Required",
+   "hi": "आवश्यक"
+  },
+  "f_submitApply": {
+   "en": "Send application",
+   "hi": "आवेदन भेजें"
+  },
+  "f_submitContact": {
+   "en": "Send message",
+   "hi": "संदेश भेजें"
+  },
+  "f_done": {
+   "en": "Your email app has opened with the details filled in. Press send there to reach the BIA office.",
+   "hi": "आपका ईमेल ऐप विवरण के साथ खुल गया है। बीआईए कार्यालय तक भेजने के लिए वहाँ “भेजें” दबाएँ।"
+  },
+  "f_invalid": {
+   "en": "Please fill in the highlighted fields.",
+   "hi": "कृपया चिह्नित फ़ील्ड भरें।"
+  },
+  "upcoming": {
+   "en": "Upcoming",
+   "hi": "आगामी"
+  },
+  "annual": {
+   "en": "Every year",
+   "hi": "हर वर्ष"
+  },
+  "recent": {
+   "en": "Recent events",
+   "hi": "हाल के कार्यक्रम"
+  },
+  "noUpcoming": {
+   "en": "New events will be announced here. Recent events are listed below.",
+   "hi": "नए कार्यक्रमों की घोषणा यहाँ होगी। हाल के कार्यक्रम नीचे दिए गए हैं।"
+  },
+  "venue": {
+   "en": "Venue",
+   "hi": "स्थान"
+  },
+  "register": {
+   "en": "Register",
+   "hi": "पंजीकरण करें"
+  },
+  "usually": {
+   "en": "Usually in",
+   "hi": "आमतौर पर"
+  },
+  "latestIssue": {
+   "en": "Latest issue",
+   "hi": "नवीनतम अंक"
+  },
+  "readIssue": {
+   "en": "Read issue",
+   "hi": "अंक पढ़ें"
+  },
+  "archive": {
+   "en": "Archive",
+   "hi": "संग्रह"
+  },
+  "olderIssues": {
+   "en": "Older issues",
+   "hi": "पुराने अंक"
+  },
+  "photos": {
+   "en": "photos",
+   "hi": "तस्वीरें"
+  },
+  "prev": {
+   "en": "Previous",
+   "hi": "पिछला"
+  },
+  "next": {
+   "en": "Next",
+   "hi": "अगला"
+  },
+  "viewAlbum": {
+   "en": "View album",
+   "hi": "एल्बम देखें"
+  },
+  "callUs": {
+   "en": "Call",
+   "hi": "फ़ोन करें"
+  },
+  "emailUs": {
+   "en": "Email",
+   "hi": "ईमेल"
+  },
+  "visitUs": {
+   "en": "Visit",
+   "hi": "पता"
+  },
+  "directions": {
+   "en": "Get directions",
+   "hi": "रास्ता देखें"
+  },
+  "hours": {
+   "en": "Office hours",
+   "hi": "कार्यालय समय"
+  },
+  "officeBearers": {
+   "en": "Office bearers",
+   "hi": "पदाधिकारी"
+  },
+  "council": {
+   "en": "Executive Council",
+   "hi": "कार्यकारिणी परिषद"
+  },
+  "committees": {
+   "en": "Committees and cells",
+   "hi": "समितियाँ एवं प्रकोष्ठ"
+  },
+  "succession": {
+   "en": "Past office bearers since 1943",
+   "hi": "1943 से पूर्व पदाधिकारी"
+  },
+  "tenure": {
+   "en": "Tenure",
+   "hi": "कार्यकाल"
+  },
+  "name": {
+   "en": "Name",
+   "hi": "नाम"
+  },
+  "r_president": {
+   "en": "President",
+   "hi": "अध्यक्ष"
+  },
+  "r_vp": {
+   "en": "Vice President",
+   "hi": "उपाध्यक्ष"
+  },
+  "r_sg": {
+   "en": "Secretary General",
+   "hi": "महासचिव"
+  },
+  "r_treasurer": {
+   "en": "Treasurer",
+   "hi": "कोषाध्यक्ष"
+  },
+  "r_mentor": {
+   "en": "Mentor",
+   "hi": "मेंटर"
+  },
+  "r_chairman": {
+   "en": "Chair",
+   "hi": "अध्यक्ष"
+  },
+  "r_cochair": {
+   "en": "Co-chair",
+   "hi": "सह-अध्यक्ष"
+  },
+  "r_convener": {
+   "en": "Convener",
+   "hi": "संयोजक"
+  },
+  "r_coconvener": {
+   "en": "Co-convener",
+   "hi": "सह-संयोजक"
+  },
+  "r_member": {
+   "en": "Member",
+   "hi": "सदस्य"
+  },
+  "vision": {
+   "en": "Vision",
+   "hi": "दृष्टि"
+  },
+  "mission": {
+   "en": "Mission",
+   "hi": "लक्ष्य"
+  },
+  "objectives": {
+   "en": "What we do",
+   "hi": "हम क्या करते हैं"
+  },
+  "journey": {
+   "en": "Our journey",
+   "hi": "हमारी यात्रा"
+  },
+  "quickLinks": {
+   "en": "Quick links",
+   "hi": "त्वरित लिंक"
+  },
+  "followUs": {
+   "en": "Follow BIA",
+   "hi": "बीआईए को फ़ॉलो करें"
+  },
+  "contactUs": {
+   "en": "Contact",
+   "hi": "संपर्क"
+  },
+  "draftBanner": {
+   "en": "You are seeing unpublished changes saved in the admin panel on this device.",
+   "hi": "आप इस डिवाइस के एडमिन पैनल में सहेजे गए अप्रकाशित बदलाव देख रहे हैं।"
+  },
+  "draftExit": {
+   "en": "Show published site",
+   "hi": "प्रकाशित साइट देखें"
+  },
+  "botOpen": {
+   "en": "Ask Chanakya",
+   "hi": "चाणक्य से पूछें"
+  },
+  "botPlaceholder": {
+   "en": "Type your question…",
+   "hi": "अपना सवाल लिखें…"
+  },
+  "botSend": {
+   "en": "Send",
+   "hi": "भेजें"
+  },
+  "botMaybe": {
+   "en": "Did you mean:",
+   "hi": "क्या आप यह पूछना चाहते हैं:"
+  },
+  "botOpenPage": {
+   "en": "Open page",
+   "hi": "पेज खोलें"
+  },
+  "botNote": {
+   "en": "Answers come from BIA’s own list. No outside service is used.",
+   "hi": "जवाब बीआईए की अपनी सूची से आते हैं। किसी बाहरी सेवा का उपयोग नहीं होता।"
+  },
+  "botFeeAsk": {
+   "en": "Which category are you?",
+   "hi": "आपकी श्रेणी कौन-सी है?"
+  },
+  "botRestart": {
+   "en": "Start over",
+   "hi": "फिर से शुरू करें"
+  },
+  "backToTop": {
+   "en": "Back to top",
+   "hi": "ऊपर जाएँ"
+  },
+  "share": {
+   "en": "Share",
+   "hi": "साझा करें"
+  },
+  "published": {
+   "en": "Published",
+   "hi": "प्रकाशित"
+  },
+  "source": {
+   "en": "Original post",
+   "hi": "मूल पोस्ट"
+  },
+  "prototype": {
+   "en": "Prototype for review by Bihar Industries Association. Not the official website.",
+   "hi": "बिहार इंडस्ट्रीज़ एसोसिएशन की समीक्षा हेतु प्रोटोटाइप। यह आधिकारिक वेबसाइट नहीं है।"
+  },
+  "officialSite": {
+   "en": "Official site",
+   "hi": "आधिकारिक साइट"
+  }
+ },
+ "footer": {
+  "about": {
+   "en": "Bihar Industries Association is the apex body of industry and services in Bihar, founded in 1943.",
+   "hi": "बिहार इंडस्ट्रीज़ एसोसिएशन, 1943 में स्थापित, बिहार में उद्योग एवं सेवा क्षेत्र की शीर्ष संस्था है।"
+  },
+  "columns": [
+   {
+    "title": {
+     "en": "Association",
+     "hi": "एसोसिएशन"
+    },
+    "links": [
+     {
+      "label": {
+       "en": "About BIA",
+       "hi": "बीआईए के बारे में"
+      },
+      "url": "#/about"
+     },
+     {
+      "label": {
+       "en": "Leadership & committees",
+       "hi": "नेतृत्व एवं समितियाँ"
+      },
+      "url": "#/leadership"
+     },
+     {
+      "label": {
+       "en": "Initiatives",
+       "hi": "पहल"
+      },
+      "url": "#/initiatives"
+     },
+     {
+      "label": {
+       "en": "Contact",
+       "hi": "संपर्क"
+      },
+      "url": "#/contact"
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "For members",
+     "hi": "सदस्यों के लिए"
+    },
+    "links": [
+     {
+      "label": {
+       "en": "Membership & fees",
+       "hi": "सदस्यता एवं शुल्क"
+      },
+      "url": "#/membership"
+     },
+     {
+      "label": {
+       "en": "Policies & Updates",
+       "hi": "नीतियाँ एवं अपडेट"
+      },
+      "url": "#/policies"
+     },
+     {
+      "label": {
+       "en": "BIA Bulletin",
+       "hi": "बीआईए बुलेटिन"
+      },
+      "url": "#/bulletin"
+     },
+     {
+      "label": {
+       "en": "Events",
+       "hi": "कार्यक्रम"
+      },
+      "url": "#/events"
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Government",
+     "hi": "सरकार"
+    },
+    "links": [
+     {
+      "label": {
+       "en": "Department of Industries, Bihar",
+       "hi": "उद्योग विभाग, बिहार"
+      },
+      "url": "https://state.bihar.gov.in/industries/CitizenHome.html"
+     },
+     {
+      "label": {
+       "en": "BIADA",
+       "hi": "बियाडा"
+      },
+      "url": "https://www.biadabihar.in/"
+     },
+     {
+      "label": {
+       "en": "Department of Agriculture, Bihar",
+       "hi": "कृषि विभाग, बिहार"
+      },
+      "url": "https://state.bihar.gov.in/krishi/CitizenHome.html"
+     },
+     {
+      "label": {
+       "en": "DPIIT, Government of India",
+       "hi": "डीपीआईआईटी, भारत सरकार"
+      },
+      "url": "https://dpiit.gov.in/"
+     }
+    ]
+   }
+  ],
+  "copyright": {
+   "en": "© 2026 Bihar Industries Association. All rights reserved.",
+   "hi": "© 2026 बिहार इंडस्ट्रीज़ एसोसिएशन। सर्वाधिकार सुरक्षित।"
+  }
+ }
+}
