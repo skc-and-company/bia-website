@@ -586,6 +586,7 @@
       try {
         const t = document.startViewTransition(run); activeVT = t;
         t.updateCallbackDone.catch(run);
+        t.ready.catch(() => {});
         t.finished.catch(() => {}).finally(() => { if (activeVT === t) activeVT = null; });
         setTimeout(run, 400);
       } catch { run(); }
