@@ -486,7 +486,26 @@
 
   function publishPanel() {
     const c = ghCfg();
-    const fld = (k, l, type = 'text', hint) => { const i = h('input', { class: 'inp', type, value: c[k] || '', autocomplete: 'off' }); i.addEventListener('change', () => { const n = ghCfg(); n[k] = i.value.trim(); saveGh(n); }); return h('label', { class: 'f' }, h('span', { class: 'lbl', text: l }), hint ? h('span', { class: 'hint', text: hint }) : null, i); };
+    const keyState = h('span', { class: 'hint', style: 'font-weight:600' });
+    const showKey = () => { const has = !!ghCfg().token; keyState.textContent = has ? '✓ Key saved in this browser' : 'No key saved in this browser yet'; keyState.style.color = has ? 'var(--ok)' : 'var(--danger)'; };
+    const fld = (k, l, type = 'text', hint) => {
+      const i = h('input', { class: 'inp', type, value: c[k] || '', autocomplete: 'off', spellcheck: 'false' });
+      const store = () => { const n = ghCfg(); n[k] = i.value.trim(); saveGh(n); showKey(); };
+      i.addEventListener('input', store); i.addEventListener('change', store);
+      return h('label', { class: 'f' }, h('span', { class: 'lbl', text: l }), hint ? h('span', { class: 'hint', text: hint }) : null, i, k === 'token' ? keyState : null);
+    };
+    const checkOut = h('span', { class: 'hint' });
+    const check = async () => {
+      const g = ghCfg();
+      if (!g.token) { checkOut.textContent = 'Paste the key first.'; checkOut.style.color = 'var(--danger)'; return; }
+      checkOut.textContent = 'Checking…'; checkOut.style.color = '';
+      try {
+        const r = await fetch(`https://api.github.com/repos/${g.owner}/${g.repo}/git/ref/heads/${g.branch}`, { headers: { Authorization: `Bearer ${g.token}`, Accept: 'application/vnd.github+json' } });
+        if (r.ok) { checkOut.textContent = `✓ Connected to ${g.owner}/${g.repo}. You can publish.`; checkOut.style.color = 'var(--ok)'; }
+        else { checkOut.textContent = r.status === 401 ? 'GitHub did not accept this key. Copy it again, or create a new one.' : r.status === 404 ? 'This key cannot see the repository. Give it access to ' + g.repo + '.' : 'GitHub said ' + r.status + '.'; checkOut.style.color = 'var(--danger)'; }
+      } catch (e) { checkOut.textContent = 'Could not reach GitHub: ' + e.message; checkOut.style.color = 'var(--danger)'; }
+    };
+    setTimeout(showKey);
     logEl = h('div', { class: 'log', hidden: true });
     const pages = `https://${c.owner}.github.io/${c.repo}/`;
     const imp = h('input', { type: 'file', accept: 'application/json,.json', hidden: true });
@@ -505,7 +524,8 @@
         h('div', { class: 'row' }, h('button', { class: 'btn pri', type: 'button', text: 'Publish now', onclick: () => publish() }), h('a', { class: 'btn', href: pages, target: '_blank', rel: 'noopener', text: 'Open live site ↗' })), logEl),
       h('section', { class: 'card' }, h('h2', { text: 'GitHub connection' }),
         h('p', { class: 'h', text: 'Publishing writes to the website’s GitHub repository, so this browser needs a GitHub publish key once. The key stays in this browser only; it is never put on the website.' }),
-        h('div', { class: 'fields' }, fld('owner', 'GitHub account'), fld('repo', 'Repository'), fld('branch', 'Branch'), fld('token', 'GitHub publish key', 'password', 'A fine-grained personal access token with Contents: Read and write, for this repository only.')),
+        h('div', { class: 'fields' }, fld('owner', 'GitHub account'), fld('repo', 'Repository'), fld('branch', 'Branch'), fld('token', 'GitHub publish key', 'password', 'A fine-grained personal access token with Contents: Read and write, for this repository only.'),
+          h('div', { class: 'row' }, h('button', { class: 'btn', type: 'button', text: 'Check connection', onclick: check }), checkOut)),
         h('div', { class: 'note blue', style: 'margin-top:12px' }, h('b', { text: 'How to create the key (one time):' }),
           h('ol', { class: 'steps' }, h('li', {}, 'Open ', h('a', { href: 'https://github.com/settings/personal-access-tokens/new', target: '_blank', rel: 'noopener', text: 'github.com → Settings → Fine-grained tokens → Generate new token' }), '.'),
             h('li', { text: `Repository access: Only select repositories → ${c.repo}.` }), h('li', { text: 'Permissions → Repository permissions → Contents: Read and write.' }), h('li', { text: 'Generate, copy the key and paste it in the box above.' })))),

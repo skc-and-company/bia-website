@@ -549,6 +549,7 @@
   let lastRoute = null;
   function parse() { const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean); return { name: p[0] || 'home', arg: p[1] }; }
   function render(opts = {}) {
+    if (!C) return;
     const { name, arg } = parse();
     const key = name + '/' + (arg || ''), same = key === lastRoute;
     const view = (pages[name] || notFound)(arg);
@@ -590,7 +591,7 @@
       if (e.origin !== location.origin) return;
       const m = e.data || {};
       if (m.type === 'bia:content') { C = m.content; await preloadUploads(C); applyTheme(); rerender(); }
-      if (m.type === 'bia:prefs') { if (m.lang) lang = m.lang; if (m.mode) explicitMode = m.mode; rerender(); applyMode(); }
+      if (m.type === 'bia:prefs') { if (m.lang) lang = m.lang; if (m.mode) explicitMode = m.mode; if (C) { rerender(); applyMode(); } }
       if (m.type === 'bia:go' && m.route !== location.hash) location.hash = m.route;
     });
   } else if ('BroadcastChannel' in window) {
@@ -609,8 +610,8 @@
     if (draft && draft.content && (PREVIEW || (draft.dirty && !hide))) { C = draft.content; usingDraft = true; } else C = pub;
     if (!C) { $('#main').innerHTML = '<div class="boot"><p>The site content could not be loaded. / साइट की सामग्री लोड नहीं हो सकी।</p></div>'; return; }
     await preloadUploads(C);
-    lang = (PREVIEW ? null : ls.get('bia.lang')) || C.theme.defaultLang || 'en';
-    explicitMode = PREVIEW ? null : ls.get('bia.mode');
+    if (!PREVIEW) { lang = ls.get('bia.lang') || C.theme.defaultLang || 'en'; explicitMode = ls.get('bia.mode'); }
+    else if (!lang) lang = C.theme.defaultLang || 'en';
     applyTheme(); renderShell(); render();
     if (window.Chanakya) window.Chanakya.mount({ get content() { return C; }, get lang() { return lang; }, ui: U, asset, go: (r) => { location.hash = r; } });
     if (PREVIEW) parent.postMessage({ type: 'bia:ready' }, location.origin);
