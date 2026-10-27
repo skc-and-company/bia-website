@@ -559,7 +559,7 @@
   })();
 
   /* ---------------------------------------------------------------- router */
-  let lastRoute = null;
+  let lastRoute = null, activeVT = null;
   function parse() { const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean); return { name: p[0] || 'home', arg: p[1] }; }
   function render(opts = {}) {
     if (!C) return;
@@ -576,9 +576,20 @@
       if (!same && !opts.keepScroll) window.scrollTo({ top: 0, behavior: 'instant' });
       if (window.Chanakya) window.Chanakya.refresh();
     };
-    const vt = document.startViewTransition && !same && lastRoute !== null && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // The page update must never depend on the view transition: Chrome aborts transitions in a hidden tab
+    // ("invalid state") and skips them when one is already running, and the callback is not always run then.
+    const vt = document.startViewTransition && !same && lastRoute !== null && !activeVT && document.visibilityState === 'visible' && !matchMedia('(prefers-reduced-motion: reduce)').matches;
     lastRoute = key;
-    if (vt) document.startViewTransition(go); else go();
+    let ran = false;
+    const run = () => { if (ran) return; ran = true; go(); };
+    if (vt) {
+      try {
+        const t = document.startViewTransition(run); activeVT = t;
+        t.updateCallbackDone.catch(run);
+        t.finished.catch(() => {}).finally(() => { if (activeVT === t) activeVT = null; });
+        setTimeout(run, 400);
+      } catch { run(); }
+    } else run();
     if (PREVIEW) parent.postMessage({ type: 'bia:route', route: location.hash || '#/' }, location.origin);
   }
   function rerender() { const y = scrollY; lastRoute = null; renderShell(); render({ keepScroll: true }); window.scrollTo(0, y); }
