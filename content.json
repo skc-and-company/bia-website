@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 5,
-  "updatedAt": "2026-10-30T05:50:32.516Z",
+  "version": 6,
+  "updatedAt": "2026-10-30T08:59:32.900Z",
   "note": "Single source for the public site. Edit through admin.html."
  },
  "site": {
@@ -131,7 +131,22 @@
    },
    "route": "#/membership",
    "visible": true,
-   "children": []
+   "children": [
+    {
+     "label": {
+      "en": "Membership & fees",
+      "hi": "सदस्यता एवं शुल्क"
+     },
+     "route": "#/membership"
+    },
+    {
+     "label": {
+      "en": "Member directory",
+      "hi": "सदस्य निर्देशिका"
+     },
+     "route": "#/members"
+    }
+   ]
   },
   {
    "label": {
@@ -1853,6 +1868,32 @@
     "en": "These are external websites. BIA is not responsible for their content. If a link stops working, please tell the BIA office.",
     "hi": "ये बाहरी वेबसाइटें हैं। उनकी सामग्री के लिए बीआईए उत्तरदायी नहीं है। कोई लिंक काम न करे तो कृपया बीआईए कार्यालय को बताएं।"
    }
+  },
+  "directory": {
+   "title": {
+    "en": "Member directory",
+    "hi": "सदस्य निर्देशिका"
+   },
+   "intro": {
+    "en": "Find BIA member firms by name, product or place.",
+    "hi": "नाम, उत्पाद या स्थान से बीआईए की सदस्य इकाइयाँ खोजें।"
+   },
+   "empty": {
+    "en": "The member list will be published here soon. Until then, please contact the BIA office for a member’s details.",
+    "hi": "सदस्य सूची जल्द ही यहाँ प्रकाशित की जाएगी। तब तक किसी सदस्य के विवरण के लिए कृपया बीआईए कार्यालय से संपर्क करें।"
+   },
+   "note": {
+    "en": "Details are published as provided by members. To correct your firm’s entry, please write to the BIA office.",
+    "hi": "विवरण सदस्यों द्वारा दी गई जानकारी के अनुसार प्रकाशित हैं। अपनी इकाई का विवरण सुधारने के लिए कृपया बीआईए कार्यालय को लिखें।"
+   },
+   "data": "",
+   "file": "",
+   "fileOffer": false,
+   "columns": [],
+   "count": 0,
+   "updated": "",
+   "sourceName": "",
+   "listId": ""
   }
  },
  "leadership": {
@@ -5246,7 +5287,8 @@
    "startup venturepark incubator",
    "subsidy incentive anudan अनुदान protsahan प्रोत्साहन package पैकेज",
    "land bhoomi भूमि biada बियाडा plot",
-   "link links website websites portal portals site sites url लिंक वेबसाइट पोर्टल"
+   "link links website websites portal portals site sites url लिंक वेबसाइट पोर्टल",
+   "list lists directory listing suchi soochi suchee सूची निर्देशिका"
   ],
   "faqs": [
    {
@@ -5586,6 +5628,19 @@
      "hi": "बीआईए के उपयोगी लिंक पेज पर बिहार एवं केंद्र सरकार के ज़रूरी विभाग और पोर्टल, फिक्की, सीआईआई और एसोचैम जैसे भारत के उद्योग संगठन, तथा यूनिडो और डब्ल्यूटीओ जैसी अंतर्राष्ट्रीय संस्थाएँ सूचीबद्ध हैं।"
     },
     "link": "#/links"
+   },
+   {
+    "q": {
+     "en": "Is there a list of BIA members?",
+     "hi": "क्या बीआईए सदस्यों की सूची है?"
+    },
+    "keywords": "list directory members firms companies units industries find search check verify whether who contact details number phone of a member sadasya suchi",
+    "action": "",
+    "a": {
+     "en": "Yes. The Member directory lists BIA’s member firms. Search by name, product, place or phone number, and filter by category.",
+     "hi": "हाँ। सदस्य निर्देशिका में बीआईए की सदस्य इकाइयाँ हैं। नाम, उत्पाद, स्थान या फ़ोन नंबर से खोजें और श्रेणी से छाँटें।"
+    },
+    "link": "#/members"
    }
   ]
  },
@@ -6157,6 +6212,58 @@
   "allLinks": {
    "en": "All useful links",
    "hi": "सभी उपयोगी लिंक"
+  },
+  "dirMembers": {
+   "en": "members",
+   "hi": "सदस्य"
+  },
+  "dirUpdated": {
+   "en": "updated",
+   "hi": "अद्यतन"
+  },
+  "dirSearch": {
+   "en": "Search by name, product, place or phone…",
+   "hi": "नाम, उत्पाद, स्थान या फ़ोन से खोजें…"
+  },
+  "dirDownload": {
+   "en": "Download the full list",
+   "hi": "पूरी सूची डाउनलोड करें"
+  },
+  "dirShowMore": {
+   "en": "Show more",
+   "hi": "और दिखाएँ"
+  },
+  "dirView": {
+   "en": "View",
+   "hi": "दृश्य"
+  },
+  "dirCards": {
+   "en": "Cards",
+   "hi": "कार्ड"
+  },
+  "dirTable": {
+   "en": "Table",
+   "hi": "तालिका"
+  },
+  "dirLoading": {
+   "en": "Loading the member list…",
+   "hi": "सदस्य सूची लोड हो रही है…"
+  },
+  "dirError": {
+   "en": "The member list could not be loaded. Please try again.",
+   "hi": "सदस्य सूची लोड नहीं हो सकी। कृपया फिर से प्रयास करें।"
+  },
+  "dirShowing": {
+   "en": "Showing {n} of {total} members",
+   "hi": "{total} में से {n} सदस्य दिखाए गए"
+  },
+  "dirMatch": {
+   "en": "{n} of {total} members match",
+   "hi": "{total} में से {n} सदस्य मिले"
+  },
+  "dirBrowse": {
+   "en": "Browse the member directory",
+   "hi": "सदस्य निर्देशिका देखें"
   }
  },
  "footer": {
@@ -6213,6 +6320,13 @@
        "hi": "सदस्यता एवं शुल्क"
       },
       "url": "#/membership"
+     },
+     {
+      "label": {
+       "en": "Member directory",
+       "hi": "सदस्य निर्देशिका"
+      },
+      "url": "#/members"
      },
      {
       "label": {
