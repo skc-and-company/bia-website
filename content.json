@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 7,
-  "updatedAt": "2026-10-30T09:00:51.677Z",
+  "version": 8,
+  "updatedAt": "2026-10-30T09:02:05.575Z",
   "note": "Single source for the public site. Edit through admin.html."
  },
  "site": {
@@ -1886,96 +1886,14 @@
     "en": "Details are published as provided by members. To correct your firm’s entry, please write to the BIA office.",
     "hi": "विवरण सदस्यों द्वारा दी गई जानकारी के अनुसार प्रकाशित हैं। अपनी इकाई का विवरण सुधारने के लिए कृपया बीआईए कार्यालय को लिखें।"
    },
-   "data": "uploads/mvuqs7ztlsw07m-member-directory.json",
+   "data": "",
    "file": "",
    "fileOffer": false,
-   "columns": [
-    {
-     "label": {
-      "en": "Sl. No.",
-      "hi": "क्रम सं."
-     },
-     "show": false,
-     "use": "",
-     "src": "Sl. No."
-    },
-    {
-     "label": {
-      "en": "Name of the Member",
-      "hi": "सदस्य का नाम"
-     },
-     "show": true,
-     "use": "title",
-     "src": "Name of the Member"
-    },
-    {
-     "label": {
-      "en": "Address",
-      "hi": "पता"
-     },
-     "show": true,
-     "use": "",
-     "src": "Address"
-    },
-    {
-     "label": {
-      "en": "City",
-      "hi": "शहर"
-     },
-     "show": true,
-     "use": "filter",
-     "src": "City"
-    },
-    {
-     "label": {
-      "en": "Line of Business",
-      "hi": "व्यवसाय"
-     },
-     "show": true,
-     "use": "",
-     "src": "Line of Business"
-    },
-    {
-     "label": {
-      "en": "Classification",
-      "hi": "वर्गीकरण"
-     },
-     "show": true,
-     "use": "filter",
-     "src": "Classification"
-    },
-    {
-     "label": {
-      "en": "Phone",
-      "hi": "फ़ोन"
-     },
-     "show": true,
-     "use": "",
-     "src": "Phone"
-    },
-    {
-     "label": {
-      "en": "Email",
-      "hi": "ईमेल"
-     },
-     "show": true,
-     "use": "",
-     "src": "Email"
-    },
-    {
-     "label": {
-      "en": "Website",
-      "hi": "वेबसाइट"
-     },
-     "show": true,
-     "use": "",
-     "src": "Website"
-    }
-   ],
-   "count": 30,
-   "updated": "2026-10-30",
-   "sourceName": "BIA-sample-member-list.pdf",
-   "listId": "mvuqs7zsmdd842"
+   "columns": [],
+   "count": 0,
+   "updated": "",
+   "sourceName": "",
+   "listId": ""
   }
  },
  "leadership": {
