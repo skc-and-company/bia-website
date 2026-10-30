@@ -55,7 +55,7 @@
   const today = () => new Date().toISOString().slice(0, 10);
   const uid = () => Math.random().toString(36).slice(2, 8);
 
-  const ROUTES = ['#/', '#/about', '#/leadership', '#/policies', '#/policies/national', '#/policies/bihar', '#/policies/gst', '#/policies/incometax', '#/membership', '#/events', '#/news', '#/bulletin', '#/gallery', '#/initiatives', '#/contact'];
+  const ROUTES = ['#/', '#/about', '#/leadership', '#/policies', '#/policies/national', '#/policies/bihar', '#/policies/gst', '#/policies/incometax', '#/membership', '#/events', '#/news', '#/bulletin', '#/gallery', '#/initiatives', '#/links', '#/contact'];
   const FONT_OPTS = () => Object.keys(window.BIA_FONTS || {});
   const SOCIAL = ['Facebook', 'X', 'YouTube', 'Instagram', 'LinkedIn', 'WhatsApp'];
   const ICONS = [['skill', 'Computer / skills'], ['outreach', 'Map / outreach'], ['startup', 'Rocket / startups'], ['expo', 'Building / exhibition'], ['award', 'Award'], ['lecture', 'Microphone / lecture'], ['users', 'People']];
@@ -122,6 +122,13 @@
         { search: true, sort: 'date', title: (x) => x.title.en, sub: (x) => `${x.section} · ${x.date || ''}`, make: () => ({ id: 'doc-' + uid(), section: 'gst', type: 'notification', title: L2('New document', 'नया दस्तावेज़'), issuer: L2(), ref: '', date: today(), effective: '', status: 'current', summary: [L2()], fileEn: '', fileHi: '', source: '' }) }),
       LIST('policies.sections', 'Sections', [TX('id', 'Short id (no spaces)'), I('title', 'Title'), IL('intro', 'Introduction')], { title: (x) => x.title.en, make: () => ({ id: 'section-' + uid(), title: L2('New section', 'नया अनुभाग'), intro: L2() }) }),
       OBJ('pages.policies', 'Page text', [I('title', 'Title'), IL('intro', 'Introduction'), NUM('newDays', 'Show the “New” badge for (days)', { min: 0, max: 365 }), IL('disclaimer', 'Note at the bottom')]),
+    ] },
+    { id: 'links', label: 'Useful links', route: '#/links', lead: 'Government portals and industry bodies, in groups. Each link opens in a new tab.', fields: [
+      OBJ('pages.links', 'Useful links page', [I('title', 'Title'), IL('intro', 'Introduction'),
+        LIST('groups', 'Link groups', [TX('id', 'Short id (no spaces)'), I('title', 'Group title'), IL('intro', 'Group introduction'),
+          LIST('items', 'Links', [I('name', 'Name'), TX('url', 'Web address'), I('text', 'One line about it')], { search: true, title: (x) => x.name.en, make: () => ({ name: L2(), url: 'https://', text: L2() }) })],
+          { title: (x) => x.title.en, make: () => ({ id: 'group-' + uid(), title: L2('New group', 'नया समूह'), intro: L2(), items: [] }) }),
+        IL('note', 'Note at the bottom')]),
     ] },
     { id: 'membership', label: 'Membership & fees', route: '#/membership', lead: 'Benefits, categories, the fee table that drives the calculator, and the application form text.', fields: [
       OBJ('pages.membership', 'Membership page', [I('title', 'Title'), IL('intro', 'Introduction'), STRS('benefits', 'Why join', 'i18n'),

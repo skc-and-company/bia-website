@@ -234,7 +234,7 @@
     },
     partners(s) {
       if (!(s.items || []).length) return '';
-      return `<section class="section" style="padding-block:clamp(44px,5vw,64px)"><div class="wrap"><h3 style="margin-bottom:20px">${esc(T(s.title))}</h3>
+      return `<section class="section" style="padding-block:clamp(44px,5vw,64px)"><div class="wrap"><div class="sec-head" style="margin-bottom:20px"><h3>${esc(T(s.title))}</h3>${C.pages.links ? `<a class="link-arrow" href="#/links">${esc(U('allLinks'))} ${arrow}</a>` : ''}</div>
         <div class="partners">${s.items.map((p) => `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(T(p.name))}${ic('ext')}</a>`).join('')}</div></div></section>`;
     },
   };
@@ -461,6 +461,18 @@
     initiatives() {
       const pg = C.pages.initiatives;
       return { title: T(pg.title), html: pageHead(T(pg.title), T(pg.intro), [{ label: T(pg.title) }]) + `<section class="section"><div class="wrap ini">${(pg.items || []).map(iniCard).join('')}</div></section>` };
+    },
+
+    links() {
+      const pg = C.pages.links;
+      if (!pg) return notFound();
+      const groups = (pg.groups || []).filter((g) => (g.items || []).length);
+      const domain = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
+      return { title: T(pg.title), html: pageHead(T(pg.title), T(pg.intro), [{ label: T(pg.title) }]) + `
+        <section class="section" style="padding-top:clamp(28px,4vw,40px);padding-bottom:0"><div class="wrap"><div class="tabs" aria-label="${esc(T(pg.title))}">${groups.map((g) => `<button class="tab" type="button" data-goto="lg-${esc(g.id)}">${esc(T(g.title))}<span class="n">${g.items.length}</span></button>`).join('')}</div></div></section>
+        ${groups.map((g, i) => `<section class="section${i % 2 ? ' tint' : ''}" id="lg-${esc(g.id)}"><div class="wrap"><div class="sec-head"><div><h2>${esc(T(g.title))}</h2>${T(g.intro) ? `<p>${esc(T(g.intro))}</p>` : ''}</div></div>
+          <div class="links-grid">${g.items.filter((it) => it.url).map((it) => `<a class="card lift lk" href="${esc(it.url)}" target="_blank" rel="noopener"><span class="lk-dom">${esc(domain(it.url))}${ic('ext')}</span><h3>${esc(T(it.name))}</h3>${T(it.text) ? `<p>${esc(T(it.text))}</p>` : ''}</a>`).join('')}</div></div></section>`).join('')}
+        ${T(pg.note) ? `<section class="section" style="padding-top:0"><div class="wrap"><p class="lib-note">${esc(T(pg.note))}</p></div></section>` : ''}` };
     },
 
     contact() {

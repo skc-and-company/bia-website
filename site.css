@@ -482,6 +482,13 @@ details.acc[open] .acc-body { animation: rise .3s var(--ease); }
 .ini .ico svg { width: 24px; height: 24px; }
 .ini h3 { font-size: 1.15rem; }
 .ini p { color: var(--muted); margin: 0; flex: 1; }
+.links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+.lk { display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: var(--text); }
+.lk h3 { font-size: 1.06rem; line-height: 1.35; }
+.lk p { color: var(--muted); margin: 0; font-size: .95rem; }
+.lk-dom { display: inline-flex; align-items: center; gap: 6px; font: 500 .78rem/1 var(--font-display); color: var(--accent-ink); letter-spacing: .02em; overflow-wrap: anywhere; }
+.lk-dom svg { width: 13px; height: 13px; opacity: .7; flex: none; }
+.lk:hover h3 { color: var(--link); }
 .partners { display: flex; flex-wrap: wrap; gap: 12px; }
 .partners a { padding: 12px 18px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--text); font-weight: 500; display: inline-flex; align-items: center; gap: 8px; transition: border-color .2s, color .2s; }
 .partners a:hover { border-color: var(--link); color: var(--link); }
