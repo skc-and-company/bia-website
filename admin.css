@@ -133,3 +133,21 @@ details.it > .body { padding: 4px 14px 16px; display: grid; gap: 14px; border-to
 
 .toast { position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 20px); transform: translate(-50%, 20px); background: var(--navy); color: #fff; padding: 10px 18px; border-radius: 10px; box-shadow: 0 12px 30px -10px rgb(0 0 0 / .5); opacity: 0; pointer-events: none; transition: opacity .25s, transform .25s; z-index: 50; max-width: calc(100vw - 32px); }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* member directory */
+.dir-status .stat { color: var(--ok); }
+.dir-cols { display: grid; gap: 6px; }
+.dir-col { display: grid; grid-template-columns: auto minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 1fr); gap: 6px 8px; align-items: center; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.dir-col.off { background: var(--bg); }
+.dir-col.off .inp { color: var(--muted); }
+.dir-col .sample { grid-column: 2 / -1; font-size: 12.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dir-tbl { overflow: auto; max-height: 540px; border: 1px solid var(--line); border-radius: 10px; margin-top: 8px; }
+.dir-tbl table { border-collapse: collapse; font-size: 13px; min-width: 100%; }
+.dir-tbl th, .dir-tbl td { padding: 6px 9px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; min-width: 90px; max-width: 280px; }
+.dir-tbl th { position: sticky; top: 0; background: var(--tint); font-weight: 600; white-space: nowrap; z-index: 2; }
+.dir-tbl .off { color: #9A9DB4; background: #F7F7FB; }
+.dir-tbl th.off { background: #ECECF3; text-decoration: line-through; }
+.dir-tbl .act { position: sticky; left: 0; z-index: 1; background: var(--surface); min-width: 0; white-space: nowrap; display: table-cell; }
+.dir-tbl th.act { z-index: 3; background: var(--tint); }
+.dir-tbl .act .ico { width: 26px; height: 26px; font-size: 12px; margin-right: 2px; }
+@media (max-width: 900px) { .dir-col { grid-template-columns: auto minmax(0, 1fr); } .dir-col .sel, .dir-col .sample { grid-column: 2 / -1; } }

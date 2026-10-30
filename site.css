@@ -538,3 +538,31 @@ html[lang="hi"] .ftr h4 { letter-spacing: .02em; font-size: .95rem; }
 main { view-transition-name: main; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
 @media print { .hdr, .util, .ftr, .proto, .bot-launch, .bot-panel, .to-top, .draftbar { display: none !important; } }
+
+/* member directory */
+.dir-top { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; justify-content: space-between; }
+.dir-meta { margin: 0; color: var(--muted); }
+.dir-meta b { color: var(--text); font: 600 1.2rem var(--font-display); }
+.dir-tools { margin-top: 18px; align-items: center; }
+.dir-count { color: var(--muted); font-size: .95rem; margin: 12px 0 16px; }
+.dir-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 16px; }
+.dir-card { display: flex; flex-direction: column; gap: 14px; padding: 20px 22px; }
+.dir-card h3 { font-size: 1.1rem; line-height: 1.35; margin: 0; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.dir-card dl { margin: 0; display: grid; gap: 8px; }
+.dir-card dl > div { display: grid; grid-template-columns: minmax(88px, 36%) minmax(0, 1fr); gap: 12px; }
+.dir-card dt { color: var(--muted); font-size: .86rem; line-height: 1.55; }
+.dir-card dd { margin: 0; font-size: .95rem; line-height: 1.5; overflow-wrap: anywhere; }
+.dir-card a, .dir-table a { color: var(--link); text-decoration: none; }
+.dir-card a:hover, .dir-table a:hover { text-decoration: underline; }
+mark { background: color-mix(in oklab, var(--accent) 38%, transparent); color: inherit; border-radius: 3px; padding: 0 1px; }
+.dir-table { max-height: min(78vh, 900px); overflow: auto; }
+.dir-table th { position: sticky; top: 0; z-index: 1; }
+.dir-table td { font-size: .92rem; padding: 10px 14px; min-width: 120px; max-width: 320px; overflow-wrap: anywhere; }
+.dir-table td.dir-name { font-weight: 600; min-width: 200px; }
+.dir-more { text-align: center; margin: 24px 0 0; }
+.dir-empty { display: grid; justify-items: center; gap: 16px; padding: clamp(36px, 6vw, 72px) 24px; }
+.dir-empty .ico { width: 58px; height: 58px; border-radius: 16px; background: var(--tint); color: var(--link); display: grid; place-items: center; }
+.dir-empty .ico svg { width: 28px; height: 28px; }
+.dir-empty p { max-width: 48ch; margin: 0; font-size: 1.05rem; color: var(--text); }
+@media (max-width: 640px) { .dir-tools .select { flex: 1 1 100%; } .dir-card dl > div { grid-template-columns: minmax(0, 1fr); gap: 0; } }
+.dir-card a[href^="tel:"], .dir-table a[href^="tel:"] { white-space: nowrap; }

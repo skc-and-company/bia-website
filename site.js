@@ -384,7 +384,7 @@
       const groups = ['industry', 'service', 'other'].filter((g) => feeRows().some((f) => f.group === g));
       const table = (g) => `<h3 style="margin:30px 0 12px">${esc(U('g_' + g))}</h3><div class="tbl-wrap"><table><thead><tr><th>${esc(U('chooseCategory'))}</th><th class="n">${esc(U('yearly'))}</th><th class="n">${esc(U('admission'))}</th><th class="n">${esc(U('gst'))} ${esc(m.gstRate)}%</th><th class="n">${esc(U('firstYear'))}</th></tr></thead><tbody>${feeRows().filter((f) => f.group === g).map((f) => { const r = feeCalc(f); return `<tr><td>${esc(T(f.label))}</td><td class="n">${rupee(f.yearly)}</td><td class="n">${rupee(f.admission)}</td><td class="n">${rupee(r.gst)}</td><td class="n"><b>${rupee(r.first)}</b></td></tr>`; }).join('')}</tbody></table></div>`;
       return { title: T(m.title), html: pageHead(T(m.title), T(m.intro), [{ label: T(m.title) }]) + `
-        <section class="section"><div class="wrap"><h2 style="margin-bottom:26px">${esc(U('benefits'))}</h2><ul class="ticks">${(m.benefits || []).map((b) => `<li>${tick}<span>${esc(T(b))}</span></li>`).join('')}</ul></div></section>
+        <section class="section"><div class="wrap"><div class="sec-head"><h2>${esc(U('benefits'))}</h2>${C.pages.directory && C.pages.directory.data ? `<a class="link-arrow" href="#/members">${esc(U('dirBrowse'))} ${arrow}</a>` : ''}</div><ul class="ticks">${(m.benefits || []).map((b) => `<li>${tick}<span>${esc(T(b))}</span></li>`).join('')}</ul></div></section>
         <section class="section tint" id="fees"><div class="wrap"><div class="sec-head"><div>${eyebrow(C.ui.fees)}<h2>${esc(U('feeCalc'))}</h2><p>${esc(U('tariffFrom'))} ${esc(fmtDate(m.tariffDate))}. ${esc(T(m.capitalNote))}</p></div></div>
           <div class="calc"><div class="calc-pick"><div class="seg" role="group" aria-label="${esc(U('chooseCategory'))}">${groups.map((g, i) => `<button type="button" data-grp="${g}" aria-pressed="${i === 0}">${esc(U('g_' + g))}</button>`).join('')}</div><div class="slabs" id="slabs"></div></div>
             <div class="calc-out on-dark" aria-live="polite" id="calcOut"></div></div>
@@ -475,6 +475,29 @@
         ${T(pg.note) ? `<section class="section" style="padding-top:0"><div class="wrap"><p class="lib-note">${esc(T(pg.note))}</p></div></section>` : ''}` };
     },
 
+    members() {
+      const pg = C.pages.directory;
+      if (!pg) return notFound();
+      const cols = (pg.columns || []).map((c, i) => ({ ...c, i })).filter((c) => c.show);
+      const has = !!pg.data && cols.length > 0;
+      const titleCol = cols.find((c) => c.use === 'title') || cols[0];
+      const filters = cols.filter((c) => c.use === 'filter' && c !== titleCol).slice(0, 3);
+      const mem = C.pages.membership || {};
+      return { title: T(pg.title), html: pageHead(T(pg.title), T(pg.intro), [{ label: T(mem.title), href: '#/membership' }, { label: T(pg.title) }]) + `
+        <section class="section" style="padding-top:clamp(28px,4vw,40px)"><div class="wrap">
+        ${has ? `<div class="dir-top"><p class="dir-meta">${pg.count ? `<b>${Number(pg.count).toLocaleString('en-IN')}</b> ${esc(U('dirMembers'))}` : ''}${pg.updated ? `<span> · ${esc(U('dirUpdated'))} ${esc(fmtDate(pg.updated))}</span>` : ''}</p>${pg.file ? `<a class="btn btn-quiet sm" href="${esc(href(pg.file))}" target="_blank" rel="noopener">${ic('doc')}${esc(U('dirDownload'))}</a>` : ''}</div>
+          <div class="toolbar dir-tools"><label class="search"><span class="sr">${esc(U('dirSearch'))}</span>${ic('search')}<input class="input" id="dirQ" type="search" placeholder="${esc(U('dirSearch'))}" autocomplete="off"></label>
+            ${filters.map((f) => `<select class="select" data-dirf="${f.i}" aria-label="${esc(T(f.label))}"><option value="">${esc(T(f.label))}: ${esc(U('all'))}</option></select>`).join('')}
+            <div class="seg" role="group" aria-label="${esc(U('dirView'))}"><button type="button" data-dirv="cards" aria-pressed="true">${esc(U('dirCards'))}</button><button type="button" data-dirv="table" aria-pressed="false">${esc(U('dirTable'))}</button></div></div>
+          <p class="dir-count" id="dirCount" aria-live="polite"></p>
+          <div id="dirList"><div class="empty">${esc(U('dirLoading'))}</div></div>
+          <p class="dir-more"><button class="btn btn-line" type="button" id="dirMore" hidden>${esc(U('dirShowMore'))}</button></p>
+          ${T(pg.note) ? `<p class="lib-note">${esc(T(pg.note))}</p>` : ''}`
+        : `<div class="empty dir-empty"><span class="ico">${ic('users')}</span><p>${esc(T(pg.empty))}</p><a class="btn btn-brand" href="#/membership">${esc(U('becomeMember'))}${arrow}</a></div>`}
+        </div></section>`,
+        after() { if (has) bindDirectory(pg, cols, titleCol, filters); } };
+    },
+
     contact() {
       const pg = C.pages.contact, s = C.site;
       return { title: T(pg.title), html: pageHead(T(pg.title), T(pg.intro), [{ label: T(pg.title) }]) + `
@@ -515,6 +538,64 @@
         <p style="margin-top:24px"><a class="link-arrow" href="#/news">${ic('left')} ${esc(U('back'))}</a></p></article></div></section>
       ${more.length ? `<section class="section tint"><div class="wrap"><h2 style="margin-bottom:26px">${esc(U('recent'))}</h2><div class="news-grid">${more.map((m) => newsCard(m)).join('')}</div></div></section>` : ''}`,
       after() { $$('[data-ph]').forEach((b) => b.addEventListener('click', () => lightbox.open(photos, +b.dataset.ph, T(n.title)))); } };
+  }
+  /* member directory: the list is a separate file, fetched only on this page */
+  let dirCache = { url: '', data: null };
+  const isPhoneCol = (c) => /phone|mobile|tel\b|fax|whats|contact|cell|फ़ोन|फोन|मोबाइल/i.test(`${c.src || ''} ${c.label.en || ''}`);
+  const telLink = (m) => `<a href="tel:${m.replace(/[^\d+]/g, '')}">${m}</a>`;
+  function dirValue(v, c) {
+    const raw = String(v || '');
+    let s = esc(raw).replace(/[\w.+-]+@[\w-]+(?:\.[\w-]+)+/g, (m) => `<a href="mailto:${m}">${m}</a>`);
+    if (!s.includes('<a ')) s = s.replace(/\b(?:https?:\/\/|www\.)[^\s,;<]+/gi, (m) => `<a href="${/^http/i.test(m) ? m : 'https://' + m}" target="_blank" rel="noopener">${m.replace(/^https?:\/\//i, '')}</a>`);
+    if (!s.includes('<a ') && (isPhoneCol(c) || /^[\d\s()+\-/,;]{9,}$/.test(raw))) {
+      s = s.replace(/\+?\d[\d\s()-]{5,}\d/g, (m) => (m.replace(/\D/g, '').length <= 13 ? telLink(m) : m.split(/\s+/).map((p) => (p.replace(/\D/g, '').length >= 6 ? telLink(p) : p)).join(' ')));
+    }
+    return s;
+  }
+  const fillN = (s, o) => s.replace(/\{(\w+)\}/g, (m, k) => (o[k] != null ? Number(o[k]).toLocaleString('en-IN') : m));
+  async function bindDirectory(pg, cols, titleCol, filters) {
+    const list = $('#dirList'), more = $('#dirMore'), count = $('#dirCount'), qi = $('#dirQ');
+    let data;
+    try {
+      const url = asset(pg.data);
+      if (!url) throw new Error('no file');
+      if (dirCache.url !== url) { const r = await fetch(url); if (!r.ok) throw new Error(r.status); dirCache = { url, data: await r.json() }; }
+      data = dirCache.data;
+    } catch (e) { if (list.isConnected) list.innerHTML = `<div class="empty">${esc(U('dirError'))}</div>`; return; }
+    if (!list.isConnected) return; // the visitor has already moved on
+    const rows = (data.rows || []).filter((r) => cols.some((c) => r[c.i]));
+    const hay = rows.map((r) => cols.map((c) => r[c.i] || '').join(' \u0001 ').toLowerCase());
+    filters.forEach((f) => {
+      const sel = $(`[data-dirf="${f.i}"]`), n = new Map();
+      rows.forEach((r) => { const v = String(r[f.i] || '').trim(); if (v) n.set(v, (n.get(v) || 0) + 1); });
+      [...n.keys()].sort((a, b) => a.localeCompare(b)).forEach((v) => sel.add(new Option(`${v} (${n.get(v)})`, v)));
+    });
+    let view = ls.get('bia.dirView') === 'table' ? 'table' : 'cards', limit = 0, matched = rows, words = [];
+    const step = () => (view === 'table' ? 100 : 24);
+    const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const mark = (html) => (words.length ? html.replace(new RegExp(words.map((w) => reEsc(esc(w))).join('|'), 'gi'), (m) => `<mark>${m}</mark>`) : html);
+    const card = (r) => `<article class="card dir-card"><h3>${mark(esc(r[titleCol.i] || '—'))}</h3><dl>${cols.filter((c) => c !== titleCol && r[c.i]).map((c) => `<div><dt>${esc(T(c.label))}</dt><dd>${dirValue(r[c.i], c)}</dd></div>`).join('')}</dl></article>`;
+    const draw = (reset) => {
+      if (reset) limit = step();
+      const shown = matched.slice(0, limit);
+      $$('[data-dirv]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.dirv === view)));
+      if (!matched.length) list.innerHTML = `<div class="empty">${esc(U('noResults'))}</div>`;
+      else if (view === 'table') list.innerHTML = `<div class="tbl-wrap dir-table"><table><thead><tr>${cols.map((c) => `<th>${esc(T(c.label))}</th>`).join('')}</tr></thead><tbody>${shown.map((r) => `<tr>${cols.map((c) => `<td${c === titleCol ? ' class="dir-name"' : ''}>${c === titleCol ? mark(esc(r[c.i] || '')) : dirValue(r[c.i], c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+      else list.innerHTML = `<div class="dir-grid">${shown.map(card).join('')}</div>`;
+      count.textContent = matched.length === rows.length ? fillN(U('dirShowing'), { n: shown.length, total: rows.length }) : fillN(U('dirMatch'), { n: matched.length, total: rows.length });
+      more.hidden = shown.length >= matched.length;
+    };
+    const run = () => {
+      words = qi.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      const fv = filters.map((f) => [f.i, $(`[data-dirf="${f.i}"]`).value]);
+      matched = rows.filter((r, i) => words.every((w) => hay[i].includes(w)) && fv.every(([ci, v]) => !v || String(r[ci] || '').trim() === v));
+      draw(true);
+    };
+    let tmr; qi.addEventListener('input', () => { clearTimeout(tmr); tmr = setTimeout(run, 140); });
+    $$('[data-dirf]').forEach((s) => s.addEventListener('change', run));
+    $$('[data-dirv]').forEach((b) => b.addEventListener('click', () => { view = b.dataset.dirv; if (!PREVIEW) ls.set('bia.dirView', view); draw(true); }));
+    more.addEventListener('click', () => { limit += step(); draw(false); });
+    run();
   }
   function notFound() { return { title: '404', html: pageHead(U('notFound'), '', []) + `<section class="section"><div class="wrap"><a class="btn btn-brand" href="#/">${esc(U('goHome'))}${arrow}</a></div></section>` }; }
 

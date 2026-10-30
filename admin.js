@@ -55,7 +55,7 @@
   const today = () => new Date().toISOString().slice(0, 10);
   const uid = () => Math.random().toString(36).slice(2, 8);
 
-  const ROUTES = ['#/', '#/about', '#/leadership', '#/policies', '#/policies/national', '#/policies/bihar', '#/policies/gst', '#/policies/incometax', '#/membership', '#/events', '#/news', '#/bulletin', '#/gallery', '#/initiatives', '#/links', '#/contact'];
+  const ROUTES = ['#/', '#/about', '#/leadership', '#/policies', '#/policies/national', '#/policies/bihar', '#/policies/gst', '#/policies/incometax', '#/membership', '#/members', '#/events', '#/news', '#/bulletin', '#/gallery', '#/initiatives', '#/links', '#/contact'];
   const FONT_OPTS = () => Object.keys(window.BIA_FONTS || {});
   const SOCIAL = ['Facebook', 'X', 'YouTube', 'Instagram', 'LinkedIn', 'WhatsApp'];
   const ICONS = [['skill', 'Computer / skills'], ['outreach', 'Map / outreach'], ['startup', 'Rocket / startups'], ['expo', 'Building / exhibition'], ['award', 'Award'], ['lecture', 'Microphone / lecture'], ['users', 'People']];
@@ -138,6 +138,10 @@
           { title: (x) => `${x.label.en} · ₹${x.yearly} + ₹${x.admission}`, make: () => ({ group: 'industry', label: L2(), yearly: 0, admission: 0 }) }),
         IL('sickNote', 'Sick unit note'), IL('capitalNote', 'Capital outlay note'), I('applyTitle', 'Form title'), IL('applyText', 'Form introduction'),
         LIST('downloads', 'Downloads', [I('label', 'Label'), FILE('url', 'File')], { make: () => ({ label: L2(), url: '' }) })]),
+    ] },
+    { id: 'directory', label: 'Member directory', route: '#/members', lead: 'Upload the member list as a PDF, Excel, Word or CSV file. It is read on this computer. Choose which columns the public sees, check the list, then Publish.', fields: [
+      { k: 'pages.directory', t: 'memberdir', l: 'Member list' },
+      OBJ('pages.directory', 'Page text', [I('title', 'Title'), IL('intro', 'Introduction'), IL('empty', 'Shown until a list is published'), IL('note', 'Note at the bottom')]),
     ] },
     { id: 'events', label: 'Events', route: '#/events', lead: 'Add upcoming events; they appear on the home page and the Events page until their date passes.', fields: [
       OBJ('pages.events', 'Events page', [I('title', 'Title'), IL('intro', 'Introduction'),
@@ -230,6 +234,7 @@
       case 'map': return mapCtl(path, f);
       case 'sections': return sectionsCtl(path, f);
       case 'bottest': return botTest();
+      case 'memberdir': return memberDir(path);
     }
     return h('div', { text: '?' + f.t });
   }
@@ -417,6 +422,167 @@
     return h('section', { class: 'card' }, h('h2', { text: 'Try a question' }), h('p', { class: 'h', text: 'Type what a visitor might ask, in English, Hindi or Hinglish, and see which answer Chanakya picks.' }), inp, out);
   }
 
+  /* ---------------------------------------------------------------- member directory
+     The whole table read from the uploaded list stays on this device ('dir:full:<listId>'; every change to the table
+     itself is a new copy, so Undo always finds the matching one). The website gets a copy with only the columns
+     marked "Show" (member-directory.json), so a hidden column is never published. */
+  const DIR_JSON = 'member-directory.json';
+  const DIR_USES = [['', 'Detail'], ['title', 'Card title'], ['filter', 'Filter']];
+  const FULL = (id) => 'dir:full:' + id;
+  const fmtDay = (d) => { try { return new Date(d).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }); } catch { return d; } };
+  async function dirBase(d) {
+    if (!d.data) return null;
+    const full = d.listId ? await idb.get(FULL(d.listId)) : null;
+    if (full && Array.isArray(full.rows)) return full;
+    // the list was uploaded on another computer: start from the published copy (its hidden columns are blank)
+    try {
+      await window.BIA.preloadUploads({ x: d.data });
+      const j = await (await fetch(window.BIA.asset(d.data) + (d.data.startsWith('upload:') ? '' : '?ts=' + Date.now()))).json();
+      return { columns: d.columns.map((c) => c.src || c.label.en), rows: j.rows || [], partial: true, sourceName: d.sourceName };
+    } catch { return null; }
+  }
+  async function dirPublishCopy(d, full) {
+    const rows = full.rows.map((r) => d.columns.map((c, i) => (c.show ? r[i] || '' : '')));
+    const id = Date.now().toString(36) + uid();
+    await idb.set('upload:' + id, { name: DIR_JSON, type: 'application/json', blob: new Blob([JSON.stringify({ v: 1, rows })], { type: 'application/json' }) });
+    d.data = `upload:${id}|${DIR_JSON}`;
+    d.count = rows.length;
+  }
+  function memberDir(path) {
+    const D = () => { let d = get(path); if (!d || typeof d !== 'object') { d = {}; set(path, d); } if (!Array.isArray(d.columns)) d.columns = []; return d; };
+    const wrap = h('div');
+    let full = null, q = '', busy = false, regenT;
+    // the table itself changed (a row removed, new column names): keep it as a new copy so Undo can return to the old one
+    const saveTable = async (next) => { const id = Date.now().toString(36) + uid(); full = { ...next, at: id }; await idb.set(FULL(id), full); D().listId = id; await dirPublishCopy(D(), full); changed(true); draw(); };
+    // only the column choices changed: make a new website copy
+    const regen = () => { clearTimeout(regenT); regenT = setTimeout(async () => { if (!full) return; await dirPublishCopy(D(), full); changed(true); drawPreview(); drawStatus(); }, 250); };
+
+    /* reading a new file */
+    const picker = h('input', { type: 'file', accept: '.pdf,.xlsx,.xlsm,.docx,.csv,application/pdf', hidden: true });
+    const prog = h('div', { class: 'note blue', hidden: true, role: 'status' });
+    picker.addEventListener('change', async () => {
+      const file = picker.files[0]; picker.value = ''; if (!file || busy) return;
+      if (file.size > 25e6) { toast('That file is over 25 MB. Please make it smaller first.'); return; }
+      busy = true; prog.hidden = false; prog.className = 'note blue'; prog.textContent = `Reading ${file.name}…`;
+      try {
+        if (!window.MemberList) throw new Error('The list reader did not load. Reload the admin page and try again.');
+        const r = await window.MemberList.read(file, (m) => { prog.textContent = m; });
+        const name = safeName(file.name), id = Date.now().toString(36) + uid();
+        await idb.set('upload:' + id, { name, type: file.type || 'application/octet-stream', blob: file });
+        const prev = D().listId ? await idb.get(FULL(D().listId)) : null;
+        if (prev && prev.sourceRef && !JSON.stringify(S.c).includes(prev.sourceRef)) await idb.del('upload:' + prev.sourceRef.slice(7).split('|')[0]);
+        full = { columns: r.columns, rows: r.rows, method: r.method, notes: r.notes, sourceName: file.name, sourceRef: `upload:${id}|${name}`, at: Date.now().toString(36) + uid() };
+        const d = D();
+        // a new list with the same column names keeps the choices made for the last one
+        const old = new Map(d.columns.map((c) => [(c.src || c.label.en || '').toLowerCase(), c]));
+        d.columns = r.meta.map((m, i) => { const o = old.get(r.columns[i].toLowerCase()); return o ? { ...o, src: r.columns[i] } : { ...m, src: r.columns[i] }; });
+        if (!d.columns.some((c) => c.use === 'title')) { const t = r.meta.findIndex((m) => m.use === 'title'); if (t >= 0) d.columns[t].use = 'title'; }
+        d.sourceName = file.name; d.updated = today(); d.listId = full.at;
+        if (d.fileOffer) d.file = full.sourceRef;
+        await idb.set(FULL(full.at), full);
+        await dirPublishCopy(d, full);
+        changed(true);
+        prog.hidden = true;
+        toast(`${r.rows.length} members read from ${file.name}. Check the list below, then publish.`);
+        draw();
+      } catch (e) {
+        prog.className = 'note'; prog.textContent = e.message || String(e);
+      } finally { busy = false; }
+    });
+
+    /* cards */
+    const statusEl = h('div', { class: 'dir-status' });
+    function drawStatus() {
+      const d = D(), shown = d.columns.filter((c) => c.show).length;
+      statusEl.innerHTML = '';
+      if (!d.data) { statusEl.append(h('p', { class: 'muted', style: 'margin:0', text: 'No member list yet. The page shows the “coming soon” text below.' })); return; }
+      statusEl.append(h('p', { style: 'margin:0' }, h('b', { class: 'stat', text: `✓ ${d.count || 0} members` }), ` · ${shown} of ${d.columns.length} columns shown`, d.sourceName ? ` · from ${d.sourceName}` : '', d.updated ? ` · ${fmtDay(d.updated)}` : ''));
+      if (full && full.method && !full.partial) statusEl.append(h('p', { class: 'hint muted', style: 'margin:4px 0 0', text: 'Read as: ' + full.method }));
+      if (full && full.partial) statusEl.append(h('p', { class: 'hint muted', style: 'margin:4px 0 0', text: 'This list was uploaded on another computer. Hidden columns can only be shown again after uploading the file here.' }));
+      (full && full.notes || []).forEach((n) => statusEl.append(h('div', { class: 'note', style: 'margin-top:8px', text: n })));
+    }
+    function fileCard() {
+      const d = D();
+      const offer = h('input', { type: 'checkbox' }); offer.checked = !!d.fileOffer;
+      offer.addEventListener('change', async () => {
+        const dd = D(); dd.fileOffer = offer.checked;
+        if (!offer.checked) dd.file = '';
+        else if (full && full.sourceRef && await idb.get('upload:' + full.sourceRef.slice(7).split('|')[0])) dd.file = full.sourceRef;
+        else if (!dd.file) { toast('Upload the list file on this computer first.'); offer.checked = false; dd.fileOffer = false; }
+        changed(true);
+      });
+      const rm = h('button', { class: 'btn warn', type: 'button', text: 'Remove the list', onclick: async () => {
+        if (!rm.classList.contains('armed')) { rm.classList.add('armed'); rm.textContent = 'Click again to remove'; setTimeout(() => { rm.classList.remove('armed'); rm.textContent = 'Remove the list'; }, 3500); return; }
+        const dd = D(); Object.assign(dd, { data: '', file: '', fileOffer: false, columns: [], count: 0, sourceName: '', updated: '', listId: '' });
+        full = null; changed(true); draw(); toast('The list is removed. Publish to take it off the site, or press Undo.');
+      } });
+      drawStatus();
+      return h('section', { class: 'card' }, h('h2', { text: 'Member list file' }),
+        h('p', { class: 'h', text: 'Upload the latest list whenever it changes; it replaces the old one. PDF, Excel (.xlsx), Word (.docx) and CSV files work. A PDF must be a real document, not a scan.' }),
+        statusEl,
+        h('div', { class: 'row', style: 'margin-top:12px' }, h('button', { class: 'btn pri', type: 'button', text: d.data ? 'Upload a new list' : 'Upload the member list', onclick: () => picker.click() }), d.data ? rm : null, picker),
+        prog,
+        h('div', { class: 'f', style: 'margin-top:14px' }, h('label', { class: 'switch' }, offer, 'Let visitors download the original file'),
+          h('span', { class: 'hint', text: 'The original file shows every column, including the hidden ones.' })));
+    }
+    function colsCard() {
+      const d = D();
+      if (!d.columns.length) return null;
+      const sample = (i) => (full ? full.rows.map((r) => r[i]).filter(Boolean).slice(0, 3).join(' · ') : '');
+      const rows = d.columns.map((c, i) => {
+        const cb = h('input', { type: 'checkbox', 'aria-label': 'Show ' + c.label.en }); cb.checked = !!c.show;
+        const row = h('div', { class: 'dir-col' + (c.show ? '' : ' off') });
+        cb.addEventListener('change', () => {
+          if (cb.checked && full && full.partial && !full.rows.some((r) => r[i])) { cb.checked = false; toast('This column was hidden when the list was published elsewhere. Upload the file here to show it.'); return; }
+          D().columns[i].show = cb.checked; row.classList.toggle('off', !cb.checked); regen();
+        });
+        const lab = (lang) => { const inp = h('input', { class: 'inp', lang, value: c.label[lang] || '', placeholder: lang === 'hi' ? 'हिन्दी नाम' : 'Column name', 'aria-label': `Column ${i + 1} name ${lang}` }); inp.addEventListener('input', () => { D().columns[i].label[lang] = inp.value; changed(); }); return inp; };
+        const use = h('select', { class: 'sel', 'aria-label': 'Use of column ' + (i + 1) }, DIR_USES.map(([v, t]) => h('option', { value: v, text: t }))); use.value = c.use || '';
+        use.addEventListener('change', () => { const cols = D().columns; if (use.value === 'title') cols.forEach((x, k) => { if (k !== i && x.use === 'title') x.use = ''; }); cols[i].use = use.value; changed(true); draw(); });
+        row.append(h('label', { class: 'switch', title: 'Show on the website' }, cb), lab('en'), lab('hi'), use, h('div', { class: 'sample', text: sample(i) || '—' }));
+        return row;
+      });
+      return h('section', { class: 'card' }, h('h2', { text: 'Columns' }),
+        h('p', { class: 'h', text: 'Switch on what the public may see. Hidden columns are left out of the published list. The member name becomes the title of each card; “Filter” columns get a drop-down on the site.' }),
+        h('div', { class: 'dir-cols' }, rows));
+    }
+    const pvBox = h('div');
+    function drawPreview() {
+      pvBox.innerHTML = '';
+      if (!full || !full.rows.length) return;
+      const d = D(), k = q.trim().toLowerCase();
+      const idx = full.rows.map((r, i) => i).filter((i) => !k || full.rows[i].join(' ').toLowerCase().includes(k));
+      const showN = idx.slice(0, 40);
+      const th = d.columns.map((c, i) => h('th', { class: c.show ? '' : 'off', text: c.label.en || `Column ${i + 1}` }));
+      const body = showN.map((i) => h('tr', {}, h('td', { class: 'act' },
+        h('button', { class: 'ico', type: 'button', title: 'Remove this row (not a member)', 'aria-label': 'Remove row', text: '✕', onclick: () => { saveTable({ ...full, rows: full.rows.filter((x, k) => k !== i) }); toast('Row removed. Undo brings it back.'); } }),
+        h('button', { class: 'ico', type: 'button', title: 'Use this row as the column names', 'aria-label': 'Use as column names', text: '⇡', onclick: () => {
+          const labels = full.rows[i].map((x, j) => x || `Column ${j + 1}`), rows = full.rows.slice(i + 1);
+          D().columns = window.MemberList.describe(labels, rows).map((m, j) => ({ ...m, src: labels[j] }));
+          saveTable({ ...full, columns: labels, rows, notes: [] }); toast('Column names updated from that row.');
+        } })),
+        ...d.columns.map((c, j) => h('td', { class: c.show ? '' : 'off', text: full.rows[i][j] || '' }))));
+      pvBox.append(h('p', { class: 'hint muted', style: 'margin:8px 0 0', text: idx.length > showN.length ? `Showing ${showN.length} of ${idx.length} rows.` : `${idx.length} row${idx.length === 1 ? '' : 's'}.` }),
+        h('div', { class: 'dir-tbl' }, h('table', {}, h('thead', {}, h('tr', {}, h('th', { class: 'act', text: '' }), ...th)), h('tbody', {}, body))));
+    }
+    function previewCard() {
+      if (!full || !full.rows.length) return null;
+      const s = h('input', { class: 'inp search-in', type: 'search', placeholder: 'Find a member in the list…', value: q });
+      s.addEventListener('input', () => { q = s.value; drawPreview(); });
+      drawPreview();
+      return h('section', { class: 'card' }, h('h2', { text: 'Check the list' }),
+        h('p', { class: 'h', text: 'This is what was read from the file; grey columns are hidden. ✕ removes a row that is not a member (a title or a note). ⇡ uses a row as the column names if the header was missed. To correct a member’s details, fix the file and upload it again.' }),
+        s, pvBox);
+    }
+    async function draw() {
+      full = await dirBase(D());
+      wrap.innerHTML = '';
+      wrap.append(fileCard(), colsCard() || '', previewCard() || '');
+    }
+    draw();
+    return wrap;
+  }
+
   /* ---------------------------------------------------------------- render a group */
   function renderSide() {
     const side = $('#side'); side.innerHTML = '';
@@ -599,6 +765,15 @@
       log(`Published version ${version}. GitHub Pages is updating the live site…`, 'ok');
       S.c = out; S.pub = clone(out); S.pubJSON = JSON.stringify(out); S.base = version; S.dirty = false; S.committed = JSON.stringify(S.c);
       await saveDraft(); for (const id of done) await idb.del('upload:' + id);
+      // older copies of the member directory made while editing are no longer needed
+      try {
+        const keep = FULL(((S.c.pages || {}).directory || {}).listId || '-');
+        for (const k of await idb.keys()) {
+          if (typeof k !== 'string') continue;
+          if (k.startsWith('dir:full') && k !== keep) await idb.del(k);
+          else if (k.startsWith('upload:')) { const rec = await idb.get(k); if (rec && rec.name === DIR_JSON) await idb.del(k); }
+        }
+      } catch {}
       sendPreview(); status('✓ Published · going live…', 'ok');
       waitLive(c, version);
     } catch (e) {
